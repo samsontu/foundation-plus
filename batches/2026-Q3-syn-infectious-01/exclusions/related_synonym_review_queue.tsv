@@ -1,0 +1,21 @@
+review_id	foundation_entity	foundation_label	mondo_class	synonym_text	scope_property	mondo_xref	suggested_action	reviewer_notes
+REV-0001	http://id.who.int/icd/entity/257068234	Cholera	MONDO:0005173	infection caused by Vibrio cholerae	oboInOwl:hasRelatedSynonym	NCIt:C128388	consider_as_inclusion_term	Causal agent framing - may qualify as inclusion term
+REV-0002	http://id.who.int/icd/entity/588616678	Typhoid fever	MONDO:0005112	infection due to Salmonella typhi	oboInOwl:hasRelatedSynonym	NCIt:C128392	consider_as_inclusion_term	Causal agent framing - may qualify as inclusion term
+REV-0003	http://id.who.int/icd/entity/1206028912	Shigellosis	MONDO:0005149	infection caused by Shigella	oboInOwl:hasRelatedSynonym	NCIt:C84947	consider_as_inclusion_term	Causal agent framing - may qualify as inclusion term
+REV-0004	http://id.who.int/icd/entity/42335174	Amoebiasis	MONDO:0006570	amebic infection	oboInOwl:hasRelatedSynonym	DOID:9537	consider_as_synonym	Common alternative phrasing
+REV-0005	http://id.who.int/icd/entity/1580735498	Tuberculosis	MONDO:0018076	tuberculous infection	oboInOwl:hasRelatedSynonym	NCIt:C3423	consider_as_synonym	Common clinical usage
+REV-0006	http://id.who.int/icd/entity/1157477580	Plague	MONDO:0005088	pestilence	oboInOwl:hasRelatedSynonym	MESH:D010930	reject_archaic	Archaic term, not used in modern clinical context
+REV-0007	http://id.who.int/icd/entity/189532001	Diphtheria	MONDO:0005577	infection caused by Corynebacterium diphtheriae	oboInOwl:hasRelatedSynonym	NCIt:C84617	consider_as_inclusion_term	Causal agent framing - may qualify as inclusion term
+REV-0008	http://id.who.int/icd/entity/1927498498	Whooping cough	MONDO:0005049	infection caused by Bordetella pertussis	oboInOwl:hasRelatedSynonym	NCIt:C84586	consider_as_inclusion_term	Causal agent framing - may qualify as inclusion term
+REV-0009	http://id.who.int/icd/entity/1208890105	Measles	MONDO:0005309	measles virus infection	oboInOwl:hasRelatedSynonym	NCIt:C84824	consider_as_inclusion_term	Virus-specific framing
+REV-0010	http://id.who.int/icd/entity/1233726543	Rubella	MONDO:0004656	rubella virus infection	oboInOwl:hasRelatedSynonym	NCIt:C84930	consider_as_inclusion_term	Virus-specific framing
+REV-0011	http://id.who.int/icd/entity/1586407942	Dengue	MONDO:0005502	dengue virus infection	oboInOwl:hasRelatedSynonym	NCIt:C84613	consider_as_inclusion_term	Virus-specific framing
+REV-0012	http://id.who.int/icd/entity/435601985	Malaria	MONDO:0005136	malarial infection	oboInOwl:hasRelatedSynonym	DOID:12365	consider_as_synonym	Common alternative phrasing
+REV-0013	http://id.who.int/icd/entity/1630407678	Leishmaniasis	MONDO:0005747	infection caused by Leishmania	oboInOwl:hasRelatedSynonym	NCIt:C84792	consider_as_inclusion_term	Causal agent framing - may qualify as inclusion term
+REV-0014	http://id.who.int/icd/entity/1580735498	Tuberculosis	MONDO:0018076	consumption	oboInOwl:hasRelatedSynonym	DOID:399	reject_archaic	Historical term, may confuse modern users
+REV-0015	http://id.who.int/icd/entity/1580735498	Tuberculosis	MONDO:0018076	Pott disease	oboInOwl:hasRelatedSynonym	Orphanet:818	consider_as_inclusion_term	Specific clinical subtype (spinal TB)
+REV-0016	http://id.who.int/icd/entity/435601985	Malaria	MONDO:0005136	ague	oboInOwl:hasRelatedSynonym	DOID:12365	reject_archaic	Archaic English term
+REV-0017	http://id.who.int/icd/entity/435601985	Malaria	MONDO:0005136	jungle fever	oboInOwl:hasRelatedSynonym	DOID:12365	reject_ambiguous	Ambiguous - also informal term with other meanings
+REV-0018	http://id.who.int/icd/entity/1586407942	Dengue	MONDO:0005502	dandy fever	oboInOwl:hasRelatedSynonym	DOID:12205	consider_as_synonym	Historical but occasionally encountered in literature
+REV-0019	http://id.who.int/icd/entity/1630407678	Leishmaniasis	MONDO:0005747	Dumdum fever	oboInOwl:hasRelatedSynonym	MESH:D007896	reject_archaic	Archaic regional name
+REV-0020	http://id.who.int/icd/entity/1630407678	Leishmaniasis	MONDO:0005747	espundia	oboInOwl:hasRelatedSynonym	DOID:9065	consider_as_synonym	Regional term (mucocutaneous leishmaniasis) used in South America

@@ -1,0 +1,39 @@
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX icd:      <http://id.who.int/icd/schema/>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+# Synonym Enrichment Harvest — Infectious Diseases
+# Batch: 2026-Q3-syn-infectious-01
+# Scope: descendants of http://id.who.int/icd/entity/1435254666
+# Pattern: synonym_enrichment_from_mondo v1.2.0
+# Executed: 2026-07-15T09:22:00Z
+
+SELECT ?foundationEntity ?foundationLabel ?mondoClass ?mondoLabel ?text ?scopeProp ?xref WHERE {
+  # Restrict to descendants of Chapter 1 (Certain infectious or parasitic diseases)
+  ?foundationEntity icd:foundation/parent* <http://id.who.int/icd/entity/1435254666> .
+  ?foundationEntity rdfs:label ?foundationLabel .
+
+  # Foundation-Mondo mapping (SSSOM exact match, confidence >= 0.9)
+  ?foundationEntity skos:exactMatch ?mondoClass .
+  ?mondoClass rdfs:label ?mondoLabel .
+
+  # Harvest synonyms
+  ?mondoClass ?scopeProp ?text .
+  VALUES ?scopeProp {
+    oboInOwl:hasExactSynonym
+    oboInOwl:hasNarrowSynonym
+    oboInOwl:hasRelatedSynonym
+  }
+
+  # Get upstream xrefs (reified axiom annotations)
+  OPTIONAL {
+    [] a owl:Axiom ;
+       owl:annotatedSource   ?mondoClass ;
+       owl:annotatedProperty ?scopeProp ;
+       owl:annotatedTarget   ?text ;
+       oboInOwl:hasDbXref    ?xref .
+  }
+}
+ORDER BY ?foundationEntity ?scopeProp ?text

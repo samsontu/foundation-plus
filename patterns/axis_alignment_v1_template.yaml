@@ -1,0 +1,68 @@
+# DOSDP-style Alignment Template
+# Pattern: axis_alignment_v1
+# Version: 1.0.0
+# Purpose: Declare ICD-11 post-coordination axis properties as equivalent to
+#          or subproperties of Relation Ontology (RO) / PATO relations.
+
+pattern_name: "axis_alignment_v1"
+pattern_iri: "http://id.who.int/icd/foundation-plus/pattern/axis_alignment_v1"
+description: >
+  Aligns each ICD-11 Content Model post-coordination axis to its corresponding
+  Relation Ontology (RO) or PATO relation. The alignment type is either
+  EquivalentObjectProperties (when semantics are identical) or SubObjectPropertyOf
+  (when the ICD axis is semantically narrower than the RO relation).
+
+contributors:
+  - "https://orcid.org/0000-0002-0295-7821"  # Samson Tu
+
+classes: {}
+
+object_properties:
+  icd_axis: "http://id.who.int/icd/schema/'icd_axis_localname'"
+  ro_relation: "http://purl.obolibrary.org/obo/'ro_relation_id'"
+
+vars:
+  icd_axis_localname: "string"    # e.g., "specificAnatomy"
+  ro_relation_id: "string"        # e.g., "RO_0004026"
+  alignment_type: "string"        # "EQ" or "SUB"
+  mapping_justification: "string" # semapv vocabulary term
+  rationale: "string"             # human-readable comment
+
+annotations:
+  - annotationProperty: "prov:wasDerivedFrom"
+    value: "http://purl.obolibrary.org/obo/'ro_relation_id'"
+  - annotationProperty: "dct:license"
+    value: "https://creativecommons.org/licenses/by/4.0/"
+  - annotationProperty: "dct:rightsHolder"
+    value: "OBO Foundry"
+  - annotationProperty: "icd:batchId"
+    value: "2026-Q2-axis-align-01"
+  - annotationProperty: "icd:batchManifestHash"
+    value: "'manifest_hash'"
+
+axiom_templates:
+  equivalent_when_EQ: |
+    EquivalentObjectProperties(
+      {{annotations}}
+      <http://id.who.int/icd/schema/{{icd_axis_localname}}>
+      <http://purl.obolibrary.org/obo/{{ro_relation_id}}>
+    )
+
+  subproperty_when_SUB: |
+    SubObjectPropertyOf(
+      {{annotations}}
+      <http://id.who.int/icd/schema/{{icd_axis_localname}}>
+      <http://purl.obolibrary.org/obo/{{ro_relation_id}}>
+    )
+
+generation_rules:
+  - if: "alignment_type == 'EQ'"
+    then: "use equivalent_when_EQ template"
+  - if: "alignment_type == 'SUB'"
+    then: "use subproperty_when_SUB template"
+
+qc_constraints:
+  - "Each ICD axis maps to at most one RO relation at the same alignment level"
+  - "No domain/range contradictions between ICD axis and aligned RO relation"
+  - "Merged ontology (Foundation + alignments) must remain OWL 2 EL compliant"
+  - "ELK classification on merged ontology must produce 0 unsatisfiable classes"

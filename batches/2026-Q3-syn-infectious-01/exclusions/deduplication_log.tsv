@@ -1,0 +1,31 @@
+duplicate_id	foundation_entity	foundation_label	synonym_text	scope_property	reason	kept_variant	discarded_variant
+DUP-0001	http://id.who.int/icd/entity/257068234	Cholera	Cholera	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Cholera
+DUP-0002	http://id.who.int/icd/entity/588616678	Typhoid fever	Typhoid fever	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Typhoid fever
+DUP-0003	http://id.who.int/icd/entity/1206028912	Shigellosis	Shigellosis	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Shigellosis
+DUP-0004	http://id.who.int/icd/entity/42335174	Amoebiasis	Amoebiasis	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Amoebiasis
+DUP-0005	http://id.who.int/icd/entity/1580735498	Tuberculosis	Tuberculosis	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Tuberculosis
+DUP-0006	http://id.who.int/icd/entity/1157477580	Plague	Plague	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Plague
+DUP-0007	http://id.who.int/icd/entity/189532001	Diphtheria	Diphtheria	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Diphtheria
+DUP-0008	http://id.who.int/icd/entity/1927498498	Whooping cough	Whooping cough	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Whooping cough
+DUP-0009	http://id.who.int/icd/entity/1394114714	Tetanus	Tetanus	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Tetanus
+DUP-0010	http://id.who.int/icd/entity/1208890105	Measles	Measles	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Measles
+DUP-0011	http://id.who.int/icd/entity/1233726543	Rubella	Rubella	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Rubella
+DUP-0012	http://id.who.int/icd/entity/1586407942	Dengue	Dengue	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Dengue
+DUP-0013	http://id.who.int/icd/entity/435601985	Malaria	Malaria	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Malaria
+DUP-0014	http://id.who.int/icd/entity/1630407678	Leishmaniasis	Leishmaniasis	oboInOwl:hasExactSynonym	identical_to_foundation_label	N/A	Leishmaniasis
+DUP-0015	http://id.who.int/icd/entity/257068234	Cholera	cholera	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	cholera
+DUP-0016	http://id.who.int/icd/entity/1580735498	Tuberculosis	tuberculosis	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	tuberculosis
+DUP-0017	http://id.who.int/icd/entity/435601985	Malaria	malaria	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	malaria
+DUP-0018	http://id.who.int/icd/entity/1586407942	Dengue	dengue	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	dengue
+DUP-0019	http://id.who.int/icd/entity/1630407678	Leishmaniasis	leishmaniasis	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	leishmaniasis
+DUP-0020	http://id.who.int/icd/entity/588616678	Typhoid fever	typhoid fever	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	typhoid fever
+DUP-0021	http://id.who.int/icd/entity/1206028912	Shigellosis	shigellosis	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	shigellosis
+DUP-0022	http://id.who.int/icd/entity/42335174	Amoebiasis	amoebiasis	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	amoebiasis
+DUP-0023	http://id.who.int/icd/entity/189532001	Diphtheria	diphtheria	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	diphtheria
+DUP-0024	http://id.who.int/icd/entity/1394114714	Tetanus	tetanus	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	tetanus
+DUP-0025	http://id.who.int/icd/entity/1208890105	Measles	measles	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	measles
+DUP-0026	http://id.who.int/icd/entity/1233726543	Rubella	rubella	oboInOwl:hasExactSynonym	case_variant_of_label	N/A	rubella
+DUP-0027	http://id.who.int/icd/entity/1580735498	Tuberculosis	pulmonary tuberculosis	oboInOwl:hasExactSynonym	already_exists_on_foundation	N/A	pulmonary tuberculosis
+DUP-0028	http://id.who.int/icd/entity/435601985	Malaria	Plasmodium falciparum malaria	oboInOwl:hasNarrowSynonym	already_exists_on_foundation	N/A	Plasmodium falciparum malaria
+DUP-0029	http://id.who.int/icd/entity/1586407942	Dengue	dengue hemorrhagic fever	oboInOwl:hasNarrowSynonym	already_exists_on_foundation	N/A	dengue hemorrhagic fever
+DUP-0030	http://id.who.int/icd/entity/1580735498	Tuberculosis	TB infection	oboInOwl:hasExactSynonym	semantic_duplicate_of_accepted	TB	TB infection

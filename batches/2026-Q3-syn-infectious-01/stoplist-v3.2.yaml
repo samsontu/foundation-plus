@@ -1,0 +1,91 @@
+# Foundation Editorial Stoplist v3.2
+# Effective: 2026-06-01
+# Used by: synonym_enrichment_from_mondo pattern v1.2.0
+# Batch: 2026-Q3-syn-infectious-01
+
+version: "3.2"
+date: "2026-06-01"
+maintainer: "WHO-FIC editorial board"
+
+rules:
+  - id: S-01
+    name: "Definition-as-term"
+    description: "Reject strings that are definitions rather than terms (>12 words, or contain 'is a', 'characterized by', 'defined as', 'caused by ... that')"
+    pattern: |
+      (^.{80,}$)|
+      (\b(is a|are a|characterized by|defined as|refers to|denotes)\b)|
+      (\bcaused by .+ that\b)
+    action: reject
+    severity: mandatory
+
+  - id: S-02
+    name: "Bare-acronym"
+    description: "Reject strings that are bare acronyms (2-5 uppercase letters) without expansion"
+    pattern: "^[A-Z]{2,5}$"
+    action: reject
+    severity: mandatory
+    exceptions:
+      - "HIV"   # Universally recognized, used as standalone term
+      - "AIDS"  # Universally recognized
+      - "TB"    # Universally recognized
+      - "SARS"  # Universally recognized
+      - "MERS"  # Universally recognized
+
+  - id: S-03
+    name: "Code-as-term"
+    description: "Reject strings that are identifiers or codes rather than human-readable terms"
+    pattern: |
+      (^[A-Z]\d{2}(\.\d+)?$)|
+      (^OMIM:\d+$)|
+      (^SCTID:\d+$)|
+      (^MESH:D\d+$)
+    action: reject
+    severity: mandatory
+
+  - id: S-04
+    name: "ICD-10-code-in-string"
+    description: "Reject strings containing ICD-10 style codes (letter + 2 digits) as the primary content"
+    pattern: "^[A-Z]\\d{2}(-[A-Z]\\d{2})?$"
+    action: reject
+    severity: mandatory
+
+  - id: S-05
+    name: "Non-target-language"
+    description: "Reject strings in languages other than the batch target language (en)"
+    detection: "language-id model confidence < 0.8 for target language"
+    action: reject
+    severity: mandatory
+
+  - id: S-06
+    name: "Parenthetical-qualifier-only"
+    description: "Reject strings like 'disease (disorder)' where the parenthetical is a semantic type marker from the source ontology, not meaningful content"
+    pattern: "\\((disorder|finding|morphologic abnormality|observable entity|situation|event|procedure)\\)$"
+    action: reject
+    severity: mandatory
+
+  - id: S-07
+    name: "Obsolete-marker"
+    description: "Reject strings containing explicit obsolescence markers"
+    pattern: "\\b(OBSOLETE|DEPRECATED|DO NOT USE)\\b"
+    action: reject
+    severity: mandatory
+
+  - id: S-08
+    name: "Excessive-length"
+    description: "Flag strings > 150 characters for manual review (may be acceptable as FSN but unlikely as synonym)"
+    pattern: "^.{151,}$"
+    action: flag_for_review
+    severity: advisory
+
+  - id: S-09
+    name: "Numeric-only"
+    description: "Reject strings that are purely numeric (e.g., SNOMED concept IDs leaked as synonyms)"
+    pattern: "^\\d+$"
+    action: reject
+    severity: mandatory
+
+  - id: S-10
+    name: "Duplicate-with-case-variation"
+    description: "When two synonyms differ only in capitalization, keep the one matching Foundation title case convention"
+    action: deduplicate_keep_titlecase
+    severity: mandatory

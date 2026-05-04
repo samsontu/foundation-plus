@@ -1,0 +1,62 @@
+foundationEntity	foundationLabel	mondoClass	mondoLabel	text	scopeProp	xref
+http://id.who.int/icd/entity/257068234	Cholera	http://purl.obolibrary.org/obo/MONDO_0005173	cholera	Asiatic cholera	oboInOwl:hasExactSynonym	DOID:1498
+http://id.who.int/icd/entity/257068234	Cholera	http://purl.obolibrary.org/obo/MONDO_0005173	cholera	epidemic cholera	oboInOwl:hasExactSynonym	MESH:D002771
+http://id.who.int/icd/entity/257068234	Cholera	http://purl.obolibrary.org/obo/MONDO_0005173	cholera	Vibrio cholerae infection	oboInOwl:hasNarrowSynonym	NCIt:C128388
+http://id.who.int/icd/entity/257068234	Cholera	http://purl.obolibrary.org/obo/MONDO_0005173	cholera	cholera (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:63650001
+http://id.who.int/icd/entity/257068234	Cholera	http://purl.obolibrary.org/obo/MONDO_0005173	cholera	Cholera	oboInOwl:hasExactSynonym	MESH:D002771
+http://id.who.int/icd/entity/257068234	Cholera	http://purl.obolibrary.org/obo/MONDO_0005173	cholera	infection caused by Vibrio cholerae	oboInOwl:hasRelatedSynonym	NCIt:C128388
+http://id.who.int/icd/entity/588616678	Typhoid fever	http://purl.obolibrary.org/obo/MONDO_0005112	typhoid fever	enteric fever	oboInOwl:hasExactSynonym	MESH:D014435
+http://id.who.int/icd/entity/588616678	Typhoid fever	http://purl.obolibrary.org/obo/MONDO_0005112	typhoid fever	typhoid	oboInOwl:hasExactSynonym	DOID:13258
+http://id.who.int/icd/entity/588616678	Typhoid fever	http://purl.obolibrary.org/obo/MONDO_0005112	typhoid fever	Salmonella typhi infection	oboInOwl:hasNarrowSynonym	NCIt:C128392
+http://id.who.int/icd/entity/588616678	Typhoid fever	http://purl.obolibrary.org/obo/MONDO_0005112	typhoid fever	typhoid fever (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:4834000
+http://id.who.int/icd/entity/588616678	Typhoid fever	http://purl.obolibrary.org/obo/MONDO_0005112	typhoid fever	infection due to Salmonella typhi	oboInOwl:hasRelatedSynonym	NCIt:C128392
+http://id.who.int/icd/entity/1206028912	Shigellosis	http://purl.obolibrary.org/obo/MONDO_0005149	shigellosis	bacillary dysentery	oboInOwl:hasExactSynonym	MESH:D004405
+http://id.who.int/icd/entity/1206028912	Shigellosis	http://purl.obolibrary.org/obo/MONDO_0005149	shigellosis	Shigella infection	oboInOwl:hasNarrowSynonym	NCIt:C84947
+http://id.who.int/icd/entity/1206028912	Shigellosis	http://purl.obolibrary.org/obo/MONDO_0005149	shigellosis	shigellosis (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:36188001
+http://id.who.int/icd/entity/1206028912	Shigellosis	http://purl.obolibrary.org/obo/MONDO_0005149	shigellosis	infection caused by Shigella	oboInOwl:hasRelatedSynonym	NCIt:C84947
+http://id.who.int/icd/entity/42335174	Amoebiasis	http://purl.obolibrary.org/obo/MONDO_0006570	amebiasis	amoebic dysentery	oboInOwl:hasExactSynonym	DOID:9537
+http://id.who.int/icd/entity/42335174	Amoebiasis	http://purl.obolibrary.org/obo/MONDO_0006570	amebiasis	Entamoeba histolytica infection	oboInOwl:hasNarrowSynonym	NCIt:C128401
+http://id.who.int/icd/entity/42335174	Amoebiasis	http://purl.obolibrary.org/obo/MONDO_0006570	amebiasis	amebiasis (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:55602000
+http://id.who.int/icd/entity/42335174	Amoebiasis	http://purl.obolibrary.org/obo/MONDO_0006570	amebiasis	amebic infection	oboInOwl:hasRelatedSynonym	DOID:9537
+http://id.who.int/icd/entity/1580735498	Tuberculosis	http://purl.obolibrary.org/obo/MONDO_0018076	tuberculosis	TB	oboInOwl:hasExactSynonym	MESH:D014376
+http://id.who.int/icd/entity/1580735498	Tuberculosis	http://purl.obolibrary.org/obo/MONDO_0018076	tuberculosis	Koch disease	oboInOwl:hasExactSynonym	Orphanet:818
+http://id.who.int/icd/entity/1580735498	Tuberculosis	http://purl.obolibrary.org/obo/MONDO_0018076	tuberculosis	mycobacterial infection due to Mycobacterium tuberculosis	oboInOwl:hasNarrowSynonym	NCIt:C3423
+http://id.who.int/icd/entity/1580735498	Tuberculosis	http://purl.obolibrary.org/obo/MONDO_0018076	tuberculosis	tuberculosis (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:56717001
+http://id.who.int/icd/entity/1580735498	Tuberculosis	http://purl.obolibrary.org/obo/MONDO_0018076	tuberculosis	tuberculous infection	oboInOwl:hasRelatedSynonym	NCIt:C3423
+http://id.who.int/icd/entity/1580735498	Tuberculosis	http://purl.obolibrary.org/obo/MONDO_0018076	tuberculosis	white plague	oboInOwl:hasExactSynonym	DOID:399
+http://id.who.int/icd/entity/1157477580	Plague	http://purl.obolibrary.org/obo/MONDO_0005088	plague	Yersinia pestis infection	oboInOwl:hasExactSynonym	NCIt:C84928
+http://id.who.int/icd/entity/1157477580	Plague	http://purl.obolibrary.org/obo/MONDO_0005088	plague	black death	oboInOwl:hasExactSynonym	DOID:3482
+http://id.who.int/icd/entity/1157477580	Plague	http://purl.obolibrary.org/obo/MONDO_0005088	plague	pestilence	oboInOwl:hasRelatedSynonym	MESH:D010930
+http://id.who.int/icd/entity/1157477580	Plague	http://purl.obolibrary.org/obo/MONDO_0005088	plague	plague (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:58750007
+http://id.who.int/icd/entity/189532001	Diphtheria	http://purl.obolibrary.org/obo/MONDO_0005577	diphtheria	Corynebacterium diphtheriae infection	oboInOwl:hasNarrowSynonym	NCIt:C84617
+http://id.who.int/icd/entity/189532001	Diphtheria	http://purl.obolibrary.org/obo/MONDO_0005577	diphtheria	diphtheria (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:397428000
+http://id.who.int/icd/entity/189532001	Diphtheria	http://purl.obolibrary.org/obo/MONDO_0005577	diphtheria	infection caused by Corynebacterium diphtheriae	oboInOwl:hasRelatedSynonym	NCIt:C84617
+http://id.who.int/icd/entity/1927498498	Whooping cough	http://purl.obolibrary.org/obo/MONDO_0005049	pertussis	pertussis	oboInOwl:hasExactSynonym	MESH:D014917
+http://id.who.int/icd/entity/1927498498	Whooping cough	http://purl.obolibrary.org/obo/MONDO_0005049	pertussis	Bordetella pertussis infection	oboInOwl:hasNarrowSynonym	NCIt:C84586
+http://id.who.int/icd/entity/1927498498	Whooping cough	http://purl.obolibrary.org/obo/MONDO_0005049	pertussis	whooping cough (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:27836007
+http://id.who.int/icd/entity/1927498498	Whooping cough	http://purl.obolibrary.org/obo/MONDO_0005049	pertussis	infection caused by Bordetella pertussis	oboInOwl:hasRelatedSynonym	NCIt:C84586
+http://id.who.int/icd/entity/1394114714	Tetanus	http://purl.obolibrary.org/obo/MONDO_0001399	tetanus	lockjaw	oboInOwl:hasExactSynonym	DOID:11338
+http://id.who.int/icd/entity/1394114714	Tetanus	http://purl.obolibrary.org/obo/MONDO_0001399	tetanus	Clostridium tetani infection	oboInOwl:hasNarrowSynonym	NCIt:C128405
+http://id.who.int/icd/entity/1394114714	Tetanus	http://purl.obolibrary.org/obo/MONDO_0001399	tetanus	tetanus (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:76902006
+http://id.who.int/icd/entity/1208890105	Measles	http://purl.obolibrary.org/obo/MONDO_0005309	measles	rubeola	oboInOwl:hasExactSynonym	MESH:D008457
+http://id.who.int/icd/entity/1208890105	Measles	http://purl.obolibrary.org/obo/MONDO_0005309	measles	morbilli	oboInOwl:hasExactSynonym	DOID:8622
+http://id.who.int/icd/entity/1208890105	Measles	http://purl.obolibrary.org/obo/MONDO_0005309	measles	measles (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:14189004
+http://id.who.int/icd/entity/1208890105	Measles	http://purl.obolibrary.org/obo/MONDO_0005309	measles	measles virus infection	oboInOwl:hasRelatedSynonym	NCIt:C84824
+http://id.who.int/icd/entity/1233726543	Rubella	http://purl.obolibrary.org/obo/MONDO_0004656	rubella	German measles	oboInOwl:hasExactSynonym	MESH:D012409
+http://id.who.int/icd/entity/1233726543	Rubella	http://purl.obolibrary.org/obo/MONDO_0004656	rubella	three-day measles	oboInOwl:hasExactSynonym	DOID:8781
+http://id.who.int/icd/entity/1233726543	Rubella	http://purl.obolibrary.org/obo/MONDO_0004656	rubella	rubella (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:36653000
+http://id.who.int/icd/entity/1233726543	Rubella	http://purl.obolibrary.org/obo/MONDO_0004656	rubella	rubella virus infection	oboInOwl:hasRelatedSynonym	NCIt:C84930
+http://id.who.int/icd/entity/1586407942	Dengue	http://purl.obolibrary.org/obo/MONDO_0005502	dengue disease	dengue fever	oboInOwl:hasExactSynonym	MESH:D003715
+http://id.who.int/icd/entity/1586407942	Dengue	http://purl.obolibrary.org/obo/MONDO_0005502	dengue disease	break-bone fever	oboInOwl:hasExactSynonym	DOID:12205
+http://id.who.int/icd/entity/1586407942	Dengue	http://purl.obolibrary.org/obo/MONDO_0005502	dengue disease	dengue (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:38362002
+http://id.who.int/icd/entity/1586407942	Dengue	http://purl.obolibrary.org/obo/MONDO_0005502	dengue disease	dengue virus infection	oboInOwl:hasRelatedSynonym	NCIt:C84613
+http://id.who.int/icd/entity/435601985	Malaria	http://purl.obolibrary.org/obo/MONDO_0005136	malaria	paludism	oboInOwl:hasExactSynonym	MESH:D008288
+http://id.who.int/icd/entity/435601985	Malaria	http://purl.obolibrary.org/obo/MONDO_0005136	malaria	marsh fever	oboInOwl:hasExactSynonym	DOID:12365
+http://id.who.int/icd/entity/435601985	Malaria	http://purl.obolibrary.org/obo/MONDO_0005136	malaria	Plasmodium infection	oboInOwl:hasNarrowSynonym	NCIt:C34797
+http://id.who.int/icd/entity/435601985	Malaria	http://purl.obolibrary.org/obo/MONDO_0005136	malaria	malaria (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:61462000
+http://id.who.int/icd/entity/435601985	Malaria	http://purl.obolibrary.org/obo/MONDO_0005136	malaria	malarial infection	oboInOwl:hasRelatedSynonym	DOID:12365
+http://id.who.int/icd/entity/1630407678	Leishmaniasis	http://purl.obolibrary.org/obo/MONDO_0005747	leishmaniasis	kala-azar	oboInOwl:hasExactSynonym	MESH:D007896
+http://id.who.int/icd/entity/1630407678	Leishmaniasis	http://purl.obolibrary.org/obo/MONDO_0005747	leishmaniasis	black fever	oboInOwl:hasExactSynonym	DOID:9065
+http://id.who.int/icd/entity/1630407678	Leishmaniasis	http://purl.obolibrary.org/obo/MONDO_0005747	leishmaniasis	Leishmania infection	oboInOwl:hasNarrowSynonym	NCIt:C84792
+http://id.who.int/icd/entity/1630407678	Leishmaniasis	http://purl.obolibrary.org/obo/MONDO_0005747	leishmaniasis	leishmaniasis (disorder)	oboInOwl:hasRelatedSynonym	SNOMEDCT:80612004
+http://id.who.int/icd/entity/1630407678	Leishmaniasis	http://purl.obolibrary.org/obo/MONDO_0005747	leishmaniasis	infection caused by Leishmania	oboInOwl:hasRelatedSynonym	NCIt:C84792

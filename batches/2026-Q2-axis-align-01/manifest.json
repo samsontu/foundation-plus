@@ -1,0 +1,216 @@
+{
+  "@context": {
+    "@vocab": "http://id.who.int/icd/schema/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "icd": "http://id.who.int/icd/schema/",
+    "ro": "http://purl.obolibrary.org/obo/",
+    "semapv": "https://w3id.org/semapv/vocab/"
+  },
+  "@type": "icd:BatchManifest",
+  "icd:batchId": "2026-Q2-axis-align-01",
+  "dct:title": "Axis-to-Relation Alignment — ICD-11 Post-Coordination Axes to RO/PATO",
+  "dct:description": "Declares 12 property-level alignment axioms that map each ICD-11 Content Model post-coordination axis to its corresponding Relation Ontology (RO) or PATO relation. Prerequisite for all subsequent content-import patterns.",
+  "icd:generatedByPattern": "axis_alignment_v1",
+  "icd:patternVersion": "1.0.0",
+  "prov:generatedAtTime": "2026-04-28T14:32:00Z",
+  "prov:wasAttributedTo": {
+    "@id": "https://orcid.org/0000-0002-0295-7821",
+    "rdfs:label": "Samson Tu"
+  },
+  "icd:scope": {
+    "icd:description": "Property-level axioms (no class-level changes)",
+    "icd:axesAligned": 12,
+    "icd:equivalentObjectProperties": 4,
+    "icd:subObjectPropertyOf": 8
+  },
+  "icd:statistics": {
+    "icd:totalAxioms": 12,
+    "icd:equivalenceAxioms": 4,
+    "icd:subpropertyAxioms": 8,
+    "icd:sourcesUsed": ["RO (10 axioms)", "PATO (2 axioms)"],
+    "icd:newPropertiesIntroduced": 0,
+    "icd:foundationClassesAffected": 0
+  },
+  "icd:alignments": [
+    {
+      "icd:axiomId": "AX-01",
+      "icd:icdAxis": "http://id.who.int/icd/schema/specificAnatomy",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0004026",
+      "icd:alignmentType": "EquivalentObjectProperties",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-02",
+      "icd:icdAxis": "http://id.who.int/icd/schema/infectiousAgent",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0004019",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-03",
+      "icd:icdAxis": "http://id.who.int/icd/schema/chemicalAgent",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0004019",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-04",
+      "icd:icdAxis": "http://id.who.int/icd/schema/hasCausingCondition",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0004001",
+      "icd:alignmentType": "EquivalentObjectProperties",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-05",
+      "icd:icdAxis": "http://id.who.int/icd/schema/hasManifestation",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0002452",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-06",
+      "icd:icdAxis": "http://id.who.int/icd/schema/associatedWith",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0002610",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-07",
+      "icd:icdAxis": "http://id.who.int/icd/schema/histopathology",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0004027",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-08",
+      "icd:icdAxis": "http://id.who.int/icd/schema/severity",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0002573",
+      "icd:alignmentType": "EquivalentObjectProperties",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-09",
+      "icd:icdAxis": "http://id.who.int/icd/schema/laterality",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/PATO_0000614",
+      "icd:alignmentType": "EquivalentObjectProperties",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-10",
+      "icd:icdAxis": "http://id.who.int/icd/schema/course",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0002488",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-11",
+      "icd:icdAxis": "http://id.who.int/icd/schema/temporalPatternAndOnset",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0002488",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    },
+    {
+      "icd:axiomId": "AX-12",
+      "icd:icdAxis": "http://id.who.int/icd/schema/timeInLife",
+      "icd:roRelation": "http://purl.obolibrary.org/obo/RO_0002490",
+      "icd:alignmentType": "SubObjectPropertyOf",
+      "icd:mappingJustification": "semapv:ManualMappingCuration"
+    }
+  ],
+  "icd:qualityControl": {
+    "icd:elkClassification": "PASS (0 unsatisfiable classes)",
+    "icd:owl2ElProfile": "PASS (compliant)",
+    "icd:robotReport": "PASS (0 errors, 0 warnings)",
+    "icd:provenanceComplete": "PASS (12/12 axioms fully annotated)",
+    "icd:domainRangeConsistency": "PASS (no contradictions)",
+    "icd:bidirectionalConsistency": "PASS (no conflicting alignments)"
+  },
+  "icd:licenseCompatibility": {
+    "relationOntology": {
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+      "dct:rightsHolder": "OBO Foundry",
+      "icd:artifactCount": 10,
+      "icd:compatible": true
+    },
+    "pato": {
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+      "dct:rightsHolder": "OBO Foundry",
+      "icd:artifactCount": 2,
+      "icd:compatible": true
+    },
+    "icd:verdict": "All sources CC-BY 4.0 — fully compatible with Foundation redistribution"
+  },
+  "icd:dependencies": {
+    "icd:upstream": [],
+    "icd:downstream": [
+      "Logical Definition Import (§3.2)",
+      "Necessary-Conditions Import (§3.3)",
+      "Equivalence-Anchored Subtree Import (§3.4)",
+      "Extension Code Value-Set Binding (§3.5)"
+    ]
+  },
+  "icd:companionFiles": [
+    {
+      "dct:identifier": "axis_alignment_v1_template.yaml",
+      "dct:description": "DOSDP-style template defining the alignment pattern",
+      "dct:format": "application/x-yaml"
+    },
+    {
+      "dct:identifier": "axis_alignment_seed.tsv",
+      "dct:description": "12-row seed file with ICD axis, RO relation, and alignment type",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "generated_axioms.ofn",
+      "dct:description": "OWL Functional Syntax with all 12 axioms + provenance annotations",
+      "dct:format": "text/owl-functional"
+    },
+    {
+      "dct:identifier": "elk_classification.log",
+      "dct:description": "ELK 0.6.0 classification log (PASS, 0 unsatisfiable classes)",
+      "dct:format": "text/plain"
+    },
+    {
+      "dct:identifier": "robot_report.tsv",
+      "dct:description": "ROBOT report output (0 errors, 0 warnings)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "el_profile_validator.txt",
+      "dct:description": "OWL 2 EL profile compliance check (PASS)",
+      "dct:format": "text/plain"
+    },
+    {
+      "dct:identifier": "sparql_provenance_check.tsv",
+      "dct:description": "SPARQL validation confirming all provenance annotations present",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "manifest.json",
+      "dct:description": "Machine-readable JSON-LD batch manifest (this file)",
+      "dct:format": "application/ld+json"
+    }
+  ],
+  "icd:changelog": [
+    {
+      "dct:date": "2026-04-28",
+      "dct:description": "Initial batch created (12 alignment axioms)"
+    },
+    {
+      "dct:date": "2026-05-01",
+      "dct:description": "QC complete; submitted to WHO-FIC editorial board"
+    }
+  ],
+  "icd:signOff": {
+    "icd:submitter": {
+      "@id": "https://orcid.org/0000-0002-0295-7821",
+      "rdfs:label": "Samson Tu"
+    },
+    "icd:submissionDate": "2026-05-01",
+    "icd:reviewer": "pending",
+    "icd:decision": "pending",
+    "icd:batchManifestHash": "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0"
+  }
+}

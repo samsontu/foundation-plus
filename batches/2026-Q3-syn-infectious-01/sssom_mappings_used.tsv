@@ -1,0 +1,36 @@
+#curie_map:
+#  icd: http://id.who.int/icd/entity/
+#  MONDO: http://purl.obolibrary.org/obo/MONDO_
+#  skos: http://www.w3.org/2004/02/skos/core#
+#  semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	confidence	subject_source	object_source	mapping_date	mapping_provider
+icd:257068234	Cholera	skos:exactMatch	MONDO:0005173	cholera	semapv:LexicalMatching	0.95	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:588616678	Typhoid fever	skos:exactMatch	MONDO:0005112	typhoid fever	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1206028912	Shigellosis	skos:exactMatch	MONDO:0005149	shigellosis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:42335174	Amoebiasis	skos:exactMatch	MONDO:0006570	amebiasis	semapv:LexicalMatching	0.92	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1580735498	Tuberculosis	skos:exactMatch	MONDO:0018076	tuberculosis	semapv:LexicalMatching	0.98	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1157477580	Plague	skos:exactMatch	MONDO:0005088	plague	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:189532001	Diphtheria	skos:exactMatch	MONDO:0005577	diphtheria	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1927498498	Whooping cough	skos:exactMatch	MONDO:0005049	pertussis	semapv:LogicalReasoning	0.93	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1394114714	Tetanus	skos:exactMatch	MONDO:0001399	tetanus	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1208890105	Measles	skos:exactMatch	MONDO:0005309	measles	semapv:LexicalMatching	0.98	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1233726543	Rubella	skos:exactMatch	MONDO:0004656	rubella	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1586407942	Dengue	skos:exactMatch	MONDO:0005502	dengue disease	semapv:LogicalReasoning	0.91	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:435601985	Malaria	skos:exactMatch	MONDO:0005136	malaria	semapv:LexicalMatching	0.98	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1630407678	Leishmaniasis	skos:exactMatch	MONDO:0005747	leishmaniasis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:803510767	Schistosomiasis	skos:exactMatch	MONDO:0005096	schistosomiasis	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1298151786	Filariasis	skos:exactMatch	MONDO:0005543	lymphatic filariasis	semapv:LogicalReasoning	0.90	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:784029157	Hookworm diseases	skos:exactMatch	MONDO:0005910	hookworm infection	semapv:LogicalReasoning	0.91	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1013785891	Ascariasis	skos:exactMatch	MONDO:0005794	ascariasis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:618757979	Strongyloidiasis	skos:exactMatch	MONDO:0005827	strongyloidiasis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:687993714	Trichuriasis	skos:exactMatch	MONDO:0005866	trichuriasis	semapv:LexicalMatching	0.95	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:294569489	Echinococcosis	skos:exactMatch	MONDO:0005229	echinococcosis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:741711700	Taeniasis	skos:exactMatch	MONDO:0005860	taeniasis	semapv:LexicalMatching	0.95	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1098877295	Rabies	skos:exactMatch	MONDO:0005091	rabies	semapv:LexicalMatching	0.98	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1073aborr	Yellow fever	skos:exactMatch	MONDO:0005596	yellow fever	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1142730482	Viral hepatitis	skos:exactMatch	MONDO:0005163	hepatitis B	semapv:LogicalReasoning	0.90	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:549964583	HIV disease	skos:exactMatch	MONDO:0005109	HIV infectious disease	semapv:LogicalReasoning	0.93	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1523681566	Influenza	skos:exactMatch	MONDO:0005812	influenza	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1449320353	Herpes zoster	skos:exactMatch	MONDO:0005609	herpes zoster	semapv:LexicalMatching	0.97	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1313308498	Candidiasis	skos:exactMatch	MONDO:0002085	candidiasis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group
+icd:1654501718	Aspergillosis	skos:exactMatch	MONDO:0005657	aspergillosis	semapv:LexicalMatching	0.96	WHO-FIC Foundation	Mondo	2026-03-15	WHO-FIC Mapping Group

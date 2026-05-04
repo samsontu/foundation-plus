@@ -1,0 +1,184 @@
+Prefix(:=<http://id.who.int/icd/schema/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(icd:=<http://id.who.int/icd/schema/>)
+Prefix(ro:=<http://purl.obolibrary.org/obo/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+
+Ontology(<http://id.who.int/icd/foundation-plus/batch/2026-Q2-axis-align-01>
+
+# Batch: 2026-Q2-axis-align-01
+# Pattern: axis_alignment_v1 v1.0.0
+# Generated: 2026-04-28T14:32:00Z
+# Attributed to: https://orcid.org/0000-0002-0295-7821 (Samson Tu)
+# Total axioms: 12 (4 EquivalentObjectProperties + 8 SubObjectPropertyOf)
+
+# ═══════════════════════════════════════════════════════════
+# EquivalentObjectProperties Axioms (4)
+# ═══════════════════════════════════════════════════════════
+
+# AX-01: specificAnatomy ≡ disease_has_location
+EquivalentObjectProperties(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0004026>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0004026>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.5: specificAnatomy is the anatomical site of the disease. RO:0004026 disease_has_location is used identically in Mondo.")
+  <http://id.who.int/icd/schema/specificAnatomy>
+  <http://purl.obolibrary.org/obo/RO_0004026>
+)
+
+# AX-04: hasCausingCondition ≡ has_material_basis_in (disease causal)
+EquivalentObjectProperties(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0004001>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0004001>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.7: a Foundation entity whose cause is another disease entity. Maps directly to Mondo disease-to-disease causal relation.")
+  <http://id.who.int/icd/schema/hasCausingCondition>
+  <http://purl.obolibrary.org/obo/RO_0004001>
+)
+
+# AX-08: severity ≡ has_severity
+EquivalentObjectProperties(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0002573>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0002573>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.11: severity scale. RO:0002573 has_severity used in Mondo with PATO severity values. Direct equivalence.")
+  <http://id.who.int/icd/schema/severity>
+  <http://purl.obolibrary.org/obo/RO_0002573>
+)
+
+# AX-09: laterality ≡ laterality_qualifier
+EquivalentObjectProperties(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/PATO_0000614>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/PATO_0000614>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.11: laterality (left/right/bilateral). PATO laterality qualifier. Direct equivalence.")
+  <http://id.who.int/icd/schema/laterality>
+  <http://purl.obolibrary.org/obo/PATO_0000614>
+)
+
+# ═══════════════════════════════════════════════════════════
+# SubObjectPropertyOf Axioms (8)
+# ═══════════════════════════════════════════════════════════
+
+# AX-02: infectiousAgent ⊆ has_material_basis_in
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0004019>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0004019>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.6: infectiousAgent is the causal organism. RO:0004019 is broader (any material basis). Subproperty, not equivalence.")
+  <http://id.who.int/icd/schema/infectiousAgent>
+  <http://purl.obolibrary.org/obo/RO_0004019>
+)
+
+# AX-03: chemicalAgent ⊆ has_material_basis_in
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0004019>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0004019>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.6: chemicalAgent parallels infectiousAgent for chemical causes. Also subproperty of has_material_basis_in.")
+  <http://id.who.int/icd/schema/chemicalAgent>
+  <http://purl.obolibrary.org/obo/RO_0004019>
+)
+
+# AX-05: hasManifestation ⊆ has_symptom
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0002452>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0002452>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.7: hasManifestation links a disease to its clinical presentation. RO:0002452 is broader (any symptom). Subproperty.")
+  <http://id.who.int/icd/schema/hasManifestation>
+  <http://purl.obolibrary.org/obo/RO_0002452>
+)
+
+# AX-06: associatedWith ⊆ correlated_with
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0002610>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0002610>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.7: associatedWith is a weak non-causal association. correlated_with is the closest RO relation; subproperty because CM usage is narrower.")
+  <http://id.who.int/icd/schema/associatedWith>
+  <http://purl.obolibrary.org/obo/RO_0002610>
+)
+
+# AX-07: histopathology ⊆ has_quality
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0004027>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0004027>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.5: histopathology is the morphological qualifier. Mondo uses has_quality with PATO/MPATH fillers. Subproperty because CM restricts to morphology.")
+  <http://id.who.int/icd/schema/histopathology>
+  <http://purl.obolibrary.org/obo/RO_0004027>
+)
+
+# AX-10: course ⊆ has_duration
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0002488>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0002488>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.11: course (acute/chronic/subacute). RO:0002488 is temporal duration; ICD course is narrower. Subproperty.")
+  <http://id.who.int/icd/schema/course>
+  <http://purl.obolibrary.org/obo/RO_0002488>
+)
+
+# AX-11: temporalPatternAndOnset ⊆ has_duration
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0002488>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0002488>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.11: temporal onset pattern. Overlaps with course via RO:0002488 but focuses on onset timing. Subproperty.")
+  <http://id.who.int/icd/schema/temporalPatternAndOnset>
+  <http://purl.obolibrary.org/obo/RO_0002488>
+)
+
+# AX-12: timeInLife ⊆ existence_overlaps
+SubObjectPropertyOf(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/RO_0002490>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "OBO Foundry")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/RO_0002490>)
+  Annotation(icd:batchId "2026-Q2-axis-align-01")
+  Annotation(icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0")
+  Annotation(rdfs:comment "CM §3.11: life stage (neonatal, childhood, etc.). Nearest RO relation is temporal overlap with a life stage. Subproperty.")
+  <http://id.who.int/icd/schema/timeInLife>
+  <http://purl.obolibrary.org/obo/RO_0002490>
+)
+
+)

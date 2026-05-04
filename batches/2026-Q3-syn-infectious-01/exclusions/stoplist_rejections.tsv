@@ -1,0 +1,31 @@
+rejection_id	foundation_entity	foundation_label	rejected_text	scope_property	stoplist_rule	rule_name	matched_pattern
+REJ-0001	http://id.who.int/icd/entity/257068234	Cholera	cholera (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0002	http://id.who.int/icd/entity/588616678	Typhoid fever	typhoid fever (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0003	http://id.who.int/icd/entity/1206028912	Shigellosis	shigellosis (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0004	http://id.who.int/icd/entity/42335174	Amoebiasis	amebiasis (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0005	http://id.who.int/icd/entity/1580735498	Tuberculosis	tuberculosis (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0006	http://id.who.int/icd/entity/1157477580	Plague	plague (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0007	http://id.who.int/icd/entity/189532001	Diphtheria	diphtheria (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0008	http://id.who.int/icd/entity/1927498498	Whooping cough	whooping cough (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0009	http://id.who.int/icd/entity/1394114714	Tetanus	tetanus (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0010	http://id.who.int/icd/entity/1208890105	Measles	measles (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0011	http://id.who.int/icd/entity/1233726543	Rubella	rubella (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0012	http://id.who.int/icd/entity/1586407942	Dengue	dengue (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0013	http://id.who.int/icd/entity/435601985	Malaria	malaria (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0014	http://id.who.int/icd/entity/1630407678	Leishmaniasis	leishmaniasis (disorder)	oboInOwl:hasRelatedSynonym	S-06	Parenthetical-qualifier-only	(disorder)$
+REJ-0015	http://id.who.int/icd/entity/1580735498	Tuberculosis	A15	oboInOwl:hasRelatedSynonym	S-04	ICD-10-code-in-string	^[A-Z]\d{2}$
+REJ-0016	http://id.who.int/icd/entity/1580735498	Tuberculosis	A15-A19	oboInOwl:hasRelatedSynonym	S-04	ICD-10-code-in-string	^[A-Z]\d{2}-[A-Z]\d{2}$
+REJ-0017	http://id.who.int/icd/entity/257068234	Cholera	A00	oboInOwl:hasRelatedSynonym	S-04	ICD-10-code-in-string	^[A-Z]\d{2}$
+REJ-0018	http://id.who.int/icd/entity/435601985	Malaria	B50-B54	oboInOwl:hasRelatedSynonym	S-04	ICD-10-code-in-string	^[A-Z]\d{2}-[A-Z]\d{2}$
+REJ-0019	http://id.who.int/icd/entity/1586407942	Dengue	A97	oboInOwl:hasRelatedSynonym	S-04	ICD-10-code-in-string	^[A-Z]\d{2}$
+REJ-0020	http://id.who.int/icd/entity/588616678	Typhoid fever	OMIM:612246	oboInOwl:hasRelatedSynonym	S-03	Code-as-term	^OMIM:\d+$
+REJ-0021	http://id.who.int/icd/entity/1580735498	Tuberculosis	SCTID:56717001	oboInOwl:hasRelatedSynonym	S-03	Code-as-term	^SCTID:\d+$
+REJ-0022	http://id.who.int/icd/entity/435601985	Malaria	MESH:D008288	oboInOwl:hasRelatedSynonym	S-03	Code-as-term	^MESH:D\d+$
+REJ-0023	http://id.who.int/icd/entity/1580735498	Tuberculosis	An infectious disease caused by Mycobacterium tuberculosis that is characterized by formation of granulomas in the lungs and other tissues	oboInOwl:hasRelatedSynonym	S-01	Definition-as-term	^.{80,}$
+REJ-0024	http://id.who.int/icd/entity/435601985	Malaria	A mosquito-borne infectious disease caused by parasitic protozoans of the genus Plasmodium that is characterized by periodic episodes of chills and fever	oboInOwl:hasRelatedSynonym	S-01	Definition-as-term	^.{80,}$
+REJ-0025	http://id.who.int/icd/entity/257068234	Cholera	An acute diarrheal disease caused by infection of the intestine with Vibrio cholerae that is characterized by profuse watery diarrhea	oboInOwl:hasRelatedSynonym	S-01	Definition-as-term	^.{80,}$
+REJ-0026	http://id.who.int/icd/entity/1586407942	Dengue	A viral infection caused by the dengue virus that is characterized by high fever, severe headache, and joint pain	oboInOwl:hasRelatedSynonym	S-01	Definition-as-term	\b(is a|characterized by)\b
+REJ-0027	http://id.who.int/icd/entity/1630407678	Leishmaniasis	A parasitic disease caused by Leishmania species that is characterized by skin sores or systemic involvement	oboInOwl:hasRelatedSynonym	S-01	Definition-as-term	\b(caused by .+ that)\b
+REJ-0028	http://id.who.int/icd/entity/1208890105	Measles	14189004	oboInOwl:hasRelatedSynonym	S-09	Numeric-only	^\d+$
+REJ-0029	http://id.who.int/icd/entity/1394114714	Tetanus	76902006	oboInOwl:hasRelatedSynonym	S-09	Numeric-only	^\d+$
+REJ-0030	http://id.who.int/icd/entity/1927498498	Whooping cough	27836007	oboInOwl:hasRelatedSynonym	S-09	Numeric-only	^\d+$

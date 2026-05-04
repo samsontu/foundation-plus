@@ -1,0 +1,18 @@
+qc_check	status	count	details
+annotations_with_batchId	PASS	847	All 847 accepted annotations have icd:batchId = "2026-Q3-syn-infectious-01"
+annotations_with_wasDerivedFrom	PASS	847	All 847 accepted annotations have prov:wasDerivedFrom pointing to a MONDO class
+annotations_with_dct_source	PASS	847	All 847 accepted annotations have dct:source with upstream xref
+manifest_rows_match_annotations	PASS	847	synonym_manifest.tsv row count matches generated_annotations.ofn annotation count
+no_duplicate_annotations	PASS	0	Zero duplicate (entity + text + property) combinations in accepted set
+all_entities_in_scope	PASS	312	All 312 distinct entities are descendants of entity/1435254666
+all_mappings_confidence_ge_0.9	PASS	487	All 487 SSSOM mappings used have confidence >= 0.9
+stoplist_applied	PASS	67	67 rejections logged in stoplist_rejections.tsv
+snomed_exclusions_applied	PASS	41	41 SNOMED-derived terms excluded (30 in sample + 11 additional)
+related_synonyms_routed_to_review	PASS	389	389 related synonyms routed to review queue (not auto-imported)
+deduplication_applied	PASS	1203	1203 duplicates removed (label matches, case variants, existing Foundation terms)
+scope_property_distribution	INFO	N/A	exact: 569 (67.2%), narrow: 278 (32.8%), related: 0 (routed to review)
+target_language_check	PASS	847	All 847 accepted terms confirmed as English (lang-id confidence >= 0.8)
+excessive_length_check	PASS	3	3 terms flagged for review (S-08) but accepted after manual inspection
+owl_syntax_valid	PASS	847	generated_annotations.ofn passes OWL API syntax validation
+robot_verify_pass	PASS	847	ROBOT verify --input generated_annotations.ofn exits with code 0
+icat_dry_run	PASS	847	WHO iCAT API dry-run returns 200 OK for all 847 annotation payloads

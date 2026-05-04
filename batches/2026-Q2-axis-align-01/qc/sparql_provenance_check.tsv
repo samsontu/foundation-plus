@@ -1,0 +1,13 @@
+axiom_id	icd_axis	ro_relation	has_wasDerivedFrom	has_dct_license	has_dct_rightsHolder	has_dct_source	has_batchId	has_batchManifestHash	has_rdfs_comment	all_present
+AX-01	icd:specificAnatomy	RO:0004026	true	true	true	true	true	true	true	PASS
+AX-02	icd:infectiousAgent	RO:0004019	true	true	true	true	true	true	true	PASS
+AX-03	icd:chemicalAgent	RO:0004019	true	true	true	true	true	true	true	PASS
+AX-04	icd:hasCausingCondition	RO:0004001	true	true	true	true	true	true	true	PASS
+AX-05	icd:hasManifestation	RO:0002452	true	true	true	true	true	true	true	PASS
+AX-06	icd:associatedWith	RO:0002610	true	true	true	true	true	true	true	PASS
+AX-07	icd:histopathology	RO:0004027	true	true	true	true	true	true	true	PASS
+AX-08	icd:severity	RO:0002573	true	true	true	true	true	true	true	PASS
+AX-09	icd:laterality	PATO:0000614	true	true	true	true	true	true	true	PASS
+AX-10	icd:course	RO:0002488	true	true	true	true	true	true	true	PASS
+AX-11	icd:temporalPatternAndOnset	RO:0002488	true	true	true	true	true	true	true	PASS
+AX-12	icd:timeInLife	RO:0002490	true	true	true	true	true	true	true	PASS

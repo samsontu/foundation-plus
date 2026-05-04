@@ -1,0 +1,31 @@
+exclusion_id	foundation_entity	foundation_label	excluded_text	scope_property	mondo_xref	exclusion_reason	snomed_license_clause
+SCTEX-0001	http://id.who.int/icd/entity/257068234	Cholera	infection caused by Vibrio cholerae	oboInOwl:hasRelatedSynonym	SNOMEDCT:63650001	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0002	http://id.who.int/icd/entity/588616678	Typhoid fever	infection due to Salmonella typhi	oboInOwl:hasRelatedSynonym	SNOMEDCT:4834000	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0003	http://id.who.int/icd/entity/1206028912	Shigellosis	infection caused by Shigella	oboInOwl:hasRelatedSynonym	SNOMEDCT:36188001	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0004	http://id.who.int/icd/entity/42335174	Amoebiasis	infection caused by Entamoeba histolytica	oboInOwl:hasRelatedSynonym	SNOMEDCT:55602000	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0005	http://id.who.int/icd/entity/1580735498	Tuberculosis	infection caused by Mycobacterium tuberculosis complex	oboInOwl:hasRelatedSynonym	SNOMEDCT:56717001	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0006	http://id.who.int/icd/entity/1157477580	Plague	infection caused by Yersinia pestis	oboInOwl:hasRelatedSynonym	SNOMEDCT:58750007	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0007	http://id.who.int/icd/entity/189532001	Diphtheria	infection caused by Corynebacterium diphtheriae	oboInOwl:hasRelatedSynonym	SNOMEDCT:397428000	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0008	http://id.who.int/icd/entity/1927498498	Whooping cough	infection caused by Bordetella pertussis	oboInOwl:hasRelatedSynonym	SNOMEDCT:27836007	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0009	http://id.who.int/icd/entity/1394114714	Tetanus	infection caused by Clostridium tetani	oboInOwl:hasRelatedSynonym	SNOMEDCT:76902006	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0010	http://id.who.int/icd/entity/1208890105	Measles	infection caused by Measles morbillivirus	oboInOwl:hasRelatedSynonym	SNOMEDCT:14189004	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0011	http://id.who.int/icd/entity/1233726543	Rubella	infection caused by Rubella virus	oboInOwl:hasRelatedSynonym	SNOMEDCT:36653000	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0012	http://id.who.int/icd/entity/1586407942	Dengue	infection caused by Dengue virus	oboInOwl:hasRelatedSynonym	SNOMEDCT:38362002	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0013	http://id.who.int/icd/entity/435601985	Malaria	infection caused by Plasmodium	oboInOwl:hasRelatedSynonym	SNOMEDCT:61462000	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0014	http://id.who.int/icd/entity/1630407678	Leishmaniasis	infection caused by Leishmania	oboInOwl:hasRelatedSynonym	SNOMEDCT:80612004	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0015	http://id.who.int/icd/entity/1580735498	Tuberculosis	tuberculous pleurisy	oboInOwl:hasNarrowSynonym	SNOMEDCT:10759991000119100	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0016	http://id.who.int/icd/entity/1580735498	Tuberculosis	tuberculosis of lung	oboInOwl:hasNarrowSynonym	SNOMEDCT:154283005	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0017	http://id.who.int/icd/entity/435601985	Malaria	benign tertian malaria	oboInOwl:hasNarrowSynonym	SNOMEDCT:30012001	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0018	http://id.who.int/icd/entity/435601985	Malaria	quartan malaria	oboInOwl:hasNarrowSynonym	SNOMEDCT:15639000	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0019	http://id.who.int/icd/entity/1586407942	Dengue	dengue with warning signs	oboInOwl:hasNarrowSynonym	SNOMEDCT:722862003	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0020	http://id.who.int/icd/entity/1586407942	Dengue	severe dengue	oboInOwl:hasNarrowSynonym	SNOMEDCT:722863008	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0021	http://id.who.int/icd/entity/1208890105	Measles	modified measles	oboInOwl:hasNarrowSynonym	SNOMEDCT:82452005	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0022	http://id.who.int/icd/entity/1233726543	Rubella	congenital rubella syndrome	oboInOwl:hasNarrowSynonym	SNOMEDCT:1857005	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0023	http://id.who.int/icd/entity/1927498498	Whooping cough	parapertussis	oboInOwl:hasNarrowSynonym	SNOMEDCT:38907003	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0024	http://id.who.int/icd/entity/1394114714	Tetanus	neonatal tetanus	oboInOwl:hasNarrowSynonym	SNOMEDCT:90910001	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0025	http://id.who.int/icd/entity/1630407678	Leishmaniasis	cutaneous leishmaniasis	oboInOwl:hasNarrowSynonym	SNOMEDCT:186803007	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0026	http://id.who.int/icd/entity/1630407678	Leishmaniasis	visceral leishmaniasis	oboInOwl:hasNarrowSynonym	SNOMEDCT:186802002	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0027	http://id.who.int/icd/entity/1157477580	Plague	bubonic plague	oboInOwl:hasNarrowSynonym	SNOMEDCT:58750007	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0028	http://id.who.int/icd/entity/1157477580	Plague	pneumonic plague	oboInOwl:hasNarrowSynonym	SNOMEDCT:78638001	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0029	http://id.who.int/icd/entity/42335174	Amoebiasis	hepatic amebiasis	oboInOwl:hasNarrowSynonym	SNOMEDCT:59557002	snomed_derived_content	SNOMED CT content subject to IHTSDO license
+SCTEX-0030	http://id.who.int/icd/entity/42335174	Amoebiasis	intestinal amebiasis	oboInOwl:hasNarrowSynonym	SNOMEDCT:71093001	snomed_derived_content	SNOMED CT content subject to IHTSDO license

@@ -1,0 +1,78 @@
+================================================================================
+ELK Reasoner v0.6.0 — Classification Log
+================================================================================
+Date:       2026-04-28T14:35:12Z
+Ontology:   http://id.who.int/icd/foundation-plus/batch/2026-Q2-axis-align-01
+Merged:     WHO-FIC Foundation (whofic-2025-05-24) + Axis Alignment Batch
+Profile:    OWL 2 EL
+JVM:        OpenJDK 17.0.9, Xmx=8g
+
+--- Configuration ---
+elk.reasoner.tracing = true
+elk.reasoner.incremental = false
+elk.saturation.maxWorkers = 4
+
+--- Loading ---
+[14:35:12.001] Loading Foundation ontology (87,432 axioms)...
+[14:35:14.218] Foundation loaded in 2,217ms
+[14:35:14.219] Loading axis alignment batch (12 axioms)...
+[14:35:14.221] Batch loaded in 2ms
+[14:35:14.222] Merged ontology: 87,444 axioms total
+
+--- Preprocessing ---
+[14:35:14.223] Computing property hierarchy...
+[14:35:14.298] Property hierarchy computed: 12 new property axioms integrated
+[14:35:14.299]   EquivalentObjectProperties: 4
+[14:35:14.299]   SubObjectPropertyOf: 8
+[14:35:14.300] Property subsumption graph: 156 nodes, 189 edges (was 144/177)
+[14:35:14.301] Indexing class expressions...
+[14:35:15.102] Indexing complete: 92,517 indexed expressions
+
+--- Saturation ---
+[14:35:15.103] Starting saturation phase (4 workers)...
+[14:35:15.103] Processing contexts: 87,432 active
+[14:35:28.441] Saturation complete in 13,338ms
+[14:35:28.442] Contexts processed: 87,432
+[14:35:28.442] Derived conclusions: 1,247,893 (net increase: +0 from alignment)
+
+--- Taxonomy Construction ---
+[14:35:28.443] Building class taxonomy...
+[14:35:29.112] Taxonomy complete in 669ms
+[14:35:29.113] Named classes: 82,914
+[14:35:29.113] Unsatisfiable classes: 0  ✓
+[14:35:29.114] Equivalent class groups: 0 new (from alignment)
+[14:35:29.114] Subclass relationships: 94,827 (unchanged)
+
+--- Property Taxonomy ---
+[14:35:29.115] Building property taxonomy...
+[14:35:29.118] Object properties: 156 (was 144)
+[14:35:29.119] New property equivalences established:
+[14:35:29.119]   icd:specificAnatomy ≡ RO:0004026 (disease_has_location)
+[14:35:29.119]   icd:hasCausingCondition ≡ RO:0004001 (has_material_basis_in_disease)
+[14:35:29.119]   icd:severity ≡ RO:0002573 (has_severity)
+[14:35:29.120]   icd:laterality ≡ PATO:0000614 (laterality_qualifier)
+[14:35:29.120] New property subsumptions established:
+[14:35:29.120]   icd:infectiousAgent ⊆ RO:0004019
+[14:35:29.120]   icd:chemicalAgent ⊆ RO:0004019
+[14:35:29.121]   icd:hasManifestation ⊆ RO:0002452
+[14:35:29.121]   icd:associatedWith ⊆ RO:0002610
+[14:35:29.121]   icd:histopathology ⊆ RO:0004027
+[14:35:29.121]   icd:course ⊆ RO:0002488
+[14:35:29.122]   icd:temporalPatternAndOnset ⊆ RO:0002488
+[14:35:29.122]   icd:timeInLife ⊆ RO:0002490
+
+--- Consistency Check ---
+[14:35:29.123] Checking ontology consistency...
+[14:35:29.456] Ontology is CONSISTENT  ✓
+
+--- Summary ---
+Classification time:      17,455ms (total)
+Unsatisfiable classes:    0
+New inferences (class):   0
+New inferences (property): 12
+Consistency:              PASS
+OWL 2 EL profile:        COMPLIANT
+
+================================================================================
+RESULT: PASS — No unsatisfiable classes, ontology consistent
+================================================================================

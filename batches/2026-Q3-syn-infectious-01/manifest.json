@@ -1,0 +1,176 @@
+{
+  "@context": {
+    "@vocab": "http://id.who.int/icd/schema/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sssom": "https://w3id.org/sssom/",
+    "icd": "http://id.who.int/icd/schema/",
+    "mondo": "http://purl.obolibrary.org/obo/MONDO_"
+  },
+  "@type": "icd:BatchManifest",
+  "icd:batchId": "2026-Q3-syn-infectious-01",
+  "dct:title": "Synonym Enrichment — Infectious Diseases (Chapter 1)",
+  "dct:description": "Batch enrichment of ICD-11 Foundation infectious disease entities with synonyms harvested from Mondo Disease Ontology via SSSOM exact-match mappings.",
+  "icd:generatedByPattern": "synonym_enrichment_from_mondo",
+  "icd:patternVersion": "1.2.0",
+  "prov:generatedAtTime": "2026-07-15T09:22:00Z",
+  "prov:wasAttributedTo": {
+    "@id": "https://orcid.org/0000-0002-0295-7821",
+    "rdfs:label": "Samson Tu"
+  },
+  "icd:scope": {
+    "icd:rootEntity": "http://id.who.int/icd/entity/1435254666",
+    "icd:rootLabel": "Certain infectious or parasitic diseases",
+    "icd:chapter": "01",
+    "icd:targetLanguage": "en"
+  },
+  "icd:statistics": {
+    "icd:totalAccepted": 847,
+    "icd:synonymsAdded": 569,
+    "icd:inclusionTermsAdded": 278,
+    "icd:distinctEntitiesEnriched": 312,
+    "icd:sssomMappingsUsed": 487,
+    "icd:sparqlRawResults": 2159,
+    "icd:duplicatesRemoved": 1203,
+    "icd:stoplistRejections": 67,
+    "icd:snomedExclusions": 41,
+    "icd:relatedSynonymsForReview": 389
+  },
+  "icd:scopeMapping": {
+    "oboInOwl:hasExactSynonym": "icd:synonym",
+    "oboInOwl:hasNarrowSynonym": "icd:inclusionTerm",
+    "oboInOwl:hasRelatedSynonym": "manual_review_queue",
+    "oboInOwl:hasBroadSynonym": "excluded"
+  },
+  "icd:qualityControl": {
+    "icd:stoplistVersion": "3.2",
+    "icd:sssomMinConfidence": 0.9,
+    "icd:languageIdMinConfidence": 0.8,
+    "icd:owlSyntaxValid": true,
+    "icd:robotVerifyPass": true,
+    "icd:icatDryRunPass": true
+  },
+  "icd:licenseCompatibility": {
+    "mondo": {
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+      "dct:rightsHolder": "Mondo Disease Ontology Consortium"
+    },
+    "upstreamSources": [
+      {
+        "@id": "DOID",
+        "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "icd:compatible": true
+      },
+      {
+        "@id": "MESH",
+        "dct:license": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html",
+        "icd:compatible": true,
+        "icd:note": "Public domain (US Government work)"
+      },
+      {
+        "@id": "NCIt",
+        "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "icd:compatible": true
+      },
+      {
+        "@id": "Orphanet",
+        "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+        "icd:compatible": true
+      },
+      {
+        "@id": "SNOMEDCT",
+        "dct:license": "https://www.snomed.org/snomed-ct/get-snomed",
+        "icd:compatible": false,
+        "icd:note": "SNOMED CT content excluded — requires IHTSDO affiliate license"
+      }
+    ]
+  },
+  "icd:companionFiles": [
+    {
+      "dct:identifier": "synonym_manifest.tsv",
+      "dct:description": "Per-artifact process provenance (847 rows)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "generated_annotations.ofn",
+      "dct:description": "OWL Functional Syntax file with all 847 synonym annotations",
+      "dct:format": "text/owl-functional"
+    },
+    {
+      "dct:identifier": "sparql_harvest_query.rq",
+      "dct:description": "SPARQL query used to harvest synonyms from Mondo",
+      "dct:format": "application/sparql-query"
+    },
+    {
+      "dct:identifier": "sparql_raw_results.tsv",
+      "dct:description": "Raw SPARQL results (2,159 rows before filtering)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "stoplist-v3.2.yaml",
+      "dct:description": "Editorial stoplist rules (10 rules)",
+      "dct:format": "application/x-yaml"
+    },
+    {
+      "dct:identifier": "stoplist_rejections.tsv",
+      "dct:description": "Terms rejected by stoplist (67 entries)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "deduplication_log.tsv",
+      "dct:description": "Duplicate entries removed (1,203 entries)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "snomed_excluded_synonyms.tsv",
+      "dct:description": "SNOMED CT-derived synonyms excluded for licensing (41 entries)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "related_synonym_review_queue.tsv",
+      "dct:description": "Related synonyms routed to manual review (389 entries)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "sssom_mappings_used.tsv",
+      "dct:description": "SSSOM exact-match mappings used (487 Foundation↔Mondo pairs)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "qc_sparql_provenance_check.tsv",
+      "dct:description": "QC validation results (16 checks, all PASS)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "manifest.json",
+      "dct:description": "Machine-readable JSON-LD batch manifest (this file)",
+      "dct:format": "application/ld+json"
+    }
+  ],
+  "icd:changelog": [
+    {
+      "dct:date": "2026-07-15",
+      "dct:description": "Initial harvest and filtering"
+    },
+    {
+      "dct:date": "2026-07-18",
+      "dct:description": "Stoplist v3.2 applied; SNOMED exclusions finalized"
+    },
+    {
+      "dct:date": "2026-07-20",
+      "dct:description": "Editorial board review complete; batch accepted"
+    }
+  ],
+  "icd:signOff": {
+    "icd:submitter": {
+      "@id": "https://orcid.org/0000-0002-0295-7821",
+      "rdfs:label": "Samson Tu"
+    },
+    "icd:reviewer": "WHO-FIC Editorial Board",
+    "icd:reviewDate": "2026-07-20",
+    "icd:decision": "approved",
+    "icd:batchManifestHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

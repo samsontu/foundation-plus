@@ -1,0 +1,57 @@
+================================================================================
+OWL 2 EL Profile Validator
+================================================================================
+Date:       2026-04-28T14:36:01Z
+Tool:       OWL API 5.5.0 — OWL2ELProfile checker
+Input:      generated_axioms.ofn (merged with Foundation skeleton)
+
+--- Profile Compliance Check ---
+
+Checking OWL 2 EL restrictions...
+
+[1] No universal quantification (ObjectAllValuesFrom).............. PASS
+[2] No cardinality restrictions (ObjectMinCardinality, etc.)....... PASS
+[3] No ObjectUnionOf in superclass position........................ PASS
+[4] No negation (ObjectComplementOf)............................... PASS
+[5] No nominals (ObjectOneOf) in class expressions................. PASS
+[6] No inverse properties (InverseObjectProperties)................ PASS
+[7] No functional properties (FunctionalObjectProperty)............ PASS
+[8] No disjoint union (DisjointUnion).............................. PASS
+[9] No reflexive/irreflexive/asymmetric property declarations...... PASS
+[10] No keys (HasKey)............................................... PASS
+[11] No datatypes outside EL-allowed set............................ PASS
+[12] EquivalentObjectProperties — permitted in OWL 2 EL............ PASS (4 axioms)
+[13] SubObjectPropertyOf — permitted in OWL 2 EL................... PASS (8 axioms)
+[14] SubPropertyChainOf — none present.............................. N/A
+[15] TransitiveObjectProperty — none in batch....................... N/A
+
+--- Axiom-by-Axiom Validation ---
+
+AX-01  EquivalentObjectProperties(icd:specificAnatomy, RO:0004026)......... OK
+AX-02  SubObjectPropertyOf(icd:infectiousAgent, RO:0004019)................ OK
+AX-03  SubObjectPropertyOf(icd:chemicalAgent, RO:0004019).................. OK
+AX-04  EquivalentObjectProperties(icd:hasCausingCondition, RO:0004001)..... OK
+AX-05  SubObjectPropertyOf(icd:hasManifestation, RO:0002452)............... OK
+AX-06  SubObjectPropertyOf(icd:associatedWith, RO:0002610)................. OK
+AX-07  SubObjectPropertyOf(icd:histopathology, RO:0004027)................. OK
+AX-08  EquivalentObjectProperties(icd:severity, RO:0002573)................ OK
+AX-09  EquivalentObjectProperties(icd:laterality, PATO:0000614)............ OK
+AX-10  SubObjectPropertyOf(icd:course, RO:0002488)......................... OK
+AX-11  SubObjectPropertyOf(icd:temporalPatternAndOnset, RO:0002488)........ OK
+AX-12  SubObjectPropertyOf(icd:timeInLife, RO:0002490)..................... OK
+
+--- Annotation Axioms (provenance) ---
+
+All 12 axioms carry annotation assertions (prov:wasDerivedFrom, dct:license,
+dct:rightsHolder, icd:batchId, icd:batchManifestHash, rdfs:comment).
+Annotation axioms are profile-neutral (permitted in all OWL 2 profiles).
+
+--- Summary ---
+
+Total axioms checked:     12 logical + 72 annotation = 84
+Profile violations:       0
+Non-EL constructs found:  0
+
+================================================================================
+RESULT: COMPLIANT — Ontology is within the OWL 2 EL profile
+================================================================================
