@@ -1,0 +1,4 @@
+anchor_id	foundation_leaf_iri	foundation_label	mondo_anchor_iri	mondo_label	reason
+ANC-42	http://id.who.int/icd/entity/1678198765	Dracunculiasis	http://purl.obolibrary.org/obo/MONDO_0005762	dracunculiasis	Mondo class is itself a leaf (no subclasses)
+ANC-43	http://id.who.int/icd/entity/687993714	Trichuriasis	http://purl.obolibrary.org/obo/MONDO_0005866	trichuriasis	Mondo class is itself a leaf (no subclasses)
+ANC-44	http://id.who.int/icd/entity/1789198765	Enterobiasis	http://purl.obolibrary.org/obo/MONDO_0005729	enterobiasis	Mondo class is itself a leaf (no subclasses)

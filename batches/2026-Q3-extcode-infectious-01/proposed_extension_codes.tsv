@@ -1,0 +1,35 @@
+proposed_code	label	extension_block	parent_code	parent_label	external_id	external_source	external_label	justification	priority	logdef_count
+# ═══════════════════════════════════════════════════════════════
+# PROPOSED INFECTIOUS AGENT EXTENSION CODES (XN) — 17 codes
+# ═══════════════════════════════════════════════════════════════
+XN_NEW_01	Ehrlichia	XN	XN0R7	Rickettsiaceae	NCBITaxon:943	NCBITaxon	Ehrlichia	Genus-level code needed for ehrlichiosis LogDef; species E. chaffeensis (XN2X4) exists but genus does not	medium	2
+XN_NEW_02	Bartonella	XN	XN0R7	Rickettsiaceae	NCBITaxon:773	NCBITaxon	Bartonella	Genus-level code for bartonellosis LogDef; species B. henselae/quintana exist but genus does not	medium	1
+XN_NEW_03	Corynebacterium	XN	XN7T0	Corynebacterium diphtheriae	NCBITaxon:1718	NCBITaxon	Corynebacterium	Genus-level code for non-diphtheriae corynebacterial infections	low	1
+XN_NEW_04	Leishmania donovani	XN	XN5G8	Leishmania	NCBITaxon:5661	NCBITaxon	Leishmania donovani	Visceral leishmaniasis (kala-azar) agent; species-level needed for LogDef distinguishing clinical forms	high	2
+XN_NEW_05	Leishmania tropica	XN	XN5G8	Leishmania	NCBITaxon:5671	NCBITaxon	Leishmania tropica	Old World cutaneous leishmaniasis agent	medium	1
+XN_NEW_06	Leishmania braziliensis	XN	XN5G8	Leishmania	NCBITaxon:5660	NCBITaxon	Leishmania braziliensis	Mucocutaneous leishmaniasis agent	medium	1
+XN_NEW_07	Naegleria fowleri	XN	XN5UG	Free-living amoebae	NCBITaxon:5763	NCBITaxon	Naegleria fowleri	Primary amoebic meningoencephalitis; rare but clinically distinctive	medium	1
+XN_NEW_08	Balamuthia mandrillaris	XN	XN5UG	Free-living amoebae	NCBITaxon:66527	NCBITaxon	Balamuthia mandrillaris	Granulomatous amoebic encephalitis	low	1
+XN_NEW_09	Acanthamoeba	XN	XN5UG	Free-living amoebae	NCBITaxon:5755	NCBITaxon	Acanthamoeba	Acanthamoeba keratitis; emerging cause of corneal infection	medium	1
+XN_NEW_10	Human enterovirus 71	XN	XN2V5	Enterovirus	NCBITaxon:12059	NCBITaxon	Enterovirus A71	Hand-foot-mouth disease agent; significant outbreak pathogen	high	1
+XN_NEW_11	Coxsackievirus	XN	XN2V5	Enterovirus	NCBITaxon:12131	NCBITaxon	Coxsackievirus	Herpangina, myocarditis, hand-foot-mouth disease	medium	2
+XN_NEW_12	Sin Nombre orthohantavirus	XN	XN4K6	Hantavirus	NCBITaxon:37133	NCBITaxon	Sin Nombre orthohantavirus	Hantavirus pulmonary syndrome agent (Americas)	medium	1
+XN_NEW_13	Sapovirus	XN	XN8J2	Caliciviridae	NCBITaxon:162145	NCBITaxon	Sapovirus	Gastroenteritis agent; increasingly recognized	low	1
+XN_NEW_14	Astrovirus	XN	XN9D0	Rotavirus	NCBITaxon:12475	NCBITaxon	Astrovirus	Gastroenteritis agent; common in children	low	1
+XN_NEW_15	Nipah virus	XN	XN0Y2	Paramyxoviridae	NCBITaxon:121791	NCBITaxon	Nipah henipavirus	WHO priority emerging pathogen; BSL-4; outbreak potential	high	1
+XN_NEW_16	Hendra virus	XN	XN0Y2	Paramyxoviridae	NCBITaxon:63330	NCBITaxon	Hendra henipavirus	Emerging zoonotic; related to Nipah	low	1
+XN_NEW_17	Talaromyces marneffei	XN	XN47W	Histoplasma	NCBITaxon:37727	NCBITaxon	Talaromyces marneffei	Talaromycosis; reclassified from Penicillium; important in immunocompromised patients in SE Asia	high	1
+# ═══════════════════════════════════════════════════════════════
+# PROPOSED ANATOMY EXTENSION CODES (XA) — 11 codes
+# ═══════════════════════════════════════════════════════════════
+XA_NEW_01	Meninges	XA	XA98G2	Central nervous system	UBERON:0002360	UBERON	meninges	Key site for meningitis localization; currently no dedicated XA code	high	3
+XA_NEW_02	Intestinal mucosa	XA	XA35A4	Intestinal structure	UBERON:0001242	UBERON	intestinal mucosa	Site of mucosal invasion in dysentery (Shigella, Entamoeba, Salmonella)	medium	2
+XA_NEW_03	Reticuloendothelial system	XA	XA0D16	Spleen	UBERON:0000758	UBERON	reticuloendothelial system	Target of visceral leishmaniasis, brucellosis, histoplasmosis	medium	2
+XA_NEW_04	Dermis	XA	XA7PL7	Skin	UBERON:0002067	UBERON	dermis	Cutaneous infections (leishmaniasis, dermatophytosis, mycetoma)	medium	2
+XA_NEW_05	Subcutaneous tissue	XA	XA7PL7	Skin	UBERON:0002072	UBERON	subcutaneous adipose tissue	Subcutaneous parasites (onchocerciasis, dracunculiasis, myiasis)	medium	2
+XA_NEW_06	Biliary system	XA	XA6AN6	Liver	UBERON:0002394	UBERON	hepatobiliary system	Hepatobiliary parasites (Clonorchis, Opisthorchis, Fasciola)	medium	1
+XA_NEW_07	Myocardium	XA	XA7RE5	Heart	UBERON:0001133	UBERON	cardiac muscle tissue	Chagas cardiomyopathy, viral myocarditis, rheumatic carditis	high	2
+XA_NEW_08	Portal venous system	XA	XA6AN6	Liver	UBERON:0010195	UBERON	hepatic portal system	Schistosomiasis portal hypertension	medium	1
+XA_NEW_09	Pylorus	XA	XA1K12	Stomach	UBERON:0001158	UBERON	pylorus	H. pylori infection site	low	1
+XA_NEW_10	Epidermis	XA	XA7PL7	Skin	UBERON:0001003	UBERON	skin epidermis	Dermatophyte infections, superficial mycoses	medium	1
+XA_NEW_11	Lymphoid tissue	XA	XA8AE9	Lymph node	UBERON:0001744	UBERON	lymphoid tissue	Lymphotropic infections (EBV, HTLV)	low	1

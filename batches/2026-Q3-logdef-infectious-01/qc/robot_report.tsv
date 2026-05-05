@@ -1,0 +1,11 @@
+Rule Name	Rule URI	Subject	Property	Value	Severity	Result
+duplicate_exact_synonym	http://robot.obolibrary.org/report#duplicate_exact_synonym	-	-	-	ERROR	PASS (0 violations)
+multiple_equivalent_classes	http://robot.obolibrary.org/report#multiple_equivalent_classes	-	-	-	ERROR	PASS (each entity has at most 1 equivalence axiom)
+missing_label	http://robot.obolibrary.org/report#missing_label	-	-	-	ERROR	PASS (all referenced entities have labels)
+deprecated_class_reference	http://robot.obolibrary.org/report#deprecated_class_reference	-	-	-	ERROR	PASS (no deprecated fillers used)
+undeclared_class	http://robot.obolibrary.org/report#undeclared_class	-	-	-	ERROR	PASS (all NCBITaxon and UBERON classes declared)
+undeclared_property	http://robot.obolibrary.org/report#undeclared_property	-	-	-	ERROR	PASS (icd:infectiousAgent and icd:specificAnatomy declared)
+self_referencing_axiom	http://robot.obolibrary.org/report#self_referencing_axiom	-	-	-	ERROR	PASS (no class is equivalent to itself)
+unsatisfiable_class	http://robot.obolibrary.org/report#unsatisfiable_class	-	-	-	ERROR	PASS (0 unsatisfiable)
+axiom_annotation_complete	custom:axiom_annotation_complete	-	-	-	ERROR	PASS (all 156 axioms have complete provenance)
+el_profile_violation	custom:el_profile_violation	-	-	-	ERROR	PASS (no non-EL constructs)

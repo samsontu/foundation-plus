@@ -1,0 +1,29 @@
+proposed_code	proposed_label	source	exists_in_whofic	whofic_entity_id	whofic_label	notes
+XN_NEW_01	Ehrlichia	NCBITaxon:943	YES	465867565	Ehrlichia
+XN_NEW_02	Bartonella	NCBITaxon:773	YES	1522409994	Bartonella
+XN_NEW_03	Corynebacterium	NCBITaxon:1718	YES	708898123	Corynebacterium
+XN_NEW_04	Leishmania donovani	NCBITaxon:5661	YES	1289797315	Leishmania donovani infantum	WHO-FIC label includes "infantum"
+XN_NEW_05	Leishmania tropica	NCBITaxon:5671	YES	929434596	Leishmania tropica
+XN_NEW_06	Leishmania braziliensis	NCBITaxon:5660	NO
+XN_NEW_07	Naegleria fowleri	NCBITaxon:5763	YES	1472971081	Naegleria fowleri
+XN_NEW_08	Balamuthia mandrillaris	NCBITaxon:66527	NO
+XN_NEW_09	Acanthamoeba	NCBITaxon:5755	YES	14173159	Acanthamoeba
+XN_NEW_10	Human enterovirus 71	NCBITaxon:12059	NO
+XN_NEW_11	Coxsackievirus	NCBITaxon:12131	YES	110725874	Coxsackievirus
+XN_NEW_12	Sin Nombre orthohantavirus	NCBITaxon:37133	YES	764390823	sin nombre virus	WHO-FIC uses lowercase label
+XN_NEW_13	Sapovirus	NCBITaxon:162145	YES	1250375177	Sapovirus
+XN_NEW_14	Astrovirus	NCBITaxon:12475	YES	1917096226	Astrovirus
+XN_NEW_15	Nipah virus	NCBITaxon:121791	NO
+XN_NEW_16	Hendra virus	NCBITaxon:63330	NO
+XN_NEW_17	Talaromyces marneffei	NCBITaxon:37727	YES	2033913333	Talaromyces marneffei
+XA_NEW_01	Meninges	UBERON:0002360	YES	1537714794	Meninges
+XA_NEW_02	Intestinal mucosa	UBERON:0001242	NO
+XA_NEW_03	Reticuloendothelial system	UBERON:0000758	YES	785854420	Mononuclear phagocyte system	WHO-FIC uses different primary label
+XA_NEW_04	Dermis	UBERON:0002067	YES	903433997	Dermis	SubClassOf Skin (123461884)
+XA_NEW_05	Subcutaneous tissue	UBERON:0002072	YES	586230733	Hypodermis	WHO-FIC label "Hypodermis"; altLabel "Subcutaneous tissue"
+XA_NEW_06	Biliary system	UBERON:0002394	NO
+XA_NEW_07	Myocardium	UBERON:0001133	YES	2134193116	Myocardium	SubClassOf Heart (1196650747)
+XA_NEW_08	Portal venous system	UBERON:0010195	NO
+XA_NEW_09	Pylorus	UBERON:0001158	YES	1057626692	Pylorus	SubClassOf Stomach (1400951602)
+XA_NEW_10	Epidermis	UBERON:0001003	YES	211935821	Epidermis	SubClassOf Skin (123461884)
+XA_NEW_11	Lymphoid tissue	UBERON:0001744	NO

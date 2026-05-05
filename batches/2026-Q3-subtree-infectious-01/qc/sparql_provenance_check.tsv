@@ -1,0 +1,16 @@
+qc_check	status	count	details
+all_subclassof_have_batchId	PASS	98	All 98 SubClassOf axioms have icd:batchId annotation
+all_subclassof_have_wasDerivedFrom	PASS	98	All 98 SubClassOf axioms have prov:wasDerivedFrom pointing to Mondo class
+all_subclassof_have_dct_license	PASS	98	All 98 SubClassOf axioms have dct:license (CC-BY 4.0)
+all_subclassof_have_dct_rightsHolder	PASS	98	All 98 SubClassOf axioms have dct:rightsHolder
+all_subclassof_have_batchManifestHash	PASS	98	All 98 SubClassOf axioms have icd:batchManifestHash
+all_classes_have_label	PASS	98	All 98 new classes have rdfs:label in English
+all_classes_declared	PASS	98	All 98 new classes have Declaration axiom
+no_label_collision	PASS	0	Zero label collisions with existing 82,914 Foundation entities
+all_parents_exist_in_foundation	PASS	42	All 42 parent entities exist in Foundation (leaf node verification)
+equivalence_axioms_present	PASS	98	All 98 new classes have EquivalentClasses axiom
+equivalence_verified_by_elk	PASS	98	ELK confirms all 98 equivalences are logically entailed
+no_unsatisfiable_classes	PASS	0	Zero unsatisfiable classes after merge
+provisional_iri_namespace	PASS	98	All new class IRIs use icd-stage: namespace correctly
+dependency_on_axis_alignment	PASS	12	All 12 axis alignment axioms from 2026-Q2-axis-align-01 are present in merged ontology
+owl2el_profile_compliant	PASS	492	All 492 axioms (98 decl + 98 label + 98 subclass + 98 equiv + 100 annot) are OWL 2 EL compliant

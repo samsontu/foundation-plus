@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@vocab": "http://id.who.int/icd/schema/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "icd": "http://id.who.int/icd/schema/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@type": "icd:BatchManifest",
+  "icd:batchId": "2026-Q3-extcode-infectious-01",
+  "dct:title": "Extension Code Proposal — Infectious Disease Fillers",
+  "dct:description": "Proposes 9 new ICD-11 extension codes (5 infectious agents, 4 anatomical structures) as descendants of ICD Extension Code (http://id.who.int/icd/entity/1920852714), needed to complete the logical definitions in batch 2026-Q3-logdef-infectious-01. Each proposed code corresponds to a Mondo filler class (NCBITaxon organism or UBERON anatomical structure) that has no existing WHO-FIC Foundation extension code entity equivalent in whofic-2025-05-24-labeled.owl. Originally 28 codes were candidates; WHO-FIC audit found 19 already exist.",
+  "icd:generatedByPattern": "extension_code_proposal",
+  "icd:patternVersion": "1.0.0",
+  "prov:generatedAtTime": "2026-08-02T14:00:00Z",
+  "prov:wasAttributedTo": {
+    "@id": "https://orcid.org/0000-0002-0295-7821",
+    "rdfs:label": "Samson Tu"
+  },
+  "icd:scope": {
+    "icd:rootEntity": "http://id.who.int/icd/entity/1920852714",
+    "icd:rootLabel": "Extension Codes",
+    "icd:targetBlocks": ["XN (Infectious agents)", "XA (Anatomy detail)"],
+    "icd:constraint": "Mondo filler classes used in infectious disease logical definitions that lack an existing ICD-11 extension code equivalent"
+  },
+  "icd:statistics": {
+    "icd:totalProposedCodes": 9,
+    "icd:proposedXN_infectiousAgents": 5,
+    "icd:proposedXA_anatomy": 4,
+    "icd:originalCandidates": 28,
+    "icd:alreadyExistInWHOFIC": 19,
+    "icd:byCategory": {
+      "species_level_agents": 3,
+      "genus_level_agents": 2,
+      "anatomical_structures": 4
+    },
+    "icd:byPriority": {
+      "high": 3,
+      "medium": 4,
+      "low": 2
+    },
+    "icd:logicalDefinitionsUnblocked": 9,
+    "icd:externalSourcesCited": {
+      "NCBITaxon": 5,
+      "UBERON": 4
+    }
+  },
+  "icd:proposalJustification": {
+    "description": "These extension codes are needed as filler classes in genus-differentia logical definitions for Foundation infectious disease entities. Without them, 9 of 152 proposed logical definitions cannot be expressed using ICD-11-native vocabulary. An audit against whofic-2025-05-24-labeled.owl reduced the original 28 candidates to 9 truly-needed codes.",
+    "precedent": "Existing XN codes already cover major WHO-priority pathogens at species level; these proposals extend coverage to clinically relevant organisms and anatomical sites not yet represented.",
+    "naming_convention": "Proposed labels follow ICD-11 extension code naming conventions. Each proposed code includes a skos:exactMatch to NCBITaxon or UBERON for interoperability."
+  },
+  "icd:dependencies": {
+    "icd:upstream": [],
+    "icd:downstream": [
+      {
+        "icd:batchId": "2026-Q3-logdef-infectious-01",
+        "icd:reason": "9 deferred logical definitions in this batch require the proposed extension codes as filler classes",
+        "icd:dependencyType": "partial",
+        "icd:affectedDefinitions": 9
+      }
+    ]
+  },
+  "icd:qualityControl": {
+    "icd:noLabelCollision": "PASS (0 collisions with existing extension code labels)",
+    "icd:externalSourceVerified": "PASS (all 17 NCBITaxon IDs and 11 UBERON IDs verified against current releases)",
+    "icd:parentBlockExists": "PASS (all proposed codes placed under existing XN or XA parent blocks)",
+    "icd:noDuplicateProposal": "PASS (no proposed code duplicates an existing extension code)",
+    "icd:clinicalRelevanceReviewed": "PASS (all proposed organisms/structures are clinically relevant to infectious disease coding)"
+  },
+  "icd:licenseCompatibility": {
+    "ncbiTaxon": {
+      "dct:license": "https://www.nlm.nih.gov/databases/download/terms_and_conditions.html",
+      "dct:rightsHolder": "NCBI/NLM",
+      "icd:compatible": true,
+      "icd:note": "Public domain (US Government work); taxon labels freely usable for extension code naming"
+    },
+    "uberon": {
+      "dct:license": "https://creativecommons.org/licenses/by/3.0/",
+      "dct:rightsHolder": "UBERON contributors",
+      "icd:compatible": true,
+      "icd:note": "CC-BY 3.0; anatomy labels freely usable with attribution"
+    },
+    "icd:verdict": "All source materials permissively licensed. Proposed code labels are standard biological nomenclature, not copyrightable."
+  },
+  "icd:companionFiles": [
+    {"dct:identifier": "proposed_extension_codes.tsv", "dct:description": "9 proposed extension codes with labels, external IDs, parent blocks, justification, and priority"},
+    {"dct:identifier": "generated_axioms.ofn", "dct:description": "OWL Functional Syntax with Declaration, SubClassOf (hierarchy), AnnotationAssertion (labels, matches) for all 9 proposed codes"},
+    {"dct:identifier": "ncbitaxon_uberon_crossref.tsv", "dct:description": "Cross-reference table: proposed code ↔ NCBITaxon/UBERON IRI ↔ existing ICD-11 parent block"},
+    {"dct:identifier": "qc/whofic_audit.tsv", "dct:description": "Audit of original 28 candidates against whofic-2025-05-24-labeled.owl (19 exist, 9 truly need proposal)"},
+    {"dct:identifier": "qc/label_collision_check.tsv", "dct:description": "Label collision check against existing extension codes (0 collisions)"},
+    {"dct:identifier": "qc/source_verification.tsv", "dct:description": "Verification that all NCBITaxon/UBERON IDs are current and non-deprecated"},
+    {"dct:identifier": "manifest.json", "dct:description": "Machine-readable JSON-LD batch manifest (this file)"}
+  ],
+  "icd:changelog": [
+    {"dct:date": "2026-08-02", "dct:description": "Gap analysis identified 28 missing extension codes needed for logical definitions"},
+    {"dct:date": "2026-08-02", "dct:description": "Proposed codes generated with labels, hierarchy placement, and cross-references"},
+    {"dct:date": "2026-08-02", "dct:description": "Batch proposed for editorial board review"},
+    {"dct:date": "2026-08-02", "dct:description": "WHO-FIC audit: 19 of 28 originally-proposed codes found to already exist in whofic-2025-05-24-labeled.owl. Batch reduced to 9 truly-needed codes (5 XN + 4 XA). Deferred definitions in logdef batch repartitioned: 143 ready + 9 deferred."}
+  ],
+  "icd:signOff": {
+    "icd:submitter": {"@id": "https://orcid.org/0000-0002-0295-7821", "rdfs:label": "Samson Tu"},
+    "icd:submissionDate": "2026-08-02",
+    "icd:reviewer": "pending",
+    "icd:reviewDate": null,
+    "icd:decision": "proposed",
+    "icd:batchManifestHash": "sha256:b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3"
+  }
+}

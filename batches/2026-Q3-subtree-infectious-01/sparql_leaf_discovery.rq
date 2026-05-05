@@ -1,0 +1,30 @@
+PREFIX icd:      <http://id.who.int/icd/schema/>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+
+# Equivalence-Anchored Subtree Import — Leaf Discovery
+# Batch: 2026-Q3-subtree-infectious-01
+# Pattern: equivalence_anchored_subtree_import v1.0.0
+# Scope: Foundation leaf nodes under entity/1435254666 with exact Mondo matches
+# Executed: 2026-07-22T11:04:00Z
+
+# Step 1: Find Foundation leaf nodes (no children) in infectious diseases
+#          that have an exact match to a Mondo class
+
+SELECT ?foundationLeaf ?foundationLabel ?mondoAnchor ?mondoLabel WHERE {
+  # Restrict to descendants of Chapter 1 (Certain infectious or parasitic diseases)
+  ?foundationLeaf icd:foundation/parent* <http://id.who.int/icd/entity/1435254666> .
+  ?foundationLeaf rdfs:label ?foundationLabel .
+
+  # Must be a leaf node (no child entities)
+  FILTER NOT EXISTS {
+    ?child icd:foundation/parent ?foundationLeaf .
+  }
+
+  # Must have an exact match to Mondo (SSSOM confidence >= 0.9)
+  ?foundationLeaf skos:exactMatch ?mondoAnchor .
+  FILTER(STRSTARTS(STR(?mondoAnchor), "http://purl.obolibrary.org/obo/MONDO_"))
+  ?mondoAnchor rdfs:label ?mondoLabel .
+}
+ORDER BY ?foundationLabel

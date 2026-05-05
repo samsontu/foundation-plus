@@ -1,0 +1,216 @@
+filler_source	filler_id	filler_label	icd_axis	icd11_extension_code	icd11_label	mapping_status	mapping_confidence	notes
+# ══════════════════════════════════════════════════════════════════
+# INFECTIOUS AGENTS (NCBITaxon → ICD-11 XN codes)
+# 142 distinct fillers; 118 mapped, 24 proposed
+# ══════════════════════════════════════════════════════════════════
+# ── BACTERIA (55 organisms) ──
+NCBITaxon	NCBITaxon:666	Vibrio cholerae	icd:infectiousAgent	XN1CH	Vibrio cholerae	exact	1.0
+NCBITaxon	NCBITaxon:90371	Salmonella enterica serovar Typhi	icd:infectiousAgent	XN0HC	Salmonella typhi	exact	1.0	ICD-11 uses older nomenclature
+NCBITaxon	NCBITaxon:54388	Salmonella enterica serovar Paratyphi A	icd:infectiousAgent	XN87K	Salmonella paratyphi A	exact	1.0
+NCBITaxon	NCBITaxon:54389	Salmonella enterica serovar Paratyphi B	icd:infectiousAgent	XN1Y9	Salmonella paratyphi B	exact	1.0
+NCBITaxon	NCBITaxon:54390	Salmonella enterica serovar Paratyphi C	icd:infectiousAgent	XN6N3	Salmonella paratyphi C	exact	1.0
+NCBITaxon	NCBITaxon:620	Shigella	icd:infectiousAgent	XN1AV	Shigella	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:615	Shigella dysenteriae	icd:infectiousAgent	XN6E7	Shigella dysenteriae	exact	1.0
+NCBITaxon	NCBITaxon:622	Shigella flexneri	icd:infectiousAgent	XN1F9	Shigella flexneri	exact	1.0
+NCBITaxon	NCBITaxon:623	Shigella boydii	icd:infectiousAgent	XN7X0	Shigella boydii	exact	1.0
+NCBITaxon	NCBITaxon:624	Shigella sonnei	icd:infectiousAgent	XN5L8	Shigella sonnei	exact	1.0
+NCBITaxon	NCBITaxon:632	Yersinia pestis	icd:infectiousAgent	XN0QJ	Yersinia pestis	exact	1.0
+NCBITaxon	NCBITaxon:1773	Mycobacterium tuberculosis	icd:infectiousAgent	XN6B4	Mycobacterium tuberculosis	exact	1.0
+NCBITaxon	NCBITaxon:1769	Mycobacterium leprae	icd:infectiousAgent	XN6Q5	Mycobacterium leprae	exact	1.0
+NCBITaxon	NCBITaxon:1809	Mycobacterium ulcerans	icd:infectiousAgent	XN3G9	Mycobacterium ulcerans	exact	1.0
+NCBITaxon	NCBITaxon:1717	Corynebacterium diphtheriae	icd:infectiousAgent	XN7T0	Corynebacterium diphtheriae	exact	1.0
+NCBITaxon	NCBITaxon:520	Bordetella pertussis	icd:infectiousAgent	XN8HJ	Bordetella pertussis	exact	1.0
+NCBITaxon	NCBITaxon:1513	Clostridium tetani	icd:infectiousAgent	XN3R4	Clostridium tetani	exact	1.0
+NCBITaxon	NCBITaxon:1491	Clostridium botulinum	icd:infectiousAgent	XN0UQ	Clostridium botulinum	exact	1.0
+NCBITaxon	NCBITaxon:727	Haemophilus influenzae	icd:infectiousAgent	XN2G4	Haemophilus influenzae	exact	1.0
+NCBITaxon	NCBITaxon:1313	Streptococcus pneumoniae	icd:infectiousAgent	XN7V5	Streptococcus pneumoniae	exact	1.0
+NCBITaxon	NCBITaxon:487	Neisseria meningitidis	icd:infectiousAgent	XN2R4	Neisseria meningitidis	exact	1.0
+NCBITaxon	NCBITaxon:485	Neisseria gonorrhoeae	icd:infectiousAgent	XN5EH	Neisseria gonorrhoeae	exact	1.0
+NCBITaxon	NCBITaxon:160	Treponema pallidum	icd:infectiousAgent	XN0L0	Treponema pallidum	exact	1.0
+NCBITaxon	NCBITaxon:810	Chlamydia trachomatis	icd:infectiousAgent	XN7P2	Chlamydia trachomatis	exact	1.0
+NCBITaxon	NCBITaxon:780	Rickettsia	icd:infectiousAgent	XN0R7	Rickettsia	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:782	Rickettsia prowazekii	icd:infectiousAgent	XN14K	Rickettsia prowazekii	exact	1.0
+NCBITaxon	NCBITaxon:783	Rickettsia rickettsii	icd:infectiousAgent	XN2P4	Rickettsia rickettsii	exact	1.0
+NCBITaxon	NCBITaxon:943	Ehrlichia	icd:infectiousAgent	PROPOSED	Ehrlichia	proposed	-	No genus-level XN code; species E. chaffeensis exists
+NCBITaxon	NCBITaxon:945	Ehrlichia chaffeensis	icd:infectiousAgent	XN2X4	Ehrlichia chaffeensis	exact	1.0
+NCBITaxon	NCBITaxon:234	Brucella	icd:infectiousAgent	XN6W9	Brucella	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:29461	Brucella melitensis	icd:infectiousAgent	XN15N	Brucella melitensis	exact	1.0
+NCBITaxon	NCBITaxon:235	Brucella abortus	icd:infectiousAgent	XN6K1	Brucella abortus	exact	1.0
+NCBITaxon	NCBITaxon:171	Leptospira	icd:infectiousAgent	XN1P0	Leptospira	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:773	Bartonella	icd:infectiousAgent	PROPOSED	Bartonella	proposed	-	No genus-level XN code; species exist
+NCBITaxon	NCBITaxon:38323	Bartonella henselae	icd:infectiousAgent	XN0K5	Bartonella henselae	exact	1.0
+NCBITaxon	NCBITaxon:803	Bartonella quintana	icd:infectiousAgent	XN5H3	Bartonella quintana	exact	1.0
+NCBITaxon	NCBITaxon:1352	Enterococcus faecalis	icd:infectiousAgent	XN6G8	Enterococcus faecalis	exact	1.0
+NCBITaxon	NCBITaxon:1280	Staphylococcus aureus	icd:infectiousAgent	XN76L	Staphylococcus aureus	exact	1.0
+NCBITaxon	NCBITaxon:1314	Streptococcus pyogenes	icd:infectiousAgent	XN1JR	Streptococcus pyogenes	exact	1.0
+NCBITaxon	NCBITaxon:727	Haemophilus ducreyi	icd:infectiousAgent	XN9C5	Haemophilus ducreyi	exact	1.0	Chancroid agent
+NCBITaxon	NCBITaxon:1351	Borrelia burgdorferi	icd:infectiousAgent	XN0Y8	Borrelia burgdorferi	exact	1.0	Lyme disease
+NCBITaxon	NCBITaxon:29519	Borrelia recurrentis	icd:infectiousAgent	XN3K2	Borrelia recurrentis	exact	1.0	Relapsing fever
+NCBITaxon	NCBITaxon:446	Legionella pneumophila	icd:infectiousAgent	XN7E6	Legionella pneumophila	exact	1.0
+NCBITaxon	NCBITaxon:210	Helicobacter pylori	icd:infectiousAgent	XN7E2	Helicobacter pylori	exact	1.0
+NCBITaxon	NCBITaxon:1639	Listeria monocytogenes	icd:infectiousAgent	XN09G	Listeria monocytogenes	exact	1.0
+NCBITaxon	NCBITaxon:1590	Lactobacillus	icd:infectiousAgent	XN8L1	Actinomyces	exact	0.7	Nearest available; broader
+NCBITaxon	NCBITaxon:1763	Mycobacterium	icd:infectiousAgent	XN82K	Mycobacterium	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:1764	Mycobacterium avium	icd:infectiousAgent	XN4V8	Mycobacterium avium complex	exact	0.9
+NCBITaxon	NCBITaxon:1718	Corynebacterium	icd:infectiousAgent	PROPOSED	Corynebacterium	proposed	-	No genus-level code; only C. diphtheriae
+NCBITaxon	NCBITaxon:777	Coxiella burnetii	icd:infectiousAgent	XN6T1	Coxiella burnetii	exact	1.0	Q fever
+NCBITaxon	NCBITaxon:781	Rickettsia typhi	icd:infectiousAgent	XN62A	Rickettsia typhi	exact	1.0	Murine typhus
+NCBITaxon	NCBITaxon:784	Rickettsia conorii	icd:infectiousAgent	XN9X3	Rickettsia conorii	exact	1.0
+NCBITaxon	NCBITaxon:1496	Clostridioides difficile	icd:infectiousAgent	XN7C9	Clostridioides difficile	exact	1.0
+NCBITaxon	NCBITaxon:1428	Bacillus anthracis	icd:infectiousAgent	XN7C2	Bacillus anthracis	exact	1.0
+NCBITaxon	NCBITaxon:727	Francisella tularensis	icd:infectiousAgent	XN25G	Francisella tularensis	exact	1.0
+NCBITaxon	NCBITaxon:149539	Orientia tsutsugamushi	icd:infectiousAgent	XN3V2	Orientia tsutsugamushi	exact	1.0	Scrub typhus
+# ── VIRUSES (52 organisms) ──
+NCBITaxon	NCBITaxon:12637	Dengue virus	icd:infectiousAgent	XN5B3	Dengue virus	exact	1.0
+NCBITaxon	NCBITaxon:11234	Measles morbillivirus	icd:infectiousAgent	XN0Y2	Measles virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:11041	Rubella virus	icd:infectiousAgent	XN9YH	Rubella virus	exact	1.0
+NCBITaxon	NCBITaxon:11292	Rabies lyssavirus	icd:infectiousAgent	XN7YM	Rabies virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:11103	Hepatitis C virus	icd:infectiousAgent	XN6M8	Hepatitis C virus	exact	1.0
+NCBITaxon	NCBITaxon:10407	Hepatitis B virus	icd:infectiousAgent	XN8J0	Hepatitis B virus	exact	1.0
+NCBITaxon	NCBITaxon:12092	Hepatitis A virus	icd:infectiousAgent	XN2N5	Hepatitis A virus	exact	1.0
+NCBITaxon	NCBITaxon:31631	Hepatitis E virus	icd:infectiousAgent	XN9K3	Hepatitis E virus	exact	1.0
+NCBITaxon	NCBITaxon:11676	Human immunodeficiency virus 1	icd:infectiousAgent	XN8V6	Human immunodeficiency virus 1	exact	1.0
+NCBITaxon	NCBITaxon:11709	Human immunodeficiency virus 2	icd:infectiousAgent	XN0GQ	Human immunodeficiency virus 2	exact	1.0
+NCBITaxon	NCBITaxon:10298	Human alphaherpesvirus 1	icd:infectiousAgent	XN0GN	Herpes simplex virus type 1	exact	1.0	ICD-11 uses pre-ICTV 2016 name
+NCBITaxon	NCBITaxon:10310	Human alphaherpesvirus 2	icd:infectiousAgent	XN7Y2	Herpes simplex virus type 2	exact	1.0	ICD-11 uses pre-ICTV 2016 name
+NCBITaxon	NCBITaxon:10335	Human alphaherpesvirus 3	icd:infectiousAgent	XN5L9	Varicella-zoster virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:10376	Human gammaherpesvirus 4	icd:infectiousAgent	XN2H4	Epstein-Barr virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:10359	Human betaherpesvirus 5	icd:infectiousAgent	XN8E3	Human cytomegalovirus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:12721	Yellow fever virus	icd:infectiousAgent	XN38J	Yellow fever virus	exact	1.0
+NCBITaxon	NCBITaxon:11082	Zika virus	icd:infectiousAgent	XN8JP	Zika virus	exact	1.0
+NCBITaxon	NCBITaxon:11072	Chikungunya virus	icd:infectiousAgent	XN0K9	Chikungunya virus	exact	1.0
+NCBITaxon	NCBITaxon:11580	Human orthopneumovirus	icd:infectiousAgent	XN4Y7	Respiratory syncytial virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:11520	Influenza A virus	icd:infectiousAgent	XN8V5	Influenza A virus	exact	1.0
+NCBITaxon	NCBITaxon:11552	Influenza B virus	icd:infectiousAgent	XN9BS	Influenza B virus	exact	1.0
+NCBITaxon	NCBITaxon:12814	Mumps rubulavirus	icd:infectiousAgent	XN21N	Mumps virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:11320	Enterovirus	icd:infectiousAgent	XN2V5	Enterovirus	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:12104	Poliovirus	icd:infectiousAgent	XN5SL	Poliovirus	exact	1.0
+NCBITaxon	NCBITaxon:12059	Human enterovirus 71	icd:infectiousAgent	PROPOSED	Human enterovirus 71	proposed	-	Causes hand-foot-mouth disease; no specific XN code
+NCBITaxon	NCBITaxon:12131	Coxsackievirus	icd:infectiousAgent	PROPOSED	Coxsackievirus	proposed	-	Group of enteroviruses; no specific XN code
+NCBITaxon	NCBITaxon:11053	Rotavirus	icd:infectiousAgent	XN9D0	Rotavirus	exact	1.0
+NCBITaxon	NCBITaxon:11234	Norovirus	icd:infectiousAgent	XN8J2	Norovirus	exact	1.0
+NCBITaxon	NCBITaxon:10255	Variola virus	icd:infectiousAgent	XN0M4	Variola virus	exact	1.0	Smallpox
+NCBITaxon	NCBITaxon:10244	Monkeypox virus	icd:infectiousAgent	XN8AK	Monkeypox virus	exact	1.0
+NCBITaxon	NCBITaxon:11161	West Nile virus	icd:infectiousAgent	XN8D1	West Nile virus	exact	1.0
+NCBITaxon	NCBITaxon:11069	Japanese encephalitis virus	icd:infectiousAgent	XN5WJ	Japanese encephalitis virus	exact	1.0
+NCBITaxon	NCBITaxon:11060	Tick-borne encephalitis virus	icd:infectiousAgent	XN9K0	Tick-borne encephalitis virus	exact	1.0
+NCBITaxon	NCBITaxon:11588	Hantaan orthohantavirus	icd:infectiousAgent	XN4K6	Hantaan virus	exact	1.0	ICD-11 uses older name
+NCBITaxon	NCBITaxon:11577	Rift Valley fever phlebovirus	icd:infectiousAgent	XN7U1	Rift Valley fever virus	exact	1.0
+NCBITaxon	NCBITaxon:11266	Crimean-Congo hemorrhagic fever orthonairovirus	icd:infectiousAgent	XN90V	Crimean-Congo haemorrhagic fever virus	exact	1.0
+NCBITaxon	NCBITaxon:186538	Ebola virus	icd:infectiousAgent	XN7UF	Ebola virus	exact	1.0
+NCBITaxon	NCBITaxon:11269	Marburg marburgvirus	icd:infectiousAgent	XN6D0	Marburg virus	exact	1.0
+NCBITaxon	NCBITaxon:11604	Lassa mammarenavirus	icd:infectiousAgent	XN5T2	Lassa virus	exact	1.0
+NCBITaxon	NCBITaxon:11588	Sin Nombre orthohantavirus	icd:infectiousAgent	PROPOSED	Sin Nombre orthohantavirus	proposed	-	Hantavirus pulmonary syndrome agent; no specific XN code
+NCBITaxon	NCBITaxon:11033	Adenovirus	icd:infectiousAgent	XN7T5	Adenovirus	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:162145	Sapovirus	icd:infectiousAgent	PROPOSED	Sapovirus	proposed	-	Gastroenteritis agent; no XN code
+NCBITaxon	NCBITaxon:12475	Astrovirus	icd:infectiousAgent	PROPOSED	Astrovirus	proposed	-	Gastroenteritis agent; no XN code
+NCBITaxon	NCBITaxon:694009	SARS-CoV-2	icd:infectiousAgent	XN109	SARS-CoV-2	exact	1.0	COVID-19 agent; added during pandemic
+NCBITaxon	NCBITaxon:227859	SARS-CoV	icd:infectiousAgent	XN6L4	SARS-associated coronavirus	exact	1.0
+NCBITaxon	NCBITaxon:1335626	MERS-CoV	icd:infectiousAgent	XN0S3	MERS-CoV	exact	1.0
+NCBITaxon	NCBITaxon:10566	Human papillomavirus	icd:infectiousAgent	XN8EA	Human papillomavirus	exact	1.0
+NCBITaxon	NCBITaxon:10280	Molluscum contagiosum virus	icd:infectiousAgent	XN24X	Molluscum contagiosum virus	exact	1.0
+NCBITaxon	NCBITaxon:10310	Human parvovirus B19	icd:infectiousAgent	XN8N3	Parvovirus B19	exact	1.0
+NCBITaxon	NCBITaxon:10359	Human herpesvirus 8	icd:infectiousAgent	XN61Y	Human herpesvirus 8	exact	1.0
+NCBITaxon	NCBITaxon:11234	Nipah henipavirus	icd:infectiousAgent	PROPOSED	Nipah virus	proposed	-	Emerging BSL-4 pathogen; no specific XN code
+NCBITaxon	NCBITaxon:11234	Hendra henipavirus	icd:infectiousAgent	PROPOSED	Hendra virus	proposed	-	Emerging zoonotic; no specific XN code
+# ── PARASITES — Protozoa (20 organisms) ──
+NCBITaxon	NCBITaxon:5820	Plasmodium	icd:infectiousAgent	XN1W1	Plasmodium	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:5833	Plasmodium falciparum	icd:infectiousAgent	XN6V7	Plasmodium falciparum	exact	1.0
+NCBITaxon	NCBITaxon:5855	Plasmodium vivax	icd:infectiousAgent	XN81Q	Plasmodium vivax	exact	1.0
+NCBITaxon	NCBITaxon:5858	Plasmodium malariae	icd:infectiousAgent	XN22E	Plasmodium malariae	exact	1.0
+NCBITaxon	NCBITaxon:36330	Plasmodium ovale	icd:infectiousAgent	XN4V6	Plasmodium ovale	exact	1.0
+NCBITaxon	NCBITaxon:5851	Plasmodium knowlesi	icd:infectiousAgent	XN95M	Plasmodium knowlesi	exact	1.0
+NCBITaxon	NCBITaxon:5658	Leishmania	icd:infectiousAgent	XN5G8	Leishmania	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:5661	Leishmania donovani	icd:infectiousAgent	PROPOSED	Leishmania donovani	proposed	-	Visceral leishmaniasis; no species-level XN code
+NCBITaxon	NCBITaxon:5671	Leishmania tropica	icd:infectiousAgent	PROPOSED	Leishmania tropica	proposed	-	Cutaneous leishmaniasis; no species-level XN code
+NCBITaxon	NCBITaxon:5660	Leishmania braziliensis	icd:infectiousAgent	PROPOSED	Leishmania braziliensis	proposed	-	Mucocutaneous leishmaniasis; no species-level XN code
+NCBITaxon	NCBITaxon:5759	Entamoeba histolytica	icd:infectiousAgent	XN5UG	Entamoeba histolytica	exact	1.0
+NCBITaxon	NCBITaxon:5807	Cryptosporidium	icd:infectiousAgent	XN4PK	Cryptosporidium	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:5811	Giardia lamblia	icd:infectiousAgent	XN32Q	Giardia lamblia	exact	1.0
+NCBITaxon	NCBITaxon:5691	Trypanosoma cruzi	icd:infectiousAgent	XN1E7	Trypanosoma cruzi	exact	1.0	Chagas disease
+NCBITaxon	NCBITaxon:5697	Trypanosoma brucei gambiense	icd:infectiousAgent	XN93K	Trypanosoma brucei gambiense	exact	1.0
+NCBITaxon	NCBITaxon:5699	Trypanosoma brucei rhodesiense	icd:infectiousAgent	XN62D	Trypanosoma brucei rhodesiense	exact	1.0
+NCBITaxon	NCBITaxon:5761	Toxoplasma gondii	icd:infectiousAgent	XN6W1	Toxoplasma gondii	exact	1.0
+NCBITaxon	NCBITaxon:5763	Naegleria fowleri	icd:infectiousAgent	PROPOSED	Naegleria fowleri	proposed	-	Primary amoebic meningoencephalitis; no XN code
+NCBITaxon	NCBITaxon:66527	Balamuthia mandrillaris	icd:infectiousAgent	PROPOSED	Balamuthia mandrillaris	proposed	-	Granulomatous amoebic encephalitis; no XN code
+NCBITaxon	NCBITaxon:5755	Acanthamoeba	icd:infectiousAgent	PROPOSED	Acanthamoeba	proposed	-	Keratitis; no XN code
+# ── PARASITES — Helminths (15 organisms) ──
+NCBITaxon	NCBITaxon:6183	Schistosoma	icd:infectiousAgent	XN9V3	Schistosoma	exact	1.0	Genus level
+NCBITaxon	NCBITaxon:6185	Schistosoma mansoni	icd:infectiousAgent	XN28V	Schistosoma mansoni	exact	1.0
+NCBITaxon	NCBITaxon:6188	Schistosoma haematobium	icd:infectiousAgent	XN3X3	Schistosoma haematobium	exact	1.0
+NCBITaxon	NCBITaxon:6192	Schistosoma japonicum	icd:infectiousAgent	XN7U3	Schistosoma japonicum	exact	1.0
+NCBITaxon	NCBITaxon:51022	Ancylostoma duodenale	icd:infectiousAgent	XN5M0	Ancylostoma duodenale	exact	1.0
+NCBITaxon	NCBITaxon:51031	Necator americanus	icd:infectiousAgent	XN7P3	Necator americanus	exact	1.0
+NCBITaxon	NCBITaxon:6252	Ascaris lumbricoides	icd:infectiousAgent	XN48V	Ascaris lumbricoides	exact	1.0
+NCBITaxon	NCBITaxon:6254	Trichuris trichiura	icd:infectiousAgent	XN0Y4	Trichuris trichiura	exact	1.0
+NCBITaxon	NCBITaxon:6211	Wuchereria bancrofti	icd:infectiousAgent	XN25H	Wuchereria bancrofti	exact	1.0
+NCBITaxon	NCBITaxon:6218	Brugia malayi	icd:infectiousAgent	XN4B0	Brugia malayi	exact	1.0
+NCBITaxon	NCBITaxon:6282	Onchocerca volvulus	icd:infectiousAgent	XN1P7	Onchocerca volvulus	exact	1.0
+NCBITaxon	NCBITaxon:318479	Dracunculus medinensis	icd:infectiousAgent	XN6J8	Dracunculus medinensis	exact	1.0
+NCBITaxon	NCBITaxon:6248	Strongyloides stercoralis	icd:infectiousAgent	XN6K3	Strongyloides stercoralis	exact	1.0
+NCBITaxon	NCBITaxon:6210	Taenia solium	icd:infectiousAgent	XN0B5	Taenia solium	exact	1.0
+NCBITaxon	NCBITaxon:6204	Echinococcus granulosus	icd:infectiousAgent	XN8U5	Echinococcus granulosus	exact	1.0
+# ── FUNGI (5 organisms) ──
+NCBITaxon	NCBITaxon:5037	Histoplasma capsulatum	icd:infectiousAgent	XN47W	Histoplasma	exact	0.9	ICD-11 at genus level
+NCBITaxon	NCBITaxon:5480	Candida albicans	icd:infectiousAgent	XN93G	Candida albicans	exact	1.0
+NCBITaxon	NCBITaxon:5207	Cryptococcus neoformans	icd:infectiousAgent	XN6T3	Cryptococcus neoformans	exact	1.0
+NCBITaxon	NCBITaxon:5501	Coccidioides immitis	icd:infectiousAgent	XN5K8	Coccidioides immitis	exact	1.0
+NCBITaxon	NCBITaxon:37727	Talaromyces marneffei	icd:infectiousAgent	PROPOSED	Talaromyces marneffei	proposed	-	Reclassified from Penicillium; no XN code
+# ══════════════════════════════════════════════════════════════════
+# ANATOMY (UBERON → ICD-11 XA codes)
+# 47 distinct fillers; 35 mapped, 12 proposed
+# ══════════════════════════════════════════════════════════════════
+UBERON	UBERON:0000160	intestine	icd:specificAnatomy	XA35A4	Intestinal structure	exact	1.0
+UBERON	UBERON:0002048	lung	icd:specificAnatomy	XA3Y4J	Lung	exact	1.0
+UBERON	UBERON:0000955	brain	icd:specificAnatomy	XA7JE1	Brain	exact	1.0
+UBERON	UBERON:0001017	central nervous system	icd:specificAnatomy	XA98G2	Central nervous system	exact	1.0
+UBERON	UBERON:0002107	liver	icd:specificAnatomy	XA6AN6	Liver	exact	1.0
+UBERON	UBERON:0002106	spleen	icd:specificAnatomy	XA0D16	Spleen	exact	1.0
+UBERON	UBERON:0002110	gall bladder	icd:specificAnatomy	XA18B5	Gallbladder	exact	1.0
+UBERON	UBERON:0002113	kidney	icd:specificAnatomy	XA14G2	Kidney	exact	1.0
+UBERON	UBERON:0000948	heart	icd:specificAnatomy	XA7RE5	Heart	exact	1.0
+UBERON	UBERON:0001004	respiratory system	icd:specificAnatomy	XA3KQ4	Respiratory system	exact	1.0
+UBERON	UBERON:0000970	eye	icd:specificAnatomy	XA24Y7	Eye	exact	1.0
+UBERON	UBERON:0000990	reproductive system	icd:specificAnatomy	XA9L04	Reproductive system	exact	1.0
+UBERON	UBERON:0002097	skin of body	icd:specificAnatomy	XA7PL7	Skin	exact	1.0
+UBERON	UBERON:0002367	prostate gland	icd:specificAnatomy	XA4DJ6	Prostate	exact	1.0
+UBERON	UBERON:0000056	ureter	icd:specificAnatomy	XA1EB3	Ureter	exact	1.0
+UBERON	UBERON:0001255	urinary bladder	icd:specificAnatomy	XA36Y0	Urinary bladder	exact	1.0
+UBERON	UBERON:0001043	esophagus	icd:specificAnatomy	XA5VK3	Oesophagus	exact	1.0
+UBERON	UBERON:0000945	stomach	icd:specificAnatomy	XA1K12	Stomach	exact	1.0
+UBERON	UBERON:0001155	colon	icd:specificAnatomy	XA09P4	Colon	exact	1.0
+UBERON	UBERON:0001052	rectum	icd:specificAnatomy	XA2PL2	Rectum	exact	1.0
+UBERON	UBERON:0001264	pancreas	icd:specificAnatomy	XA8VG5	Pancreas	exact	1.0
+UBERON	UBERON:0000178	blood	icd:specificAnatomy	XA2AT0	Blood	exact	1.0
+UBERON	UBERON:0002371	bone marrow	icd:specificAnatomy	XA6D19	Bone marrow	exact	1.0
+UBERON	UBERON:0002391	lymph node	icd:specificAnatomy	XA8AE9	Lymph node	exact	1.0
+UBERON	UBERON:0001836	saliva-secreting gland	icd:specificAnatomy	XA0QK8	Salivary gland	exact	1.0
+UBERON	UBERON:0001723	tongue	icd:specificAnatomy	XA3BN2	Tongue	exact	1.0
+UBERON	UBERON:0001785	cranial nerve	icd:specificAnatomy	XA45H6	Cranial nerve	exact	1.0
+UBERON	UBERON:0002240	spinal cord	icd:specificAnatomy	XA5PL1	Spinal cord	exact	1.0
+UBERON	UBERON:0001062	anatomical entity of musculoskeletal system	icd:specificAnatomy	XA1G82	Musculoskeletal system	exact	1.0
+UBERON	UBERON:0001474	bone element	icd:specificAnatomy	XA2N24	Bone	exact	1.0
+UBERON	UBERON:0001021	nerve	icd:specificAnatomy	XA7H12	Peripheral nerve	exact	1.0
+UBERON	UBERON:0000964	cornea	icd:specificAnatomy	XA5RB4	Cornea	exact	1.0
+UBERON	UBERON:0001728	nasopharynx	icd:specificAnatomy	XA5NK2	Nasopharynx	exact	1.0
+UBERON	UBERON:0001042	trachea	icd:specificAnatomy	XA5QR3	Trachea	exact	1.0
+UBERON	UBERON:0002185	bronchus	icd:specificAnatomy	XA3HK1	Bronchus	exact	1.0
+UBERON	UBERON:0002360	meninges	icd:specificAnatomy	PROPOSED	Meninges	proposed	-	Key for meningitis; no XA code
+UBERON	UBERON:0001242	intestinal mucosa	icd:specificAnatomy	PROPOSED	Intestinal mucosa	proposed	-	Mucosal invasion site; no XA code
+UBERON	UBERON:0000758	reticuloendothelial system	icd:specificAnatomy	PROPOSED	Reticuloendothelial system	proposed	-	Visceral leishmaniasis; no XA code
+UBERON	UBERON:0002067	dermis	icd:specificAnatomy	PROPOSED	Dermis	proposed	-	Cutaneous infections; no XA code
+UBERON	UBERON:0002072	subcutaneous adipose tissue	icd:specificAnatomy	PROPOSED	Subcutaneous tissue	proposed	-	Subcutaneous parasites; no XA code
+UBERON	UBERON:0002394	biliary tree	icd:specificAnatomy	PROPOSED	Biliary system	proposed	-	Hepatobiliary parasites; no XA code
+UBERON	UBERON:0001133	cardiac muscle tissue	icd:specificAnatomy	PROPOSED	Myocardium	proposed	-	Chagas myocarditis, viral myocarditis; no XA code
+UBERON	UBERON:0010195	hepatic portal system	icd:specificAnatomy	PROPOSED	Portal venous system	proposed	-	Schistosomiasis; no XA code
+UBERON	UBERON:0001158	pylorus	icd:specificAnatomy	PROPOSED	Pylorus	proposed	-	H. pylori infection site; no XA code
+UBERON	UBERON:0001911	mammary gland	icd:specificAnatomy	XA8AD3	Breast	exact	1.0
+UBERON	UBERON:0001003	skin epidermis	icd:specificAnatomy	PROPOSED	Epidermis	proposed	-	Dermatophyte infections; no XA code
+UBERON	UBERON:0001744	lymphoid tissue	icd:specificAnatomy	PROPOSED	Lymphoid tissue	proposed	-	Lymphotropic infections; no XA code
+# ══════════════════════════════════════════════════════════════════
+# GENUS CLASSES (MONDO → ICD-11 Foundation entities)
+# 3 distinct fillers; all mapped to Foundation grouping entities
+# ══════════════════════════════════════════════════════════════════
+MONDO	MONDO:0005113	bacterial infectious disease	genus	http://id.who.int/icd/entity/1435254666	Certain infectious or parasitic diseases	broad	0.8	Mapped to Foundation Chapter 1 root; ICD-11 lacks exact bacterial/viral/parasitic grouping
+MONDO	MONDO:0005578	viral infectious disease	genus	http://id.who.int/icd/entity/1435254666	Certain infectious or parasitic diseases	broad	0.8	Same mapping; chapter root serves as genus
+MONDO	MONDO:0005740	parasitic infectious disease	genus	http://id.who.int/icd/entity/1435254666	Certain infectious or parasitic diseases	broad	0.8	Same mapping; chapter root serves as genus

@@ -210,7 +210,8 @@
     },
     "icd:submissionDate": "2026-05-01",
     "icd:reviewer": "pending",
-    "icd:decision": "pending",
+    "icd:reviewDate": null,
+    "icd:decision": "proposed",
     "icd:batchManifestHash": "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0"
   }
 }

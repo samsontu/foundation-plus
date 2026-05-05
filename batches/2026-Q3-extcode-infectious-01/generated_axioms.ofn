@@ -1,0 +1,334 @@
+Prefix(:=<http://id.who.int/icd/entity/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(icd:=<http://id.who.int/icd/schema/>)
+Prefix(ext:=<http://id.who.int/icd/extension/>)
+Prefix(ext-proposed:=<http://id.who.int/icd/staging/extension/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+Ontology(<http://id.who.int/icd/foundation-plus/batch/2026-Q3-extcode-infectious-01>
+
+# Batch: 2026-Q3-extcode-infectious-01
+# Pattern: extension_code_proposal v1.0.0
+# Generated: 2026-08-02T14:00:00Z
+# Attributed to: https://orcid.org/0000-0002-0295-7821 (Samson Tu)
+# Total: 28 proposed extension codes (17 XN + 11 XA)
+#
+# Each proposed code has:
+#   - Declaration (as OWL Class)
+#   - SubClassOf (placed under appropriate parent in ICD-11 hierarchy)
+#   - rdfs:label (ICD-11 style label)
+#   - skos:exactMatch (cross-reference to NCBITaxon or UBERON)
+#   - Provenance annotations (batch ID, source)
+
+# ═══════════════════════════════════════════════════════════════
+# PROPOSED INFECTIOUS AGENT EXTENSION CODES (17)
+# Parent hierarchy: XN block
+# ═══════════════════════════════════════════════════════════════
+
+# XN_NEW_01: Ehrlichia (genus)
+Declaration(Class(ext-proposed:XN_NEW_01))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_01 "Ehrlichia"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_01 <http://purl.obolibrary.org/obo/NCBITaxon_943>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_01 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_01 <http://purl.obolibrary.org/obo/NCBITaxon_943>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_01 ext:XN0R7
+)
+
+# XN_NEW_02: Bartonella (genus)
+Declaration(Class(ext-proposed:XN_NEW_02))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_02 "Bartonella"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_02 <http://purl.obolibrary.org/obo/NCBITaxon_773>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_02 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_02 <http://purl.obolibrary.org/obo/NCBITaxon_773>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_02 ext:XN0R7
+)
+
+# XN_NEW_03: Corynebacterium (genus)
+Declaration(Class(ext-proposed:XN_NEW_03))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_03 "Corynebacterium"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_03 <http://purl.obolibrary.org/obo/NCBITaxon_1718>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_03 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_03 <http://purl.obolibrary.org/obo/NCBITaxon_1718>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_03 ext:XN7T0
+)
+
+# XN_NEW_04: Leishmania donovani
+Declaration(Class(ext-proposed:XN_NEW_04))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_04 "Leishmania donovani"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_04 <http://purl.obolibrary.org/obo/NCBITaxon_5661>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_04 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_04 <http://purl.obolibrary.org/obo/NCBITaxon_5661>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_04 ext:XN5G8
+)
+
+# XN_NEW_05: Leishmania tropica
+Declaration(Class(ext-proposed:XN_NEW_05))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_05 "Leishmania tropica"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_05 <http://purl.obolibrary.org/obo/NCBITaxon_5671>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_05 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_05 <http://purl.obolibrary.org/obo/NCBITaxon_5671>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_05 ext:XN5G8
+)
+
+# XN_NEW_06: Leishmania braziliensis
+Declaration(Class(ext-proposed:XN_NEW_06))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_06 "Leishmania braziliensis"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_06 <http://purl.obolibrary.org/obo/NCBITaxon_5660>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_06 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_06 <http://purl.obolibrary.org/obo/NCBITaxon_5660>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_06 ext:XN5G8
+)
+
+# XN_NEW_07: Naegleria fowleri
+Declaration(Class(ext-proposed:XN_NEW_07))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_07 "Naegleria fowleri"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_07 <http://purl.obolibrary.org/obo/NCBITaxon_5763>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_07 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_07 <http://purl.obolibrary.org/obo/NCBITaxon_5763>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_07 ext:XN5UG
+)
+
+# XN_NEW_08: Balamuthia mandrillaris
+Declaration(Class(ext-proposed:XN_NEW_08))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_08 "Balamuthia mandrillaris"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_08 <http://purl.obolibrary.org/obo/NCBITaxon_66527>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_08 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_08 <http://purl.obolibrary.org/obo/NCBITaxon_66527>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_08 ext:XN5UG
+)
+
+# XN_NEW_09: Acanthamoeba (genus)
+Declaration(Class(ext-proposed:XN_NEW_09))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_09 "Acanthamoeba"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_09 <http://purl.obolibrary.org/obo/NCBITaxon_5755>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_09 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_09 <http://purl.obolibrary.org/obo/NCBITaxon_5755>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_09 ext:XN5UG
+)
+
+# XN_NEW_10: Human enterovirus 71
+Declaration(Class(ext-proposed:XN_NEW_10))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_10 "Human enterovirus 71"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_10 <http://purl.obolibrary.org/obo/NCBITaxon_12059>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_10 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_10 <http://purl.obolibrary.org/obo/NCBITaxon_12059>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_10 ext:XN2V5
+)
+
+# XN_NEW_11: Coxsackievirus
+Declaration(Class(ext-proposed:XN_NEW_11))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_11 "Coxsackievirus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_11 <http://purl.obolibrary.org/obo/NCBITaxon_12131>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_11 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_11 <http://purl.obolibrary.org/obo/NCBITaxon_12131>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_11 ext:XN2V5
+)
+
+# XN_NEW_12: Sin Nombre orthohantavirus
+Declaration(Class(ext-proposed:XN_NEW_12))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_12 "Sin Nombre orthohantavirus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_12 <http://purl.obolibrary.org/obo/NCBITaxon_37133>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_12 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_12 <http://purl.obolibrary.org/obo/NCBITaxon_37133>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_12 ext:XN4K6
+)
+
+# XN_NEW_13: Sapovirus
+Declaration(Class(ext-proposed:XN_NEW_13))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_13 "Sapovirus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_13 <http://purl.obolibrary.org/obo/NCBITaxon_162145>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_13 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_13 <http://purl.obolibrary.org/obo/NCBITaxon_162145>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_13 ext:XN8J2
+)
+
+# XN_NEW_14: Astrovirus
+Declaration(Class(ext-proposed:XN_NEW_14))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_14 "Astrovirus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_14 <http://purl.obolibrary.org/obo/NCBITaxon_12475>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_14 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_14 <http://purl.obolibrary.org/obo/NCBITaxon_12475>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_14 ext:XN9D0
+)
+
+# XN_NEW_15: Nipah virus
+Declaration(Class(ext-proposed:XN_NEW_15))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_15 "Nipah virus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_15 <http://purl.obolibrary.org/obo/NCBITaxon_121791>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_15 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_15 <http://purl.obolibrary.org/obo/NCBITaxon_121791>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_15 ext:XN0Y2
+)
+
+# XN_NEW_16: Hendra virus
+Declaration(Class(ext-proposed:XN_NEW_16))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_16 "Hendra virus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_16 <http://purl.obolibrary.org/obo/NCBITaxon_63330>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_16 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_16 <http://purl.obolibrary.org/obo/NCBITaxon_63330>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_16 ext:XN0Y2
+)
+
+# XN_NEW_17: Talaromyces marneffei
+Declaration(Class(ext-proposed:XN_NEW_17))
+AnnotationAssertion(rdfs:label ext-proposed:XN_NEW_17 "Talaromyces marneffei"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XN_NEW_17 <http://purl.obolibrary.org/obo/NCBITaxon_37727>)
+AnnotationAssertion(icd:batchId ext-proposed:XN_NEW_17 "2026-Q3-extcode-infectious-01")
+AnnotationAssertion(dct:source ext-proposed:XN_NEW_17 <http://purl.obolibrary.org/obo/NCBITaxon_37727>)
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XN_NEW_17 ext:XN47W
+)
+
+# ═══════════════════════════════════════════════════════════════
+# PROPOSED ANATOMY EXTENSION CODES (11)
+# Parent hierarchy: XA block
+# ═══════════════════════════════════════════════════════════════
+
+# XA_NEW_01: Meninges
+Declaration(Class(ext-proposed:XA_NEW_01))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_01 "Meninges"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_01 <http://purl.obolibrary.org/obo/UBERON_0002360>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_01 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_01 ext:XA98G2
+)
+
+# XA_NEW_02: Intestinal mucosa
+Declaration(Class(ext-proposed:XA_NEW_02))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_02 "Intestinal mucosa"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_02 <http://purl.obolibrary.org/obo/UBERON_0001242>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_02 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_02 ext:XA35A4
+)
+
+# XA_NEW_03: Reticuloendothelial system
+Declaration(Class(ext-proposed:XA_NEW_03))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_03 "Reticuloendothelial system"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_03 <http://purl.obolibrary.org/obo/UBERON_0000758>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_03 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_03 ext:XA0D16
+)
+
+# XA_NEW_04: Dermis
+Declaration(Class(ext-proposed:XA_NEW_04))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_04 "Dermis"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_04 <http://purl.obolibrary.org/obo/UBERON_0002067>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_04 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_04 ext:XA7PL7
+)
+
+# XA_NEW_05: Subcutaneous tissue
+Declaration(Class(ext-proposed:XA_NEW_05))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_05 "Subcutaneous tissue"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_05 <http://purl.obolibrary.org/obo/UBERON_0002072>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_05 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_05 ext:XA7PL7
+)
+
+# XA_NEW_06: Biliary system
+Declaration(Class(ext-proposed:XA_NEW_06))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_06 "Biliary system"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_06 <http://purl.obolibrary.org/obo/UBERON_0002394>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_06 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_06 ext:XA6AN6
+)
+
+# XA_NEW_07: Myocardium
+Declaration(Class(ext-proposed:XA_NEW_07))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_07 "Myocardium"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_07 <http://purl.obolibrary.org/obo/UBERON_0001133>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_07 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_07 ext:XA7RE5
+)
+
+# XA_NEW_08: Portal venous system
+Declaration(Class(ext-proposed:XA_NEW_08))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_08 "Portal venous system"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_08 <http://purl.obolibrary.org/obo/UBERON_0010195>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_08 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_08 ext:XA6AN6
+)
+
+# XA_NEW_09: Pylorus
+Declaration(Class(ext-proposed:XA_NEW_09))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_09 "Pylorus"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_09 <http://purl.obolibrary.org/obo/UBERON_0001158>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_09 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_09 ext:XA1K12
+)
+
+# XA_NEW_10: Epidermis
+Declaration(Class(ext-proposed:XA_NEW_10))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_10 "Epidermis"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_10 <http://purl.obolibrary.org/obo/UBERON_0001003>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_10 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_10 ext:XA7PL7
+)
+
+# XA_NEW_11: Lymphoid tissue
+Declaration(Class(ext-proposed:XA_NEW_11))
+AnnotationAssertion(rdfs:label ext-proposed:XA_NEW_11 "Lymphoid tissue"@en)
+AnnotationAssertion(skos:exactMatch ext-proposed:XA_NEW_11 <http://purl.obolibrary.org/obo/UBERON_0001744>)
+AnnotationAssertion(icd:batchId ext-proposed:XA_NEW_11 "2026-Q3-extcode-infectious-01")
+SubClassOf(
+  Annotation(icd:batchId "2026-Q3-extcode-infectious-01")
+  ext-proposed:XA_NEW_11 ext:XA8AE9
+)
+
+)

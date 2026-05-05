@@ -1,0 +1,78 @@
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+# Equivalence-Anchored Subtree Import — Mondo Descendant Harvest
+# Batch: 2026-Q3-subtree-infectious-01
+# For each Mondo anchor class identified in leaf_discovery,
+# retrieve all subclasses (descendants) that are candidates for import.
+# Executed: 2026-07-22T11:06:00Z
+
+SELECT ?mondoAnchor ?mondoAnchorLabel ?mondoDescendant ?descendantLabel ?depth WHERE {
+  # ?mondoAnchor is bound from the leaf_discovery results
+  VALUES ?mondoAnchor {
+    <http://purl.obolibrary.org/obo/MONDO_0005776>   # cryptosporidiosis
+    <http://purl.obolibrary.org/obo/MONDO_0005836>   # trachoma
+    <http://purl.obolibrary.org/obo/MONDO_0005764>   # ehrlichiosis
+    <http://purl.obolibrary.org/obo/MONDO_0019353>   # rickettsiosis
+    <http://purl.obolibrary.org/obo/MONDO_0005775>   # cysticercosis
+    <http://purl.obolibrary.org/obo/MONDO_0005113>   # bacterial meningitis
+    <http://purl.obolibrary.org/obo/MONDO_0005821>   # sporotrichosis
+    <http://purl.obolibrary.org/obo/MONDO_0001751>   # histoplasmosis
+    <http://purl.obolibrary.org/obo/MONDO_0005046>   # coccidioidomycosis
+    <http://purl.obolibrary.org/obo/MONDO_0004833>   # blastomycosis
+    <http://purl.obolibrary.org/obo/MONDO_0006636>   # chromoblastomycosis
+    <http://purl.obolibrary.org/obo/MONDO_0005689>   # mycetoma
+    <http://purl.obolibrary.org/obo/MONDO_0019115>   # congenital toxoplasmosis
+    <http://purl.obolibrary.org/obo/MONDO_0005854>   # trypanosomiasis
+    <http://purl.obolibrary.org/obo/MONDO_0005543>   # lymphatic filariasis
+    <http://purl.obolibrary.org/obo/MONDO_0005229>   # echinococcosis
+    <http://purl.obolibrary.org/obo/MONDO_0005827>   # strongyloidiasis
+    <http://purl.obolibrary.org/obo/MONDO_0005866>   # trichuriasis
+    <http://purl.obolibrary.org/obo/MONDO_0017722>   # nocardiosis
+    <http://purl.obolibrary.org/obo/MONDO_0005657>   # aspergillosis
+    <http://purl.obolibrary.org/obo/MONDO_0005947>   # zygomycosis
+    <http://purl.obolibrary.org/obo/MONDO_0002085>   # candidiasis
+    <http://purl.obolibrary.org/obo/MONDO_0017705>   # paracoccidioidomycosis
+    <http://purl.obolibrary.org/obo/MONDO_0005762>   # dracunculiasis
+    <http://purl.obolibrary.org/obo/MONDO_0005093>   # leptospirosis
+    <http://purl.obolibrary.org/obo/MONDO_0015307>   # prion disease
+    <http://purl.obolibrary.org/obo/MONDO_0005609>   # herpes zoster
+    <http://purl.obolibrary.org/obo/MONDO_0005819>   # dermatophytosis
+    <http://purl.obolibrary.org/obo/MONDO_0005729>   # enterobiasis
+    <http://purl.obolibrary.org/obo/MONDO_0005794>   # ascariasis
+    <http://purl.obolibrary.org/obo/MONDO_0005860>   # taeniasis
+    <http://purl.obolibrary.org/obo/MONDO_0018555>   # viral hemorrhagic fever
+    <http://purl.obolibrary.org/obo/MONDO_0005812>   # influenza
+    <http://purl.obolibrary.org/obo/MONDO_0005154>   # meningococcal disease
+    <http://purl.obolibrary.org/obo/MONDO_0019116>   # acquired toxoplasmosis
+    <http://purl.obolibrary.org/obo/MONDO_0005810>   # brucellosis
+    <http://purl.obolibrary.org/obo/MONDO_0005808>   # anthrax
+    <http://purl.obolibrary.org/obo/MONDO_0005745>   # tularemia
+    <http://purl.obolibrary.org/obo/MONDO_0005100>   # chikungunya
+    <http://purl.obolibrary.org/obo/MONDO_0005439>   # Zika virus disease
+    <http://purl.obolibrary.org/obo/MONDO_0005148>   # West Nile fever
+    <http://purl.obolibrary.org/obo/MONDO_0005233>   # non-polio enterovirus infection
+    <http://purl.obolibrary.org/obo/MONDO_0005575>   # Chagas disease
+    <http://purl.obolibrary.org/obo/MONDO_0005070>   # toxocariasis
+    <http://purl.obolibrary.org/obo/MONDO_0005851>   # trichinosis
+  }
+
+  ?mondoAnchor rdfs:label ?mondoAnchorLabel .
+
+  # Find descendants (direct and transitive subclasses)
+  ?mondoDescendant rdfs:subClassOf+ ?mondoAnchor .
+  ?mondoDescendant rdfs:label ?descendantLabel .
+
+  # Exclude deprecated/obsolete classes
+  FILTER NOT EXISTS { ?mondoDescendant owl:deprecated true }
+
+  # Compute depth (approximate: count intermediate classes)
+  OPTIONAL {
+    SELECT ?mondoDescendant ?mondoAnchor (COUNT(?mid) AS ?depth) WHERE {
+      ?mondoDescendant rdfs:subClassOf* ?mid .
+      ?mid rdfs:subClassOf+ ?mondoAnchor .
+    } GROUP BY ?mondoDescendant ?mondoAnchor
+  }
+}
+ORDER BY ?mondoAnchorLabel ?descendantLabel

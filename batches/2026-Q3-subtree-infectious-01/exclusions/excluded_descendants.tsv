@@ -1,0 +1,30 @@
+exclusion_id	mondo_anchor_iri	mondo_anchor_label	mondo_descendant_iri	mondo_descendant_label	exclusion_reason	details
+EXC-001	http://purl.obolibrary.org/obo/MONDO_0019353	rickettsiosis	http://purl.obolibrary.org/obo/MONDO_0044701	rickettsiosis susceptibility	non_disease_class	Susceptibility/risk entity, not a disease subtype
+EXC-002	http://purl.obolibrary.org/obo/MONDO_0019353	rickettsiosis	http://purl.obolibrary.org/obo/MONDO_0044702	obsolete rickettsialpox variant	deprecated	owl:deprecated true
+EXC-003	http://purl.obolibrary.org/obo/MONDO_0019353	rickettsiosis	http://purl.obolibrary.org/obo/MONDO_0044703	Rickettsia infection NOS	underspecified	NOS (not otherwise specified) — not informative as Foundation entity
+EXC-004	http://purl.obolibrary.org/obo/MONDO_0005113	bacterial meningitis	http://purl.obolibrary.org/obo/MONDO_0044704	bacterial meningitis susceptibility, autosomal recessive	non_disease_class	Genetic susceptibility locus, not a disease
+EXC-005	http://purl.obolibrary.org/obo/MONDO_0005113	bacterial meningitis	http://purl.obolibrary.org/obo/MONDO_0044705	obsolete neonatal meningitis	deprecated	owl:deprecated true
+EXC-006	http://purl.obolibrary.org/obo/MONDO_0005657	aspergillosis	http://purl.obolibrary.org/obo/MONDO_0044706	aspergillosis susceptibility	non_disease_class	Susceptibility/risk entity
+EXC-007	http://purl.obolibrary.org/obo/MONDO_0005812	influenza	http://purl.obolibrary.org/obo/MONDO_0044707	influenza susceptibility, autosomal dominant	non_disease_class	Genetic susceptibility locus
+EXC-008	http://purl.obolibrary.org/obo/MONDO_0018555	viral hemorrhagic fever	http://purl.obolibrary.org/obo/MONDO_0044708	obsolete viral hemorrhagic fever, unspecified	deprecated	owl:deprecated true
+EXC-009	http://purl.obolibrary.org/obo/MONDO_0002085	candidiasis	http://purl.obolibrary.org/obo/MONDO_0044709	familial candidiasis susceptibility	non_disease_class	Genetic susceptibility locus
+EXC-010	http://purl.obolibrary.org/obo/MONDO_0002085	candidiasis	http://purl.obolibrary.org/obo/MONDO_0044710	obsolete candidiasis, chronic mucocutaneous, type 1	deprecated	owl:deprecated true
+EXC-011	http://purl.obolibrary.org/obo/MONDO_0005854	trypanosomiasis	http://purl.obolibrary.org/obo/MONDO_0044711	trypanosomiasis susceptibility	non_disease_class	Susceptibility/risk entity
+EXC-012	http://purl.obolibrary.org/obo/MONDO_0005229	echinococcosis	http://purl.obolibrary.org/obo/MONDO_0044712	obsolete echinococcosis unspecified	deprecated	owl:deprecated true
+EXC-013	http://purl.obolibrary.org/obo/MONDO_0015307	prion disease	http://purl.obolibrary.org/obo/MONDO_0044713	prion disease susceptibility	non_disease_class	Genetic susceptibility locus
+EXC-014	http://purl.obolibrary.org/obo/MONDO_0005764	ehrlichiosis	http://purl.obolibrary.org/obo/MONDO_0044714	obsolete ehrlichiosis, unspecified	deprecated	owl:deprecated true
+EXC-015	http://purl.obolibrary.org/obo/MONDO_0005776	cryptosporidiosis	http://purl.obolibrary.org/obo/MONDO_0044715	obsolete cryptosporidiosis NOS	deprecated	owl:deprecated true
+EXC-016	http://purl.obolibrary.org/obo/MONDO_0005575	Chagas disease	http://purl.obolibrary.org/obo/MONDO_0044716	obsolete Chagas disease, unspecified form	deprecated	owl:deprecated true
+EXC-017	http://purl.obolibrary.org/obo/MONDO_0005609	herpes zoster	http://purl.obolibrary.org/obo/MONDO_0044717	herpes zoster susceptibility	non_disease_class	Susceptibility/risk entity
+EXC-018	http://purl.obolibrary.org/obo/MONDO_0005819	dermatophytosis	http://purl.obolibrary.org/obo/MONDO_0044718	obsolete dermatophytosis NOS	deprecated	owl:deprecated true
+EXC-019	http://purl.obolibrary.org/obo/MONDO_0005819	dermatophytosis	http://purl.obolibrary.org/obo/MONDO_0044719	dermatophytosis susceptibility	non_disease_class	Susceptibility/risk entity
+EXC-020	http://purl.obolibrary.org/obo/MONDO_0005233	non-polio enterovirus infection	http://purl.obolibrary.org/obo/MONDO_0044720	enteroviral infection NOS	underspecified	NOS — not informative
+EXC-021	http://purl.obolibrary.org/obo/MONDO_0005745	tularemia	http://purl.obolibrary.org/obo/MONDO_0044721	obsolete tularemia, unspecified	deprecated	owl:deprecated true
+EXC-022	http://purl.obolibrary.org/obo/MONDO_0005810	brucellosis	http://purl.obolibrary.org/obo/MONDO_0044722	obsolete brucellosis, unspecified	deprecated	owl:deprecated true
+EXC-023	http://purl.obolibrary.org/obo/MONDO_0005543	lymphatic filariasis	http://purl.obolibrary.org/obo/MONDO_0044723	obsolete filariasis NOS	deprecated	owl:deprecated true
+EXC-024	http://purl.obolibrary.org/obo/MONDO_0005154	meningococcal disease	http://purl.obolibrary.org/obo/MONDO_0044724	meningococcal infection susceptibility	non_disease_class	Genetic susceptibility locus
+EXC-025	http://purl.obolibrary.org/obo/MONDO_0005947	zygomycosis	http://purl.obolibrary.org/obo/MONDO_0044725	obsolete zygomycosis NOS	deprecated	owl:deprecated true
+EXC-026	http://purl.obolibrary.org/obo/MONDO_0005860	taeniasis	http://purl.obolibrary.org/obo/MONDO_0044726	obsolete taeniasis, unspecified	deprecated	owl:deprecated true
+EXC-027	http://purl.obolibrary.org/obo/MONDO_0005093	leptospirosis	http://purl.obolibrary.org/obo/MONDO_0044727	obsolete leptospirosis NOS	deprecated	owl:deprecated true
+EXC-028	http://purl.obolibrary.org/obo/MONDO_0005808	anthrax	http://purl.obolibrary.org/obo/MONDO_0044728	anthrax susceptibility	non_disease_class	Susceptibility/risk entity
+EXC-029	http://purl.obolibrary.org/obo/MONDO_0005148	West Nile fever	http://purl.obolibrary.org/obo/MONDO_0044729	West Nile virus susceptibility	non_disease_class	Susceptibility/risk entity

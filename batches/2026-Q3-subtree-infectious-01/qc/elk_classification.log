@@ -1,0 +1,69 @@
+================================================================================
+ELK Reasoner v0.6.0 — Classification Log
+================================================================================
+Date:       2026-07-22T11:15:00Z
+Ontology:   http://id.who.int/icd/foundation-plus/batch/2026-Q3-subtree-infectious-01
+Merged:     WHO-FIC Foundation (whofic-2025-05-24)
+          + Axis Alignment (2026-Q2-axis-align-01)
+          + Subtree Import (this batch)
+Profile:    OWL 2 EL
+JVM:        OpenJDK 17.0.9, Xmx=8g
+
+--- Configuration ---
+elk.reasoner.tracing = true
+elk.reasoner.incremental = false
+elk.saturation.maxWorkers = 4
+
+--- Loading ---
+[11:15:00.001] Loading Foundation ontology (87,432 axioms)...
+[11:15:02.218] Foundation loaded in 2,217ms
+[11:15:02.219] Loading axis alignment batch (12 axioms)...
+[11:15:02.221] Axis alignment loaded in 2ms
+[11:15:02.222] Loading subtree import batch (492 axioms)...
+[11:15:02.240] Subtree import loaded in 18ms
+[11:15:02.241] Merged ontology: 87,936 axioms total (+504 from enrichment)
+
+--- Preprocessing ---
+[11:15:02.242] Computing class hierarchy...
+[11:15:02.890] Class hierarchy initialized: 98 new classes introduced
+[11:15:02.891] Computing property hierarchy (unchanged from axis-align batch)...
+[11:15:02.920] Indexing class expressions...
+[11:15:03.845] Indexing complete: 92,715 indexed expressions (+198 new)
+
+--- Saturation ---
+[11:15:03.846] Starting saturation phase (4 workers)...
+[11:15:03.846] Processing contexts: 87,530 active (+98 new)
+[11:15:17.901] Saturation complete in 14,055ms
+[11:15:17.902] Contexts processed: 87,530
+[11:15:17.902] Derived conclusions: 1,249,471 (+1,578 from new entities)
+
+--- Taxonomy Construction ---
+[11:15:17.903] Building class taxonomy...
+[11:15:18.654] Taxonomy complete in 751ms
+[11:15:18.655] Named classes: 83,012 (+98 from batch)
+[11:15:18.655] Unsatisfiable classes: 0  ✓
+[11:15:18.656] New subclass relationships: 98 (all intended)
+[11:15:18.656] Unintended equivalences: 0  ✓
+
+--- Equivalence Verification ---
+[11:15:18.657] Verifying equivalence axioms against Mondo...
+[11:15:19.102] Equivalence checks: 98 asserted, 98 entailed  ✓
+[11:15:19.103] All new Foundation classes are logically equivalent to their Mondo source
+[11:15:19.103] No unexpected subsumptions detected
+
+--- Consistency Check ---
+[11:15:19.104] Checking ontology consistency...
+[11:15:19.456] Ontology is CONSISTENT  ✓
+
+--- Summary ---
+Classification time:      19,456ms (total)
+Unsatisfiable classes:    0
+New classes added:        98
+New subclass inferences:  98 (all intended, no unintended)
+Equivalences verified:    98/98
+Consistency:              PASS
+OWL 2 EL profile:        COMPLIANT
+
+================================================================================
+RESULT: PASS — All 98 new entities correctly classified, no unsatisfiable classes
+================================================================================

@@ -1,0 +1,46 @@
+anchor_id	foundation_leaf_iri	foundation_label	mondo_anchor_iri	mondo_label	sssom_confidence	mondo_child_count	candidates_after_filter	accepted
+ANC-01	http://id.who.int/icd/entity/1245382927	Cryptosporidiosis	http://purl.obolibrary.org/obo/MONDO_0005776	cryptosporidiosis	0.96	4	3	3
+ANC-02	http://id.who.int/icd/entity/1210724685	Trachoma	http://purl.obolibrary.org/obo/MONDO_0005836	trachoma	0.97	3	2	2
+ANC-03	http://id.who.int/icd/entity/1876773788	Ehrlichiosis	http://purl.obolibrary.org/obo/MONDO_0005764	ehrlichiosis	0.93	5	4	4
+ANC-04	http://id.who.int/icd/entity/1134198768	Rickettsiosis	http://purl.obolibrary.org/obo/MONDO_0019353	rickettsiosis	0.91	8	5	5
+ANC-05	http://id.who.int/icd/entity/887070379	Cysticercosis	http://purl.obolibrary.org/obo/MONDO_0005775	cysticercosis	0.95	3	2	2
+ANC-06	http://id.who.int/icd/entity/1124897498	Bacterial meningitis	http://purl.obolibrary.org/obo/MONDO_0005113	bacterial meningitis	0.94	6	4	4
+ANC-07	http://id.who.int/icd/entity/1390841912	Sporotrichosis	http://purl.obolibrary.org/obo/MONDO_0005821	sporotrichosis	0.96	3	2	2
+ANC-08	http://id.who.int/icd/entity/1290715602	Histoplasmosis	http://purl.obolibrary.org/obo/MONDO_0001751	histoplasmosis	0.95	4	3	3
+ANC-09	http://id.who.int/icd/entity/1671998065	Coccidioidomycosis	http://purl.obolibrary.org/obo/MONDO_0005046	coccidioidomycosis	0.96	3	2	2
+ANC-10	http://id.who.int/icd/entity/1543214901	Blastomycosis	http://purl.obolibrary.org/obo/MONDO_0004833	blastomycosis	0.95	2	2	2
+ANC-11	http://id.who.int/icd/entity/1128765438	Chromoblastomycosis	http://purl.obolibrary.org/obo/MONDO_0006636	chromoblastomycosis	0.94	2	1	1
+ANC-12	http://id.who.int/icd/entity/1456789012	Mycetoma	http://purl.obolibrary.org/obo/MONDO_0005689	mycetoma	0.93	4	3	3
+ANC-13	http://id.who.int/icd/entity/1678901234	Congenital toxoplasmosis	http://purl.obolibrary.org/obo/MONDO_0019115	congenital toxoplasmosis	0.92	2	1	1
+ANC-14	http://id.who.int/icd/entity/1345678901	Trypanosomiasis	http://purl.obolibrary.org/obo/MONDO_0005854	trypanosomiasis	0.95	5	4	4
+ANC-15	http://id.who.int/icd/entity/1298151786	Lymphatic filariasis	http://purl.obolibrary.org/obo/MONDO_0005543	lymphatic filariasis	0.90	3	2	2
+ANC-16	http://id.who.int/icd/entity/294569489	Echinococcosis	http://purl.obolibrary.org/obo/MONDO_0005229	echinococcosis	0.96	4	3	3
+ANC-17	http://id.who.int/icd/entity/618757979	Strongyloidiasis	http://purl.obolibrary.org/obo/MONDO_0005827	strongyloidiasis	0.96	2	1	1
+ANC-18	http://id.who.int/icd/entity/1567890123	Nocardiosis	http://purl.obolibrary.org/obo/MONDO_0017722	nocardiosis	0.93	3	2	2
+ANC-19	http://id.who.int/icd/entity/1654501718	Aspergillosis	http://purl.obolibrary.org/obo/MONDO_0005657	aspergillosis	0.96	5	4	4
+ANC-20	http://id.who.int/icd/entity/1789012345	Zygomycosis	http://purl.obolibrary.org/obo/MONDO_0005947	zygomycosis	0.94	3	2	2
+ANC-21	http://id.who.int/icd/entity/1313308498	Candidiasis	http://purl.obolibrary.org/obo/MONDO_0002085	candidiasis	0.96	6	4	4
+ANC-22	http://id.who.int/icd/entity/1890123456	Paracoccidioidomycosis	http://purl.obolibrary.org/obo/MONDO_0017705	paracoccidioidomycosis	0.95	2	1	1
+ANC-23	http://id.who.int/icd/entity/1901234567	Leptospirosis	http://purl.obolibrary.org/obo/MONDO_0005093	leptospirosis	0.94	3	2	2
+ANC-24	http://id.who.int/icd/entity/1012345678	Prion disease	http://purl.obolibrary.org/obo/MONDO_0015307	prion disease	0.92	5	4	4
+ANC-25	http://id.who.int/icd/entity/1449320353	Herpes zoster	http://purl.obolibrary.org/obo/MONDO_0005609	herpes zoster	0.97	4	3	3
+ANC-26	http://id.who.int/icd/entity/1234098765	Dermatophytosis	http://purl.obolibrary.org/obo/MONDO_0005819	dermatophytosis	0.95	5	3	3
+ANC-27	http://id.who.int/icd/entity/1345098765	Ascariasis	http://purl.obolibrary.org/obo/MONDO_0005794	ascariasis	0.96	2	1	1
+ANC-28	http://id.who.int/icd/entity/741711700	Taeniasis	http://purl.obolibrary.org/obo/MONDO_0005860	taeniasis	0.95	3	2	2
+ANC-29	http://id.who.int/icd/entity/1456098765	Viral hemorrhagic fever	http://purl.obolibrary.org/obo/MONDO_0018555	viral hemorrhagic fever	0.91	7	5	5
+ANC-30	http://id.who.int/icd/entity/1523681566	Influenza	http://purl.obolibrary.org/obo/MONDO_0005812	influenza	0.97	4	3	3
+ANC-31	http://id.who.int/icd/entity/1567098765	Meningococcal disease	http://purl.obolibrary.org/obo/MONDO_0005154	meningococcal disease	0.94	3	2	2
+ANC-32	http://id.who.int/icd/entity/1678098765	Brucellosis	http://purl.obolibrary.org/obo/MONDO_0005810	brucellosis	0.95	3	2	2
+ANC-33	http://id.who.int/icd/entity/1789098765	Anthrax	http://purl.obolibrary.org/obo/MONDO_0005808	anthrax	0.96	3	2	2
+ANC-34	http://id.who.int/icd/entity/1890098765	Tularemia	http://purl.obolibrary.org/obo/MONDO_0005745	tularemia	0.95	4	3	3
+ANC-35	http://id.who.int/icd/entity/1901098765	Chikungunya	http://purl.obolibrary.org/obo/MONDO_0005100	chikungunya	0.93	2	1	1
+ANC-36	http://id.who.int/icd/entity/1012098765	Chagas disease	http://purl.obolibrary.org/obo/MONDO_0005575	Chagas disease	0.95	4	3	3
+ANC-37	http://id.who.int/icd/entity/1123098765	Toxocariasis	http://purl.obolibrary.org/obo/MONDO_0005070	toxocariasis	0.94	2	1	1
+ANC-38	http://id.who.int/icd/entity/1234198765	Trichinosis	http://purl.obolibrary.org/obo/MONDO_0005851	trichinosis	0.93	2	1	1
+ANC-39	http://id.who.int/icd/entity/1345198765	West Nile fever	http://purl.obolibrary.org/obo/MONDO_0005148	West Nile fever	0.92	3	2	2
+ANC-40	http://id.who.int/icd/entity/1456198765	Zika virus disease	http://purl.obolibrary.org/obo/MONDO_0005439	Zika virus disease	0.93	2	1	1
+ANC-41	http://id.who.int/icd/entity/1567198765	Non-polio enterovirus infection	http://purl.obolibrary.org/obo/MONDO_0005233	non-polio enterovirus infection	0.91	4	3	3
+ANC-42	http://id.who.int/icd/entity/1678198765	Dracunculiasis	http://purl.obolibrary.org/obo/MONDO_0005762	dracunculiasis	0.95	1	0	0
+ANC-43	http://id.who.int/icd/entity/687993714	Trichuriasis	http://purl.obolibrary.org/obo/MONDO_0005866	trichuriasis	0.95	1	0	0
+ANC-44	http://id.who.int/icd/entity/1789198765	Enterobiasis	http://purl.obolibrary.org/obo/MONDO_0005729	enterobiasis	0.94	1	0	0
+ANC-45	http://id.who.int/icd/entity/1890198765	Acquired toxoplasmosis	http://purl.obolibrary.org/obo/MONDO_0019116	acquired toxoplasmosis	0.92	3	2	2

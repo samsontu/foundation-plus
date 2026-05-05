@@ -160,7 +160,7 @@
     },
     {
       "dct:date": "2026-07-20",
-      "dct:description": "Editorial board review complete; batch accepted"
+      "dct:description": "Batch proposed for editorial board review"
     }
   ],
   "icd:signOff": {
@@ -168,9 +168,10 @@
       "@id": "https://orcid.org/0000-0002-0295-7821",
       "rdfs:label": "Samson Tu"
     },
-    "icd:reviewer": "WHO-FIC Editorial Board",
-    "icd:reviewDate": "2026-07-20",
-    "icd:decision": "approved",
+    "icd:submissionDate": "2026-07-20",
+    "icd:reviewer": "pending",
+    "icd:reviewDate": null,
+    "icd:decision": "proposed",
     "icd:batchManifestHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   }
 }

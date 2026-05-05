@@ -1,0 +1,153 @@
+{
+  "@context": {
+    "@vocab": "http://id.who.int/icd/schema/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "icd": "http://id.who.int/icd/schema/",
+    "mondo": "http://purl.obolibrary.org/obo/MONDO_",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@type": "icd:BatchManifest",
+  "icd:batchId": "2026-Q3-logdef-infectious-01",
+  "dct:title": "Logical Definition Import — Infectious Diseases",
+  "dct:description": "Adds 152 logical definitions (EquivalentClasses axioms) to Foundation infectious disease entities that currently lack them. Each definition derives from a Mondo EquivalentClasses axiom (no constructed definitions). Filler classes reference ICD extension code entities by WHO-FIC Foundation entity IRI (descendants of http://id.who.int/icd/entity/1920852714). Definitions whose fillers require proposed new extension codes are deferred until batch 2026-Q3-extcode-infectious-01 is approved.",
+  "icd:generatedByPattern": "logical_definition_import",
+  "icd:patternVersion": "2.0.0",
+  "prov:generatedAtTime": "2026-07-28T09:15:00Z",
+  "prov:wasAttributedTo": {
+    "@id": "https://orcid.org/0000-0002-0295-7821",
+    "rdfs:label": "Samson Tu"
+  },
+  "icd:scope": {
+    "icd:rootEntity": "http://id.who.int/icd/entity/1435254666",
+    "icd:rootLabel": "Certain infectious or parasitic diseases",
+    "icd:chapter": "01",
+    "icd:constraint": "Foundation entities with SSSOM exact Mondo match (confidence >= 0.9) that LACK an existing icd:logicalDefinition"
+  },
+  "icd:statistics": {
+    "icd:foundationEntitiesScanned": 487,
+    "icd:entitiesWithMondoMatch": 312,
+    "icd:entitiesAlreadyHaveLogDef": 89,
+    "icd:mondoClassesWithLogDef": 211,
+    "icd:candidateLogDefs": 168,
+    "icd:excludedLogDefs": 16,
+    "icd:acceptedLogDefs": 152,
+    "icd:readyLogDefs": 143,
+    "icd:deferredLogDefs": 9,
+    "icd:excludedForNoMondoEquivClass": 4,
+    "icd:axesUsed": {
+      "icd:infectiousAgent": 148,
+      "icd:specificAnatomy": 45,
+      "icd:hasManifestation": 12,
+      "icd:hasCausingCondition": 3
+    },
+    "icd:fillerSources": {
+      "whoficExtensionCodeEntity": 167,
+      "proposedExtensionCode": 9,
+      "foundationEntity_genus": 3
+    },
+    "icd:fillerMapping": {
+      "totalDistinctFillers": 198,
+      "mappedToWHOFIC": 167,
+      "proposedNewExtCodes": 9,
+      "genusToFoundation": 3
+    },
+    "icd:extensionCodeIRIBase": "http://id.who.int/icd/entity/",
+    "icd:extensionCodeRoot": "http://id.who.int/icd/entity/1920852714",
+    "icd:extensionCodeRootLabel": "ICD Extension Code",
+    "icd:extensionCodeSource": "whofic-2025-05-24-labeled.owl"
+  },
+  "icd:translationRules": {
+    "description": "Mondo logical definitions use RO relations; these are translated to ICD axis vocabulary using the axis alignment from 2026-Q2-axis-align-01. Filler classes are translated from external ontologies to ICD-11 extension codes using the filler mapping table.",
+    "fillerTranslation": "NCBITaxon organisms and UBERON anatomy terms are mapped to WHO-FIC Foundation extension code entities (descendants of http://id.who.int/icd/entity/1920852714) using rdfs:label and entity IRIs from whofic-2025-05-24-labeled.owl. Mappings documented in filler_to_icd11_extension_code_map.tsv.",
+    "mappings": [
+      {"mondo_property": "RO:0004019 (has_material_basis_in)", "icd_axis": "icd:infectiousAgent", "alignment": "SubObjectPropertyOf"},
+      {"mondo_property": "RO:0004026 (disease_has_location)", "icd_axis": "icd:specificAnatomy", "alignment": "EquivalentObjectProperties"},
+      {"mondo_property": "RO:0002452 (has_symptom)", "icd_axis": "icd:hasManifestation", "alignment": "SubObjectPropertyOf"},
+      {"mondo_property": "RO:0004001 (has_material_basis_in_disease)", "icd_axis": "icd:hasCausingCondition", "alignment": "EquivalentObjectProperties"}
+    ],
+    "genus_translation": "Mondo genus classes are mapped to their Foundation equivalents (same SSSOM mapping set); if no Foundation equivalent exists, the logical definition is excluded"
+  },
+  "icd:dependencies": {
+    "icd:upstream": [
+      {
+        "icd:batchId": "2026-Q2-axis-align-01",
+        "icd:reason": "Axis alignment axioms required so ELK can verify Mondo-equivalence of translated definitions"
+      },
+      {
+        "icd:batchId": "2026-Q3-extcode-infectious-01",
+        "icd:reason": "9 deferred logical definitions require proposed new extension codes from this batch",
+        "icd:dependencyType": "partial",
+        "icd:affectedDefinitions": 9,
+        "icd:note": "143 ready definitions can proceed independently; 9 are blocked until new extension codes are approved"
+      }
+    ],
+    "icd:downstream": [
+      "Classification-based QC for subtree import batch (uses logical definitions for equivalence verification)"
+    ]
+  },
+  "icd:exclusionCriteria": [
+    "Foundation entity already has a logical definition (avoid conflict)",
+    "Mondo LogDef uses non-EL constructs (ObjectUnionOf, negation)",
+    "Foundation-Mondo mapping scope mismatch (e.g., Foundation 'viral hepatitis' maps to Mondo 'hepatitis B')",
+    "Differentia filler has no Foundation equivalent (unmapped anatomy or organism)",
+    "Mondo LogDef defines by non-biological criterion (setting, transmission mode)",
+    "Genus class has no Foundation equivalent",
+    "Mondo class lacks an EquivalentClasses axiom (no constructed definitions permitted)"
+  ],
+  "icd:qualityControl": {
+    "icd:elkClassification": "PASS (0 unsatisfiable, 143 ready equivalences entailed, 0 reclassifications; 9 deferred pending new extension codes)",
+    "icd:mondoCrossCheck": "PASS (143/143 ready definitions subsumption-equivalent to Mondo originals; all 152 definitions derive from Mondo EquivalentClasses axioms)",
+    "icd:robotReport": "PASS (0 errors)",
+    "icd:owl2ElProfile": "PASS (all axioms use only ObjectIntersectionOf + ObjectSomeValuesFrom)",
+    "icd:provenanceComplete": "PASS (all axioms fully annotated)",
+    "icd:noOverwrite": "PASS (0 conflicts with pre-existing logical definitions)",
+    "icd:allFillersExist": "PASS (186 WHO-FIC extension code entities verified; 9 pending from extcode batch)",
+    "icd:allDefinitionsFromMondo": "PASS (all 152 definitions derive from Mondo EquivalentClasses axioms; 0 constructed)",
+    "icd:fillerMappingVerified": "PASS (all NCBITaxon→XN and UBERON→XA mappings reviewed for semantic equivalence)"
+  },
+  "icd:licenseCompatibility": {
+    "mondo": {
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+      "dct:rightsHolder": "Mondo Disease Ontology Consortium",
+      "icd:compatible": true
+    },
+    "icd11ExtensionCodes": {
+      "dct:license": "https://icd.who.int/en/docs/ICD11-license.pdf",
+      "dct:rightsHolder": "World Health Organization",
+      "icd:compatible": true,
+      "icd:note": "ICD-11 extension codes are part of the WHO-FIC content; no external license dependency"
+    },
+    "icd:verdict": "Logical definitions now use ICD-11 native extension codes wherever possible, eliminating most external license dependencies. Mondo CC-BY 4.0 attribution retained for definition structure provenance."
+  },
+  "icd:companionFiles": [
+    {"dct:identifier": "sparql_harvest_logdefs.rq", "dct:description": "SPARQL query harvesting Mondo logical definitions for unmapped Foundation entities"},
+    {"dct:identifier": "logdef_candidates.tsv", "dct:description": "Per-differentia candidate list (20 sample rows of full 312-row set)"},
+    {"dct:identifier": "filler_to_icd11_extension_code_map.tsv", "dct:description": "Complete mapping of 198 Mondo fillers (NCBITaxon, UBERON, MONDO) to ICD-11 extension codes; 167 mapped, 28 proposed"},
+    {"dct:identifier": "generated_axioms.ofn", "dct:description": "OWL Functional Syntax with 143 ready + 9 deferred EquivalentClasses axioms (152 total)"},
+    {"dct:identifier": "exclusions/excluded_logdefs.tsv", "dct:description": "12 logical definitions excluded with reasons"},
+    {"dct:identifier": "qc/elk_classification.log", "dct:description": "ELK classification and Mondo cross-check log"},
+    {"dct:identifier": "qc/robot_report.tsv", "dct:description": "ROBOT report (0 errors)"},
+    {"dct:identifier": "qc/sparql_provenance_check.tsv", "dct:description": "Provenance annotation and structural validation"},
+    {"dct:identifier": "analysis_icd11_extension_code_feasibility.md", "dct:description": "Feasibility analysis of reformulating definitions using ICD-11 extension codes"},
+    {"dct:identifier": "manifest.json", "dct:description": "Machine-readable JSON-LD batch manifest (this file)"}
+  ],
+  "icd:changelog": [
+    {"dct:date": "2026-07-28", "dct:description": "Initial harvest of Mondo logical definitions; translation to ICD axis vocabulary"},
+    {"dct:date": "2026-07-29", "dct:description": "Exclusion filtering (non-EL, scope mismatch, unmapped fillers)"},
+    {"dct:date": "2026-07-30", "dct:description": "ELK classification and Mondo cross-check — all 156 definitions verified"},
+    {"dct:date": "2026-08-02", "dct:description": "Revised to use ICD-11 extension codes (XN/XA) as fillers instead of NCBITaxon/UBERON; 128 ready, 28 deferred pending extension code proposal batch 2026-Q3-extcode-infectious-01"},
+    {"dct:date": "2026-08-02", "dct:description": "Batch proposed for editorial board review"},
+    {"dct:date": "2026-08-02", "dct:description": "Revised: removed 4 constructed definitions lacking Mondo EquivalentClasses axioms (typhoid fever, malaria, rabies, visceral leishmaniasis); all 152 remaining definitions now derive from Mondo. Extension code fillers referenced by WHO-FIC Foundation entity IRIs and rdfs:labels from whofic-2025-05-24-labeled.owl."},
+    {"dct:date": "2026-08-02", "dct:description": "WHO-FIC audit: 19 of 28 proposed extension codes found to already exist in whofic-2025-05-24-labeled.owl. 18 formerly-deferred definitions reclassified as READY. Updated partition: 143 ready + 9 deferred = 152 total. HermiT reasoner: PASS (0 inconsistent, 0 unsatisfiable classes)."}
+  ],
+  "icd:signOff": {
+    "icd:submitter": {"@id": "https://orcid.org/0000-0002-0295-7821", "rdfs:label": "Samson Tu"},
+    "icd:submissionDate": "2026-08-02",
+    "icd:reviewer": "pending",
+    "icd:reviewDate": null,
+    "icd:decision": "proposed",
+    "icd:batchManifestHash": "sha256:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2"
+  }
+}

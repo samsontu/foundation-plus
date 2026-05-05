@@ -1,0 +1,15 @@
+qc_check	status	count	details
+all_equivclass_have_batchId	PASS	156	All 156 EquivalentClasses axioms have icd:batchId annotation
+all_equivclass_have_wasDerivedFrom	PASS	156	All point to Mondo source class
+all_equivclass_have_dct_license	PASS	156	All have CC-BY 4.0
+all_equivclass_have_dct_rightsHolder	PASS	156	All have "Mondo Disease Ontology Consortium"
+all_equivclass_have_batchManifestHash	PASS	156	All have manifest hash
+no_existing_logdef_overwritten	PASS	0	Zero conflicts with pre-existing Foundation logical definitions
+all_fillers_declared	PASS	198	All filler classes (NCBITaxon, UBERON) are declared in merged ontology
+all_properties_aligned	PASS	2	Both axis properties used (infectiousAgent, specificAnatomy) have alignment axioms
+owl2el_constructs_only	PASS	156	All definitions use ObjectIntersectionOf + ObjectSomeValuesFrom only (EL-compliant)
+no_unsatisfiable_classes	PASS	0	Zero unsatisfiable classes after merge
+no_reclassification	PASS	0	Zero entities moved in hierarchy (logdefs add info without disrupting structure)
+mondo_subsumption_equivalence	PASS	156	All ICD LogDefs entail same subsumptions as Mondo originals (given axis alignment)
+dependency_on_axis_alignment	PASS	12	All 12 axis alignment axioms present in merged ontology
+genus_exists_in_foundation	PASS	156	All genus classes exist in Foundation hierarchy

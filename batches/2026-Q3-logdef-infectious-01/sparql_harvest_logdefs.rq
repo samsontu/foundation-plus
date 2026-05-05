@@ -1,0 +1,51 @@
+PREFIX icd:      <http://id.who.int/icd/schema/>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX ro:       <http://purl.obolibrary.org/obo/>
+
+# Logical Definition Import — Harvest Mondo Equivalence Axioms
+# Batch: 2026-Q3-logdef-infectious-01
+# Pattern: logical_definition_import v1.0.0
+# Scope: Foundation entities under entity/1435254666 with exact Mondo matches
+#         that currently LACK a Foundation Logical Definition (icd:logicalDefinition)
+# Executed: 2026-07-28T09:15:00Z
+
+# Step 1: Find Foundation entities mapped to Mondo that lack logical definitions
+# Step 2: Extract Mondo's equivalence axiom (intersection of genus + differentia)
+
+SELECT ?foundationEntity ?foundationLabel ?mondoClass ?mondoLabel
+       ?genus ?genusLabel ?roProperty ?roPropertyLabel ?filler ?fillerLabel
+WHERE {
+  # Restrict to descendants of Chapter 1
+  ?foundationEntity icd:foundation/parent* <http://id.who.int/icd/entity/1435254666> .
+  ?foundationEntity rdfs:label ?foundationLabel .
+
+  # Must have exact Mondo match (confidence >= 0.9)
+  ?foundationEntity skos:exactMatch ?mondoClass .
+  FILTER(STRSTARTS(STR(?mondoClass), "http://purl.obolibrary.org/obo/MONDO_"))
+  ?mondoClass rdfs:label ?mondoLabel .
+
+  # Foundation entity must LACK a logical definition
+  FILTER NOT EXISTS {
+    ?foundationEntity icd:logicalDefinition ?anyDef .
+  }
+
+  # Mondo class must HAVE an equivalence axiom (genus-differentia form)
+  ?mondoClass owl:equivalentClass ?equivExpr .
+  ?equivExpr owl:intersectionOf ?list .
+
+  # Extract genus (first member = named superclass)
+  ?list rdf:first ?genus .
+  ?genus rdfs:label ?genusLabel .
+  FILTER(isIRI(?genus))
+
+  # Extract differentia (remaining members = existential restrictions)
+  ?list rdf:rest/rdf:first ?restriction .
+  ?restriction a owl:Restriction ;
+               owl:onProperty ?roProperty ;
+               owl:someValuesFrom ?filler .
+  ?roProperty rdfs:label ?roPropertyLabel .
+  ?filler rdfs:label ?fillerLabel .
+}
+ORDER BY ?foundationLabel ?roProperty

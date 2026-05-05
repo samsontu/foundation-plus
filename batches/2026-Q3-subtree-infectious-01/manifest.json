@@ -1,0 +1,176 @@
+{
+  "@context": {
+    "@vocab": "http://id.who.int/icd/schema/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "icd": "http://id.who.int/icd/schema/",
+    "icd-stage": "http://id.who.int/icd/staging/entity/",
+    "mondo": "http://purl.obolibrary.org/obo/MONDO_",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "semapv": "https://w3id.org/semapv/vocab/"
+  },
+  "@type": "icd:BatchManifest",
+  "icd:batchId": "2026-Q3-subtree-infectious-01",
+  "dct:title": "Equivalence-Anchored Subtree Import — Infectious Diseases",
+  "dct:description": "Imports 98 new Foundation entities as children of 42 infectious disease leaf nodes, sourced from Mondo descendants of those leaf nodes' exact-match Mondo classes. Each new entity receives a provisional IRI (icd-stage:), a SubClassOf assertion to its Foundation parent, and an EquivalentClasses axiom anchoring it to its Mondo source. Provisional IRIs are rewritten to permanent entity URIs at iCAT submission.",
+  "icd:generatedByPattern": "equivalence_anchored_subtree_import",
+  "icd:patternVersion": "1.0.0",
+  "prov:generatedAtTime": "2026-07-22T11:04:00Z",
+  "prov:wasAttributedTo": {
+    "@id": "https://orcid.org/0000-0002-0295-7821",
+    "rdfs:label": "Samson Tu"
+  },
+  "icd:scope": {
+    "icd:rootEntity": "http://id.who.int/icd/entity/1435254666",
+    "icd:rootLabel": "Certain infectious or parasitic diseases",
+    "icd:chapter": "01",
+    "icd:constraint": "Foundation leaf nodes (no children) with SSSOM exact match to Mondo (confidence >= 0.9)"
+  },
+  "icd:statistics": {
+    "icd:foundationLeafNodesScanned": 312,
+    "icd:leafNodesWithMondoMatch": 45,
+    "icd:anchorClassesWithDescendants": 42,
+    "icd:anchorClassesNoDescendants": 3,
+    "icd:totalMondoDescendantsFound": 127,
+    "icd:excludedDescendants": 29,
+    "icd:newFoundationEntitiesProposed": 98,
+    "icd:newSubClassOfAxioms": 98,
+    "icd:newEquivalentClassesAxioms": 98,
+    "icd:provisionalIRIsMinted": 98
+  },
+  "icd:iriGovernance": {
+    "icd:provisionalNamespace": "http://id.who.int/icd/staging/entity/",
+    "icd:provisionalPattern": "ST-NNNN (zero-padded sequential)",
+    "icd:permanentNamespace": "http://id.who.int/icd/entity/",
+    "icd:rewriteTrigger": "iCAT API submission acceptance",
+    "icd:note": "Provisional IRIs are batch-scoped and rewritten to permanent Foundation entity IRIs upon editorial board approval and iCAT insertion."
+  },
+  "icd:dependencies": {
+    "icd:upstream": [
+      {
+        "icd:batchId": "2026-Q2-axis-align-01",
+        "icd:reason": "Axis alignment axioms required for equivalence verification (ELK must treat icd:specificAnatomy ≡ RO:0004026, etc.)"
+      }
+    ],
+    "icd:downstream": [
+      "Synonym enrichment of newly added entities (future batch)",
+      "Logical definition refinement (future batch)"
+    ]
+  },
+  "icd:exclusionCriteria": [
+    "owl:deprecated = true (obsolete Mondo classes)",
+    "Susceptibility/risk loci (not disease subtypes)",
+    "NOS (not otherwise specified) classes",
+    "Mondo leaves with no subclasses (anchor yields no candidates)"
+  ],
+  "icd:qualityControl": {
+    "icd:elkClassification": "PASS (0 unsatisfiable classes, 98 new correctly classified)",
+    "icd:equivalenceVerification": "PASS (98/98 equivalences entailed by ELK)",
+    "icd:robotReport": "PASS (0 errors; INFO: 98 classes lack textual definitions — acceptable for initial import)",
+    "icd:labelCollisionCheck": "PASS (0 collisions with existing 82,914 Foundation labels)",
+    "icd:owl2ElProfile": "PASS (all 492 axioms compliant)",
+    "icd:provenanceComplete": "PASS (all axioms fully annotated)",
+    "icd:parentVerification": "PASS (all 42 parent entities confirmed as Foundation leaves)"
+  },
+  "icd:licenseCompatibility": {
+    "mondo": {
+      "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+      "dct:rightsHolder": "Mondo Disease Ontology Consortium",
+      "icd:artifactCount": 98,
+      "icd:compatible": true
+    },
+    "icd:verdict": "All 98 entities derived from Mondo (CC-BY 4.0). Fully compatible with Foundation redistribution."
+  },
+  "icd:companionFiles": [
+    {
+      "dct:identifier": "sparql_leaf_discovery.rq",
+      "dct:description": "SPARQL query to find Foundation leaf nodes with exact Mondo matches",
+      "dct:format": "application/sparql-query"
+    },
+    {
+      "dct:identifier": "sparql_mondo_descendants.rq",
+      "dct:description": "SPARQL query to harvest Mondo descendants of anchor classes",
+      "dct:format": "application/sparql-query"
+    },
+    {
+      "dct:identifier": "anchor_leaf_nodes.tsv",
+      "dct:description": "45 Foundation leaf nodes with their Mondo anchors and descendant counts",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "sssom_anchor_mappings.tsv",
+      "dct:description": "SSSOM mappings for the 45 Foundation↔Mondo anchor pairs",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "proposed_new_entities.tsv",
+      "dct:description": "98 proposed new Foundation entities with provisional IRIs, parents, and Mondo sources",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "generated_axioms.ofn",
+      "dct:description": "OWL Functional Syntax with declarations, labels, SubClassOf, and EquivalentClasses axioms",
+      "dct:format": "text/owl-functional"
+    },
+    {
+      "dct:identifier": "exclusions/excluded_descendants.tsv",
+      "dct:description": "29 Mondo descendants excluded (deprecated, susceptibility loci, NOS)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "exclusions/no_descendant_anchors.tsv",
+      "dct:description": "3 anchor classes that yielded no candidates (Mondo class is itself a leaf)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "qc/elk_classification.log",
+      "dct:description": "ELK classification log (PASS, 98 new classes, 0 unsatisfiable)",
+      "dct:format": "text/plain"
+    },
+    {
+      "dct:identifier": "qc/robot_report.tsv",
+      "dct:description": "ROBOT report (0 errors, 1 INFO about missing definitions)",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "qc/sparql_provenance_check.tsv",
+      "dct:description": "SPARQL QC confirming all provenance annotations present",
+      "dct:format": "text/tab-separated-values"
+    },
+    {
+      "dct:identifier": "manifest.json",
+      "dct:description": "Machine-readable JSON-LD batch manifest (this file)",
+      "dct:format": "application/ld+json"
+    }
+  ],
+  "icd:changelog": [
+    {
+      "dct:date": "2026-07-22",
+      "dct:description": "Initial leaf discovery and descendant harvest"
+    },
+    {
+      "dct:date": "2026-07-23",
+      "dct:description": "Exclusion filtering (deprecated, susceptibility, NOS)"
+    },
+    {
+      "dct:date": "2026-07-24",
+      "dct:description": "ELK classification and equivalence verification — all 98 entities pass"
+    },
+    {
+      "dct:date": "2026-07-25",
+      "dct:description": "Batch submitted for editorial review"
+    }
+  ],
+  "icd:signOff": {
+    "icd:submitter": {
+      "@id": "https://orcid.org/0000-0002-0295-7821",
+      "rdfs:label": "Samson Tu"
+    },
+    "icd:submissionDate": "2026-07-25",
+    "icd:reviewer": "pending",
+    "icd:reviewDate": null,
+    "icd:decision": "proposed",
+    "icd:batchManifestHash": "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5"
+  }
+}

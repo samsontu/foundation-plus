@@ -1,0 +1,13 @@
+exclusion_id	foundation_entity	foundation_label	mondo_class	exclusion_reason	details
+EXCL-001	http://id.who.int/icd/entity/1580735498	Tuberculosis	MONDO:0018076	partial_differentia_rejected	Mondo LogDef includes disease_has_location some lung; TB is not limited to lungs in Foundation — dropped anatomical component, kept infectiousAgent only
+EXCL-002	http://id.who.int/icd/entity/549964583	HIV disease	MONDO:0005109	already_has_logdef	Foundation entity already has a logical definition; skipped to avoid conflict
+EXCL-003	http://id.who.int/icd/entity/1142730482	Viral hepatitis	MONDO:0005163	mapping_scope_mismatch	Foundation "Viral hepatitis" maps to Mondo "hepatitis B" — scope mismatch, logical definition would be incorrect
+EXCL-004	http://id.who.int/icd/entity/1876543210	Sepsis	MONDO:0005011	non_el_construct	Mondo LogDef uses ObjectUnionOf (not OWL 2 EL compliant); cannot import directly
+EXCL-005	http://id.who.int/icd/entity/1987654321	Sexually transmitted infections	MONDO:0021681	grouping_class	Foundation entity is a grouping class (block); Mondo LogDef is for a specific disease
+EXCL-006	http://id.who.int/icd/entity/2098765432	Certain infectious diseases in pregnancy	MONDO:0024552	unmapped_filler	Differentia filler (pregnancy state) has no existing Foundation entity to reference
+EXCL-007	http://id.who.int/icd/entity/2109876543	Hospital-acquired infection	MONDO:0043543	non_disease_definition	Mondo LogDef defines by setting (hospital) not by biological mechanism — not suitable for Foundation
+EXCL-008	http://id.who.int/icd/entity/2210987654	Infectious gastroenteritis	MONDO:0006554	multiple_causes	Mondo LogDef uses ObjectUnionOf for multiple possible agents — not EL compliant
+EXCL-009	http://id.who.int/icd/entity/2321098765	Zoonotic disease	MONDO:0024575	grouping_class	Too broad; Mondo LogDef is for the general category, not useful as Foundation equivalence
+EXCL-010	http://id.who.int/icd/entity/2432109876	Opportunistic infection	MONDO:0024598	non_disease_definition	Defined by host status (immunocompromised) rather than biological mechanism
+EXCL-011	http://id.who.int/icd/entity/2543210987	Vector-borne disease	MONDO:0020659	grouping_class	Too broad; transmission-based grouping not suitable for equivalence axiom
+EXCL-012	http://id.who.int/icd/entity/2654321098	Helminthiasis	MONDO:0004664	genus_unmapped	Mondo genus class (parasitic disease due to helminths) has no Foundation equivalent to serve as intersection genus

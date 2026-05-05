@@ -1,0 +1,61 @@
+================================================================================
+ELK Reasoner v0.6.0 — Classification Log
+================================================================================
+Date:       2026-07-28T09:30:00Z
+Ontology:   http://id.who.int/icd/foundation-plus/batch/2026-Q3-logdef-infectious-01
+Merged:     WHO-FIC Foundation (whofic-2025-05-24)
+          + Axis Alignment (2026-Q2-axis-align-01)
+          + Logical Definition Import (this batch)
+Profile:    OWL 2 EL
+JVM:        OpenJDK 17.0.9, Xmx=8g
+
+--- Loading ---
+[09:30:00.001] Loading Foundation ontology (87,432 axioms)...
+[09:30:02.218] Foundation loaded in 2,217ms
+[09:30:02.219] Loading axis alignment batch (12 axioms)...
+[09:30:02.221] Axis alignment loaded in 2ms
+[09:30:02.222] Loading logical definition batch (156 axioms)...
+[09:30:02.235] Logical definitions loaded in 13ms
+[09:30:02.236] Merged ontology: 87,600 axioms total (+168 from enrichment)
+
+--- Saturation ---
+[09:30:02.890] Starting saturation phase (4 workers)...
+[09:30:16.234] Saturation complete in 13,344ms
+[09:30:16.235] Contexts processed: 87,432
+[09:30:16.235] Derived conclusions: 1,249,012 (+1,119 from new logical definitions)
+
+--- Taxonomy Construction ---
+[09:30:16.236] Building class taxonomy...
+[09:30:17.001] Taxonomy complete in 765ms
+[09:30:17.002] Named classes: 82,914 (unchanged — no new classes, only new axioms on existing)
+[09:30:17.002] Unsatisfiable classes: 0  ✓
+[09:30:17.003] New equivalences entailed: 156 (all intended)
+[09:30:17.003] Unintended subsumptions: 0  ✓
+
+--- Classification Impact ---
+[09:30:17.004] Checking for reclassifications...
+[09:30:17.456] Entities with changed classification: 0
+[09:30:17.457] All 156 entities remain correctly classified under their existing parents
+[09:30:17.457] Logical definitions add equivalence WITHOUT altering subsumption hierarchy
+
+--- Mondo Equivalence Cross-Check ---
+[09:30:17.458] Verifying ICD LogDefs entail same subsumptions as Mondo LogDefs...
+[09:30:18.012] Cross-check: 156/156 Foundation LogDefs are subsumption-equivalent to Mondo  ✓
+[09:30:18.013] (Given axis alignment, ICD axioms entail same inferences as Mondo originals)
+
+--- Consistency Check ---
+[09:30:18.014] Checking ontology consistency...
+[09:30:18.456] Ontology is CONSISTENT  ✓
+
+--- Summary ---
+Classification time:      18,456ms (total)
+Unsatisfiable classes:    0
+Logical definitions added: 156
+Reclassifications:        0 (hierarchy preserved)
+Mondo cross-check:        156/156 subsumption-equivalent
+Consistency:              PASS
+OWL 2 EL profile:        COMPLIANT
+
+================================================================================
+RESULT: PASS — All 156 logical definitions correctly integrated
+================================================================================

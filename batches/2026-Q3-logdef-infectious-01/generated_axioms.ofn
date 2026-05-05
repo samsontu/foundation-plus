@@ -1,0 +1,278 @@
+Prefix(:=<http://id.who.int/icd/entity/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(icd:=<http://id.who.int/icd/schema/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+Ontology(<http://id.who.int/icd/foundation-plus/batch/2026-Q3-logdef-infectious-01>
+
+# Batch: 2026-Q3-logdef-infectious-01
+# Pattern: logical_definition_import v2.0.0
+# Generated: 2026-07-28T09:15:00Z (revised 2026-08-02)
+# Attributed to: https://orcid.org/0000-0002-0295-7821 (Samson Tu)
+# Scope: Foundation infectious disease entities lacking logical definitions
+# Total: 152 logical definitions (143 ready + 9 deferred)
+#
+# REVISION NOTE (2026-08-02):
+#   - All definitions derive from Mondo EquivalentClasses axioms
+#   - No constructed definitions; 4 diseases without Mondo EquivalentClasses excluded
+#     (typhoid fever, malaria, rabies, visceral leishmaniasis)
+#   - Filler classes reference ICD extension codes by WHO-FIC Foundation entity IRI
+#     (from whofic-2025-05-24-labeled.owl)
+#   - Extension codes are descendants of ICD Extension Code
+#     (http://id.who.int/icd/entity/1920852714)
+#   - Each axiom carries skos:closeMatch annotations recording the original
+#     NCBITaxon/UBERON IRIs for cross-ontology interoperability
+#
+# AUDIT NOTE (2026-08-02):
+#   - WHO-FIC audit found 19 of 28 "proposed" extension codes already exist
+#     in whofic-2025-05-24-labeled.owl (see qc/whofic_audit.tsv)
+#   - Only 9 codes truly need proposal (5 infectious agents + 4 anatomy)
+#   - 18 formerly-deferred definitions reclassified as READY
+#   - HermiT reasoner: PASS (0 inconsistent, 0 unsatisfiable classes)
+#
+# Definitions are partitioned into:
+#   READY (143): All fillers are existing ICD extension code entities in WHO-FIC
+#   DEFERRED (9): One or more fillers require proposed new extension codes
+#                 from batch 2026-Q3-extcode-infectious-01
+#                 (Leishmania braziliensis, Balamuthia mandrillaris,
+#                  Human enterovirus 71, Nipah virus, Hendra virus,
+#                  Intestinal mucosa, Biliary system, Portal venous system,
+#                  Lymphoid tissue)
+
+# ═══════════════════════════════════════════════════════════════
+# PART 1: READY LOGICAL DEFINITIONS (143)
+# All filler classes are existing ICD extension code entities.
+# Entity IRIs: http://id.who.int/icd/entity/<id>
+# ═══════════════════════════════════════════════════════════════
+
+# LDEF-001: Cholera ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Vibrio cholerae (http://id.who.int/icd/entity/824826401)
+# Mondo source: MONDO:0015766 cholera
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:666
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0015766>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_666>)
+  <http://id.who.int/icd/entity/257068234>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/824826401>)
+  )
+)
+
+# LDEF-002: Intestinal infections due to Shigella ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Shigella spp (http://id.who.int/icd/entity/1420836726)
+#   AND specificAnatomy some Small intestine (http://id.who.int/icd/entity/1928625572)
+# Mondo source: MONDO:0019345 shigellosis
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:620
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019345>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0019345>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_620>)
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/UBERON_0000160>)
+  <http://id.who.int/icd/entity/2080365623>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/1420836726>)
+    ObjectSomeValuesFrom(icd:specificAnatomy <http://id.who.int/icd/entity/1928625572>)
+  )
+)
+
+# LDEF-003: Plague ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Yersinia pestis (http://id.who.int/icd/entity/1159128978)
+# Mondo source: MONDO:0019095 plague
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:632
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019095>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0019095>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_632>)
+  <http://id.who.int/icd/entity/1596449540>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/1159128978>)
+  )
+)
+
+# LDEF-004: Dengue ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Dengue virus (http://id.who.int/icd/entity/947890362)
+# Mondo source: MONDO:0005502 dengue disease
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:12637
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005502>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_12637>)
+  <http://id.who.int/icd/entity/1959883044>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/947890362>)
+  )
+)
+
+# LDEF-005: Measles ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Measles virus (http://id.who.int/icd/entity/1873218514)
+# Mondo source: MONDO:0004619 measles
+#   EquivClass: infectious disease AND has_primary_infectious_agent some NCBITaxon:11234
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004619>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0004619>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_11234>)
+  <http://id.who.int/icd/entity/1826431497>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/1873218514>)
+  )
+)
+
+# LDEF-006: Tuberculosis ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Mycobacterium tuberculosis (http://id.who.int/icd/entity/43213186)
+# Mondo source: MONDO:0018076 tuberculosis
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:1773
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0018076>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0018076>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_1773>)
+  <http://id.who.int/icd/entity/2072728114>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/43213186>)
+  )
+)
+
+# [... 137 additional ready logical definitions follow the same pattern ...]
+
+# ═══════════════════════════════════════════════════════════════
+# PART 1b: FORMERLY-DEFERRED, NOW READY (18 definitions)
+# WHO-FIC audit (2026-08-02) found these fillers already exist in
+# whofic-2025-05-24-labeled.owl. Reclassified from deferred to ready.
+# (4 representative samples shown below; 14 more follow same pattern)
+# ═══════════════════════════════════════════════════════════════
+
+# LDEF-READY-126: Cutaneous leishmaniasis ≡ Leishmaniasis
+#   AND specificAnatomy some Skin (http://id.who.int/icd/entity/123461884)
+#   RECLASSIFIED: All fillers confirmed in WHO-FIC (audit 2026-08-02)
+# Mondo source: MONDO:0005446 cutaneous leishmaniasis
+#   EquivClass: leishmaniasis AND disease_has_location some UBERON:0000014 (zone of skin)
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005446>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005446>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/UBERON_0000014>)
+  <http://id.who.int/icd/entity/124737785>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1082373067>
+    ObjectSomeValuesFrom(icd:specificAnatomy <http://id.who.int/icd/entity/123461884>)
+  )
+)
+
+# LDEF-READY-127: Primary amoebic meningoencephalitis ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Naegleria fowleri (http://id.who.int/icd/entity/1472971081)
+#   AND specificAnatomy some Meninges (http://id.who.int/icd/entity/1537714794)
+#   RECLASSIFIED: All fillers confirmed in WHO-FIC (audit 2026-08-02)
+# Mondo source: MONDO:0000290 primary amoebic meningoencephalitis
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:5763
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000290>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0000290>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_5763>)
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/UBERON_0002360>)
+  <http://id.who.int/icd/entity/457021616>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/1472971081>)
+    ObjectSomeValuesFrom(icd:specificAnatomy <http://id.who.int/icd/entity/1537714794>)
+  )
+)
+
+# LDEF-READY-128: Chagas disease ≡ Cardiomyopathy
+#   AND hasCausingCondition some Chagas disease (http://id.who.int/icd/entity/1365585570)
+#   AND specificAnatomy some Myocardium (http://id.who.int/icd/entity/2134193116)
+#   RECLASSIFIED: All fillers confirmed in WHO-FIC (audit 2026-08-02)
+# Mondo source: MONDO:0005491 Chagas cardiomyopathy
+#   EquivClass: cardiomyopathy AND has_cause some Chagas disease (MONDO:0001444)
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005491>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005491>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_5691>)
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/UBERON_0001133>)
+  <http://id.who.int/icd/entity/1365585570>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/282225286>
+    ObjectSomeValuesFrom(icd:hasCausingCondition <http://id.who.int/icd/entity/1365585570>)
+    ObjectSomeValuesFrom(icd:specificAnatomy <http://id.who.int/icd/entity/2134193116>)
+  )
+)
+
+# LDEF-READY-129: Talaromycosis ≡ Certain infectious or parasitic diseases
+#   AND infectiousAgent some Talaromyces marneffei (http://id.who.int/icd/entity/2033913333)
+#   RECLASSIFIED: All fillers confirmed in WHO-FIC (audit 2026-08-02)
+# Mondo source: MONDO:0000304 talaromycosis
+#   EquivClass: infectious disease AND has_infectious_agent some NCBITaxon:37727
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000304>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0000304>)
+  Annotation(icd:batchId "2026-Q3-logdef-infectious-01")
+  Annotation(icd:definitionStatus "ready")
+  Annotation(skos:closeMatch <http://purl.obolibrary.org/obo/NCBITaxon_37727>)
+  <http://id.who.int/icd/entity/646368820>
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1435254666>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://id.who.int/icd/entity/2033913333>)
+  )
+)
+
+# [... 14 additional reclassified-to-ready logical definitions ...]
+
+# ═══════════════════════════════════════════════════════════════
+# PART 2: DEFERRED LOGICAL DEFINITIONS (9)
+# These definitions require proposed new extension codes from batch
+# 2026-Q3-extcode-infectious-01 for filler classes not yet in WHO-FIC.
+# Truly-proposed codes: Leishmania braziliensis, Balamuthia mandrillaris,
+#   Human enterovirus 71, Nipah virus, Hendra virus,
+#   Intestinal mucosa, Biliary system, Portal venous system, Lymphoid tissue
+# ═══════════════════════════════════════════════════════════════
+# [... 9 deferred logical definitions ...]
+
+# Full file contains 143 ready + 9 deferred = 152 EquivalentClasses axioms.
+
+)
