@@ -1,0 +1,1394 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ext: <http://id.who.int/icd/extension/> .
+@prefix ext-proposed: <http://id.who.int/icd/staging/extension/> .
+@prefix icd: <http://id.who.int/icd/schema/> .
+@prefix icd-entity: <http://id.who.int/icd/entity/> .
+@prefix icd-stage: <http://id.who.int/icd/staging/entity/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://id.who.int/icd/foundation-plus-experiment> a owl:Ontology ;
+    rdfs:label "Foundation-Plus Experiment"@en ;
+    rdfs:comment "Experimental ontology combining the WHO-FIC Foundation Component with Mondo Disease Ontology. Includes synonym enrichment (2026-Q3-syn-infectious-01), axis alignments (2026-Q2-axis-align-01), logical definitions (2026-Q3-logdef-infectious-01), extension code proposals (2026-Q3-extcode-infectious-01), and subtree imports (2026-Q3-subtree-infectious-01). Imports mondo.owl and whofic-2025-05-24-labeled.owl."@en ;
+    owl:imports obo:mondo.owl,
+        <http://who.int/icd> ;
+    owl:versionInfo "0.2.0-experiment" .
+
+icd:batchId a owl:AnnotationProperty .
+
+icd:batchManifestHash a owl:AnnotationProperty .
+
+icd:definitionStatus a owl:AnnotationProperty .
+
+dct:license a owl:AnnotationProperty .
+
+dct:rightsHolder a owl:AnnotationProperty .
+
+dct:source a owl:AnnotationProperty .
+
+prov:wasDerivedFrom a owl:AnnotationProperty .
+
+icd-entity:124737785 owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab1 .
+
+icd-entity:1596449540 owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab2 .
+
+icd-entity:435671752 icd:synonym "entamoebiasis"@en .
+
+icd-entity:457021616 owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab3 .
+
+icd-entity:508032285 icd:synonym "Corynebacterium infection"@en .
+
+icd-entity:646368820 owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab4 .
+
+icd:associatedWith a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0002610 .
+
+icd:chemicalAgent a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0004019 .
+
+icd:histopathology a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0004027 .
+
+icd:severity a owl:ObjectProperty ;
+    owl:equivalentProperty obo:RO_0002573 .
+
+icd:temporalPatternAndOnset a owl:ObjectProperty ;
+    rdfs:subPropertyOf obo:RO_0002488 .
+
+ext-proposed:XA_NEW_01 a owl:Class ;
+    rdfs:label "Meninges"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA98G2 ;
+    skos:exactMatch obo:UBERON_0002360 .
+
+ext-proposed:XA_NEW_02 a owl:Class ;
+    rdfs:label "Intestinal mucosa"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA35A4 ;
+    skos:exactMatch obo:UBERON_0001242 .
+
+ext-proposed:XA_NEW_03 a owl:Class ;
+    rdfs:label "Reticuloendothelial system"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA0D16 ;
+    skos:exactMatch obo:UBERON_0000758 .
+
+ext-proposed:XA_NEW_04 a owl:Class ;
+    rdfs:label "Dermis"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA7PL7 ;
+    skos:exactMatch obo:UBERON_0002067 .
+
+ext-proposed:XA_NEW_05 a owl:Class ;
+    rdfs:label "Subcutaneous tissue"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA7PL7 ;
+    skos:exactMatch obo:UBERON_0002072 .
+
+ext-proposed:XA_NEW_06 a owl:Class ;
+    rdfs:label "Biliary system"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA6AN6 ;
+    skos:exactMatch obo:UBERON_0002394 .
+
+ext-proposed:XA_NEW_07 a owl:Class ;
+    rdfs:label "Myocardium"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA7RE5 ;
+    skos:exactMatch obo:UBERON_0001133 .
+
+ext-proposed:XA_NEW_08 a owl:Class ;
+    rdfs:label "Portal venous system"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA6AN6 ;
+    skos:exactMatch obo:UBERON_0010195 .
+
+ext-proposed:XA_NEW_09 a owl:Class ;
+    rdfs:label "Pylorus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA1K12 ;
+    skos:exactMatch obo:UBERON_0001158 .
+
+ext-proposed:XA_NEW_10 a owl:Class ;
+    rdfs:label "Epidermis"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA7PL7 ;
+    skos:exactMatch obo:UBERON_0001003 .
+
+ext-proposed:XA_NEW_11 a owl:Class ;
+    rdfs:label "Lymphoid tissue"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    rdfs:subClassOf ext:XA8AE9 ;
+    skos:exactMatch obo:UBERON_0001744 .
+
+ext-proposed:XN_NEW_01 a owl:Class ;
+    rdfs:label "Ehrlichia"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_943 ;
+    rdfs:subClassOf ext:XN0R7 ;
+    skos:exactMatch obo:NCBITaxon_943 .
+
+ext-proposed:XN_NEW_02 a owl:Class ;
+    rdfs:label "Bartonella"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_773 ;
+    rdfs:subClassOf ext:XN0R7 ;
+    skos:exactMatch obo:NCBITaxon_773 .
+
+ext-proposed:XN_NEW_03 a owl:Class ;
+    rdfs:label "Corynebacterium"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_1718 ;
+    rdfs:subClassOf ext:XN7T0 ;
+    skos:exactMatch obo:NCBITaxon_1718 .
+
+ext-proposed:XN_NEW_04 a owl:Class ;
+    rdfs:label "Leishmania donovani"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_5661 ;
+    rdfs:subClassOf ext:XN5G8 ;
+    skos:exactMatch obo:NCBITaxon_5661 .
+
+ext-proposed:XN_NEW_05 a owl:Class ;
+    rdfs:label "Leishmania tropica"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_5671 ;
+    rdfs:subClassOf ext:XN5G8 ;
+    skos:exactMatch obo:NCBITaxon_5671 .
+
+ext-proposed:XN_NEW_06 a owl:Class ;
+    rdfs:label "Leishmania braziliensis"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_5660 ;
+    rdfs:subClassOf ext:XN5G8 ;
+    skos:exactMatch obo:NCBITaxon_5660 .
+
+ext-proposed:XN_NEW_07 a owl:Class ;
+    rdfs:label "Naegleria fowleri"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_5763 ;
+    rdfs:subClassOf ext:XN5UG ;
+    skos:exactMatch obo:NCBITaxon_5763 .
+
+ext-proposed:XN_NEW_08 a owl:Class ;
+    rdfs:label "Balamuthia mandrillaris"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_66527 ;
+    rdfs:subClassOf ext:XN5UG ;
+    skos:exactMatch obo:NCBITaxon_66527 .
+
+ext-proposed:XN_NEW_09 a owl:Class ;
+    rdfs:label "Acanthamoeba"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_5755 ;
+    rdfs:subClassOf ext:XN5UG ;
+    skos:exactMatch obo:NCBITaxon_5755 .
+
+ext-proposed:XN_NEW_10 a owl:Class ;
+    rdfs:label "Human enterovirus 71"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_12059 ;
+    rdfs:subClassOf ext:XN2V5 ;
+    skos:exactMatch obo:NCBITaxon_12059 .
+
+ext-proposed:XN_NEW_11 a owl:Class ;
+    rdfs:label "Coxsackievirus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_12131 ;
+    rdfs:subClassOf ext:XN2V5 ;
+    skos:exactMatch obo:NCBITaxon_12131 .
+
+ext-proposed:XN_NEW_12 a owl:Class ;
+    rdfs:label "Sin Nombre orthohantavirus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_37133 ;
+    rdfs:subClassOf ext:XN4K6 ;
+    skos:exactMatch obo:NCBITaxon_37133 .
+
+ext-proposed:XN_NEW_13 a owl:Class ;
+    rdfs:label "Sapovirus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_162145 ;
+    rdfs:subClassOf ext:XN8J2 ;
+    skos:exactMatch obo:NCBITaxon_162145 .
+
+ext-proposed:XN_NEW_14 a owl:Class ;
+    rdfs:label "Astrovirus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_12475 ;
+    rdfs:subClassOf ext:XN9D0 ;
+    skos:exactMatch obo:NCBITaxon_12475 .
+
+ext-proposed:XN_NEW_15 a owl:Class ;
+    rdfs:label "Nipah virus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_121791 ;
+    rdfs:subClassOf ext:XN0Y2 ;
+    skos:exactMatch obo:NCBITaxon_121791 .
+
+ext-proposed:XN_NEW_16 a owl:Class ;
+    rdfs:label "Hendra virus"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_63330 ;
+    rdfs:subClassOf ext:XN0Y2 ;
+    skos:exactMatch obo:NCBITaxon_63330 .
+
+ext-proposed:XN_NEW_17 a owl:Class ;
+    rdfs:label "Talaromyces marneffei"@en ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    dct:source obo:NCBITaxon_37727 ;
+    rdfs:subClassOf ext:XN47W ;
+    skos:exactMatch obo:NCBITaxon_37727 .
+
+icd-entity:1365585570 owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab5 .
+
+icd-entity:1528414070 icd:synonym "typhoid"@en,
+        "typhoidal salmonellosis"@en .
+
+icd:hasCausingCondition a owl:ObjectProperty ;
+    owl:equivalentProperty obo:RO_0004001 .
+
+icd-stage:ST-0006 a owl:Class ;
+    rdfs:label "Human monocytic ehrlichiosis"@en ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0000225 ;
+    rdfs:subClassOf icd-entity:1116297863 ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab6 ;
+    prov:wasDerivedFrom obo:MONDO_0000225 .
+
+icd-stage:ST-0007 a owl:Class ;
+    rdfs:label "Human granulocytic anaplasmosis"@en ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0005118 ;
+    rdfs:subClassOf icd-entity:1116297863 ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab7 ;
+    prov:wasDerivedFrom obo:MONDO_0005118 .
+
+icd-stage:ST-0009 a owl:Class ;
+    rdfs:label "Sennetsu fever"@en ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0000332 ;
+    rdfs:subClassOf icd-entity:1116297863 ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab8 ;
+    prov:wasDerivedFrom obo:MONDO_0000332 .
+
+icd-entity:2072728114 icd:inclusionTerm "active tuberculosis"@en ;
+    icd:synonym "tuberculosis disease"@en ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab9 .
+
+icd-entity:1793762788 icd:synonym "Clostridium tetani caused infectious disease of the nervous system"@en,
+        "Clostridium tetani infectious disease of the nervous system"@en,
+        "clostridial tetanus"@en,
+        "infection due to Clostridium tetani"@en .
+
+icd:inclusionTerm a owl:AnnotationProperty .
+
+obo:RO_0002488 a owl:ObjectProperty .
+
+obo:RO_0002573 a owl:ObjectProperty .
+
+obo:RO_0002610 a owl:ObjectProperty .
+
+obo:RO_0004001 a owl:ObjectProperty .
+
+obo:RO_0004019 a owl:ObjectProperty .
+
+obo:RO_0004026 a owl:ObjectProperty .
+
+obo:RO_0004027 a owl:ObjectProperty .
+
+icd-entity:2064398473 icd:synonym "Bordetella pertussis caused disease or disorder"@en,
+        "Bordetella pertussis disease or disorder"@en,
+        "Bordetella pertussis infection"@en,
+        "Bordetella pertussis infectious disease"@en,
+        "WC - whooping cough"@en .
+
+icd-entity:1826431497 icd:synonym "Measles morbillivirus caused disease or disorder"@en,
+        "Measles morbillivirus disease or disorder"@en,
+        "Measles morbillivirus infectious disease"@en,
+        "morbilli"@en,
+        "rubeola infection"@en ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab10 .
+
+icd-entity:2080365623 icd:inclusionTerm "Shigella boydii infectious disease"@en,
+        "Shigella flexneri infectious disease"@en,
+        "Shigella sonnei infectious disease"@en ;
+    icd:synonym "Shigella gastroenteritis"@en,
+        "bacillary dysentery"@en ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab11 .
+
+icd-entity:410022648 icd:synonym "Rubella infection"@en,
+        "Rubella virus caused disease or disorder"@en,
+        "Rubella virus disease or disorder"@en,
+        "Rubella virus infectious disease"@en,
+        "german measles"@en,
+        "three-Day Measles"@en .
+
+icd-entity:257068234 icd:synonym "Vibrio cholerae"@en,
+        "Vibrio cholerae caused disease or disorder"@en,
+        "Vibrio cholerae disease or disorder"@en,
+        "Vibrio cholerae infectious disease"@en,
+        "cholera - Vibrio cholerae"@en,
+        "cholera due to Vibrio cholerae"@en ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab12 .
+
+icd:specificAnatomy a owl:ObjectProperty ;
+    owl:equivalentProperty obo:RO_0004026 .
+
+icd-entity:1959883044 icd:synonym "DF"@en,
+        "Dengue fever"@en,
+        "Dengue virus caused disease or disorder"@en,
+        "Dengue virus disease or disorder"@en,
+        "Dengue virus infection"@en,
+        "Dengue virus infectious disease"@en,
+        "break bone fever"@en,
+        "breakbone fever"@en,
+        "classic dengue"@en ;
+    owl:equivalentClass _:n5004a7c835674c5a8acb406400d03faab13 .
+
+icd:synonym a owl:AnnotationProperty .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_15 ;
+    owl:annotatedTarget ext:XN0Y2 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0005446 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:124737785 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab1 ;
+    skos:closeMatch obo:UBERON_0000014 ;
+    prov:wasDerivedFrom obo:MONDO_0005446 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0005118 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource icd-stage:ST-0007 ;
+    owl:annotatedTarget icd-entity:1116297863 ;
+    prov:wasDerivedFrom obo:MONDO_0005118 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_09 ;
+    owl:annotatedTarget ext:XN5UG .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:13258",
+        "Orphanet:99745",
+        "icd11.foundation:1528414070" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1528414070 ;
+    owl:annotatedTarget "typhoid"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "Dengue virus infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "NCIT:C85051" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:410022648 ;
+    owl:annotatedTarget "three-Day Measles"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004656 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "NCIT:C3423" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2072728114 ;
+    owl:annotatedTarget "tuberculosis disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0018076 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "Orphanet:99828" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "Dengue virus infection"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2064398473 ;
+    owl:annotatedTarget "Bordetella pertussis disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005077 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2064398473 ;
+    owl:annotatedTarget "Bordetella pertussis caused disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005077 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:410022648 ;
+    owl:annotatedTarget "Rubella virus infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004656 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "NCIT:C96406" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1826431497 ;
+    owl:annotatedTarget "rubeola infection"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:12205",
+        "ICD10CM:A90",
+        "NCIT:C34528",
+        "Orphanet:99828" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "Dengue fever"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1793762788 ;
+    owl:annotatedTarget "Clostridium tetani caused infectious disease of the nervous system"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005526 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget "Vibrio cholerae disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "NCIT:C85051" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:410022648 ;
+    owl:annotatedTarget "Rubella infection"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004656 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:12385" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2080365623 ;
+    owl:annotatedTarget "bacillary dysentery"@en ;
+    prov:wasDerivedFrom obo:MONDO_0019345 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:11405" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:508032285 ;
+    owl:annotatedTarget "Corynebacterium infection"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005504 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:12205" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "classic dengue"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1793762788 ;
+    owl:annotatedTarget "Clostridium tetani infectious disease of the nervous system"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005526 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:1116" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2064398473 ;
+    owl:annotatedTarget "WC - whooping cough"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005077 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:410022648 ;
+    owl:annotatedTarget "Rubella virus caused disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004656 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1826431497 ;
+    owl:annotatedTarget "Measles morbillivirus infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:8781",
+        "NCIT:C85051" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:410022648 ;
+    owl:annotatedTarget "german measles"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004656 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget "Vibrio cholerae caused disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:inclusionTerm ;
+    owl:annotatedSource icd-entity:2072728114 ;
+    owl:annotatedTarget "active tuberculosis"@en ;
+    prov:wasDerivedFrom obo:MONDO_0018076 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:inclusionTerm ;
+    owl:annotatedSource icd-entity:2080365623 ;
+    owl:annotatedTarget "Shigella flexneri infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0019345 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:11338" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1793762788 ;
+    owl:annotatedTarget "clostridial tetanus"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005526 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "Orphanet:99745" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1528414070 ;
+    owl:annotatedTarget "typhoidal salmonellosis"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-stage:ST-0007 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab7 ;
+    prov:wasDerivedFrom obo:MONDO_0005118 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-stage:ST-0009 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab8 ;
+    prov:wasDerivedFrom obo:MONDO_0000332 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:12205" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "breakbone fever"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1826431497 ;
+    owl:annotatedTarget "Measles morbillivirus caused disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:9181" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:435671752 ;
+    owl:annotatedTarget "entamoebiasis"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005644 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "GARD:0008692" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2064398473 ;
+    owl:annotatedTarget "Bordetella pertussis infection"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005077 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:1498" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget "cholera - Vibrio cholerae"@en ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2064398473 ;
+    owl:annotatedTarget "Bordetella pertussis infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005077 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget "Vibrio cholerae infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:410022648 ;
+    owl:annotatedTarget "Rubella virus disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004656 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "NCIT:C34528" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "break bone fever"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "Orphanet:99828" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "DF"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:inclusionTerm ;
+    owl:annotatedSource icd-entity:2080365623 ;
+    owl:annotatedTarget "Shigella sonnei infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0019345 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "Dengue virus caused disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget "Dengue virus disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:12385" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:2080365623 ;
+    owl:annotatedTarget "Shigella gastroenteritis"@en ;
+    prov:wasDerivedFrom obo:MONDO_0019345 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:inclusionTerm ;
+    owl:annotatedSource icd-entity:2080365623 ;
+    owl:annotatedTarget "Shigella boydii infectious disease"@en ;
+    prov:wasDerivedFrom obo:MONDO_0019345 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:11338" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1793762788 ;
+    owl:annotatedTarget "infection due to Clostridium tetani"@en ;
+    prov:wasDerivedFrom obo:MONDO_0005526 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1826431497 ;
+    owl:annotatedTarget "Measles morbillivirus disease or disorder"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:1498" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget "Vibrio cholerae"@en ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:1498",
+        "ICD9CM:001.0" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget "cholera due to Vibrio cholerae"@en ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-syn-infectious-01" ;
+    dct:source "DOID:8622",
+        "ICD10CM:B05",
+        "icd11.foundation:1826431497" ;
+    owl:annotatedProperty icd:synonym ;
+    owl:annotatedSource icd-entity:1826431497 ;
+    owl:annotatedTarget "morbilli"@en ;
+    prov:wasDerivedFrom obo:MONDO_0004619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0005502 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:1959883044 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab13 ;
+    skos:closeMatch obo:NCBITaxon_12637 ;
+    prov:wasDerivedFrom obo:MONDO_0005502 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0005491 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:1365585570 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab5 ;
+    skos:closeMatch obo:NCBITaxon_5691,
+        obo:UBERON_0001133 ;
+    prov:wasDerivedFrom obo:MONDO_0005491 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0015474 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:1837013982 ;
+    prov:wasDerivedFrom obo:MONDO_0015474 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0016003 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:1116297863 ;
+    prov:wasDerivedFrom obo:MONDO_0016003 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_06 ;
+    owl:annotatedTarget ext:XA6AN6 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0018076 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:2072728114 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab9 ;
+    skos:closeMatch obo:NCBITaxon_1773 ;
+    prov:wasDerivedFrom obo:MONDO_0018076 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_08 ;
+    owl:annotatedTarget ext:XA6AN6 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0000332 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource icd-stage:ST-0009 ;
+    owl:annotatedTarget icd-entity:1116297863 ;
+    prov:wasDerivedFrom obo:MONDO_0000332 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_11 ;
+    owl:annotatedTarget ext:XN2V5 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedTarget [ a owl:Class ;
+            owl:intersectionOf ( icd-entity:1837013982 [ a owl:Restriction ;
+                        owl:onProperty icd:specificAnatomy ;
+                        owl:someValuesFrom obo:UBERON_0000160 ] ) ] ;
+    prov:wasDerivedFrom obo:MONDO_0015474 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0019345 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:2080365623 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab11 ;
+    skos:closeMatch obo:NCBITaxon_620,
+        obo:UBERON_0000160 ;
+    prov:wasDerivedFrom obo:MONDO_0019345 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0019095 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:1596449540 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab2 ;
+    skos:closeMatch obo:NCBITaxon_632 ;
+    prov:wasDerivedFrom obo:MONDO_0019095 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_12 ;
+    owl:annotatedTarget ext:XN4K6 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0002488 ;
+    rdfs:comment "CM §3.11: temporal onset pattern. Overlaps with course via RO:0002488 but focuses on onset timing. Subproperty." ;
+    owl:annotatedProperty rdfs:subPropertyOf ;
+    owl:annotatedSource icd:temporalPatternAndOnset ;
+    owl:annotatedTarget obo:RO_0002488 ;
+    prov:wasDerivedFrom obo:RO_0002488 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0000304 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:646368820 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab4 ;
+    skos:closeMatch obo:NCBITaxon_37727 ;
+    prov:wasDerivedFrom obo:MONDO_0000304 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_06 ;
+    owl:annotatedTarget ext:XN5G8 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_07 ;
+    owl:annotatedTarget ext:XN5UG .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_04 ;
+    owl:annotatedTarget ext:XA7PL7 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0015766 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:257068234 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab12 ;
+    skos:closeMatch obo:NCBITaxon_666 ;
+    prov:wasDerivedFrom obo:MONDO_0015766 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_11 ;
+    owl:annotatedTarget ext:XA8AE9 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_03 ;
+    owl:annotatedTarget ext:XA0D16 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_01 ;
+    owl:annotatedTarget ext:XA98G2 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_05 ;
+    owl:annotatedTarget ext:XN5G8 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_02 ;
+    owl:annotatedTarget ext:XA35A4 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_09 ;
+    owl:annotatedTarget ext:XA1K12 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_14 ;
+    owl:annotatedTarget ext:XN9D0 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_07 ;
+    owl:annotatedTarget ext:XA7RE5 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0000225 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource icd-stage:ST-0006 ;
+    owl:annotatedTarget icd-entity:1116297863 ;
+    prov:wasDerivedFrom obo:MONDO_0000225 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0004001 ;
+    rdfs:comment "CM §3.7: a Foundation entity whose cause is another disease entity. Maps directly to Mondo disease-to-disease causal relation." ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource icd:hasCausingCondition ;
+    owl:annotatedTarget obo:RO_0004001 ;
+    prov:wasDerivedFrom obo:RO_0004001 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_03 ;
+    owl:annotatedTarget ext:XN7T0 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_10 ;
+    owl:annotatedTarget ext:XA7PL7 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedTarget [ a owl:Class ;
+            owl:intersectionOf ( icd-entity:1837013982 [ a owl:Restriction ;
+                        owl:onProperty icd:specificAnatomy ;
+                        owl:someValuesFrom obo:UBERON_0002048 ] ) ] ;
+    prov:wasDerivedFrom obo:MONDO_0015474 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-stage:ST-0006 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab6 ;
+    prov:wasDerivedFrom obo:MONDO_0000225 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_08 ;
+    owl:annotatedTarget ext:XN5UG .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0001249 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:372424530 ;
+    prov:wasDerivedFrom obo:MONDO_0001249 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0004027 ;
+    rdfs:comment "CM §3.5: histopathology is the morphological qualifier. Mondo uses has_quality with PATO/MPATH fillers. Subproperty because CM restricts to morphology." ;
+    owl:annotatedProperty rdfs:subPropertyOf ;
+    owl:annotatedSource icd:histopathology ;
+    owl:annotatedTarget obo:RO_0004027 ;
+    prov:wasDerivedFrom obo:RO_0004027 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0000290 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:457021616 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab3 ;
+    skos:closeMatch obo:NCBITaxon_5763,
+        obo:UBERON_0002360 ;
+    prov:wasDerivedFrom obo:MONDO_0000290 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XA_NEW_05 ;
+    owl:annotatedTarget ext:XA7PL7 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0004026 ;
+    rdfs:comment "CM §3.5: specificAnatomy is the anatomical site of the disease. RO:0004026 disease_has_location is used identically in Mondo." ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource icd:specificAnatomy ;
+    owl:annotatedTarget obo:RO_0004026 ;
+    prov:wasDerivedFrom obo:RO_0004026 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0001195 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:1981846 ;
+    prov:wasDerivedFrom obo:MONDO_0001195 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0002610 ;
+    rdfs:comment "CM §3.7: associatedWith is a weak non-causal association. correlated_with is the closest RO relation; subproperty because CM usage is narrower." ;
+    owl:annotatedProperty rdfs:subPropertyOf ;
+    owl:annotatedSource icd:associatedWith ;
+    owl:annotatedTarget obo:RO_0002610 ;
+    prov:wasDerivedFrom obo:RO_0002610 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0002573 ;
+    rdfs:comment "CM §3.11: severity scale. RO:0002573 has_severity used in Mondo with PATO severity values. Direct equivalence." ;
+    owl:annotatedProperty owl:equivalentProperty ;
+    owl:annotatedSource icd:severity ;
+    owl:annotatedTarget obo:RO_0002573 ;
+    prov:wasDerivedFrom obo:RO_0002573 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_16 ;
+    owl:annotatedTarget ext:XN0Y2 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_17 ;
+    owl:annotatedTarget ext:XN47W .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0015474 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:1837013982 ;
+    prov:wasDerivedFrom obo:MONDO_0015474 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_13 ;
+    owl:annotatedTarget ext:XN8J2 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_02 ;
+    owl:annotatedTarget ext:XN0R7 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0001249 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:372424530 ;
+    prov:wasDerivedFrom obo:MONDO_0001249 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-logdef-infectious-01" ;
+    icd:definitionStatus "ready" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0004619 ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedSource icd-entity:1826431497 ;
+    owl:annotatedTarget _:n5004a7c835674c5a8acb406400d03faab10 ;
+    skos:closeMatch obo:NCBITaxon_11234 ;
+    prov:wasDerivedFrom obo:MONDO_0004619 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_10 ;
+    owl:annotatedTarget ext:XN2V5 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_01 ;
+    owl:annotatedTarget ext:XN0R7 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q2-axis-align-01" ;
+    icd:batchManifestHash "sha256:a3f8c1d9e4b72e5f01984bc3d6a7890ef2c14d58b3e6a9d0c7f5b8e1a4d2f6a0" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "OBO Foundry" ;
+    dct:source obo:RO_0004019 ;
+    rdfs:comment "CM §3.6: chemicalAgent parallels infectiousAgent for chemical causes. Also subproperty of has_material_basis_in." ;
+    owl:annotatedProperty rdfs:subPropertyOf ;
+    owl:annotatedSource icd:chemicalAgent ;
+    owl:annotatedTarget obo:RO_0004019 ;
+    prov:wasDerivedFrom obo:RO_0004019 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-extcode-infectious-01" ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ext-proposed:XN_NEW_04 ;
+    owl:annotatedTarget ext:XN5G8 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:rightsHolder "Mondo Disease Ontology Consortium" ;
+    dct:source obo:MONDO_0015474 ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedTarget icd-entity:1837013982 ;
+    prov:wasDerivedFrom obo:MONDO_0015474 .
+
+[] a owl:Axiom ;
+    icd:batchId "2026-Q3-subtree-infectious-01" ;
+    owl:annotatedProperty owl:equivalentClass ;
+    owl:annotatedTarget [ a owl:Class ;
+            owl:intersectionOf ( icd-entity:1981846 [ a owl:Restriction ;
+                        owl:onProperty icd:infectiousAgent ;
+                        owl:someValuesFrom obo:NCBITaxon_114277 ] ) ] ;
+    prov:wasDerivedFrom obo:MONDO_0001195 .
+
+_:n5004a7c835674c5a8acb406400d03faab133 a owl:Restriction ;
+    owl:onProperty icd:infectiousAgent ;
+    owl:someValuesFrom obo:NCBITaxon_948 .
+
+_:n5004a7c835674c5a8acb406400d03faab134 rdf:first _:n5004a7c835674c5a8acb406400d03faab133 ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab135 rdf:first icd-entity:1116297863 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab134 .
+
+_:n5004a7c835674c5a8acb406400d03faab136 rdf:first [ a owl:Restriction ;
+            owl:onProperty icd:infectiousAgent ;
+            owl:someValuesFrom obo:NCBITaxon_951 ] ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab138 rdf:first icd-entity:1116297863 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab136 .
+
+_:n5004a7c835674c5a8acb406400d03faab139 rdf:first icd-entity:282225286 ;
+    rdf:rest ( [ a owl:Restriction ;
+                owl:onProperty icd:hasCausingCondition ;
+                owl:someValuesFrom icd-entity:1365585570 ] [ a owl:Restriction ;
+                owl:onProperty icd:specificAnatomy ;
+                owl:someValuesFrom icd-entity:2134193116 ] ) .
+
+_:n5004a7c835674c5a8acb406400d03faab144 rdf:first [ a owl:Restriction ;
+            owl:onProperty icd:infectiousAgent ;
+            owl:someValuesFrom icd-entity:947890362 ] ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab146 a owl:Restriction ;
+    owl:onProperty icd:infectiousAgent ;
+    owl:someValuesFrom icd-entity:1873218514 .
+
+_:n5004a7c835674c5a8acb406400d03faab147 rdf:first [ a owl:Restriction ;
+            owl:onProperty icd:infectiousAgent ;
+            owl:someValuesFrom icd-entity:2033913333 ] ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab149 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab144 .
+
+_:n5004a7c835674c5a8acb406400d03faab150 rdf:first [ a owl:Restriction ;
+            owl:onProperty icd:infectiousAgent ;
+            owl:someValuesFrom obo:NCBITaxon_945 ] ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab152 a owl:Restriction ;
+    owl:onProperty icd:infectiousAgent ;
+    owl:someValuesFrom icd-entity:43213186 .
+
+_:n5004a7c835674c5a8acb406400d03faab153 rdf:first [ a owl:Restriction ;
+            owl:onProperty icd:infectiousAgent ;
+            owl:someValuesFrom icd-entity:1472971081 ] ;
+    rdf:rest ( [ a owl:Restriction ;
+                owl:onProperty icd:specificAnatomy ;
+                owl:someValuesFrom icd-entity:1537714794 ] ) .
+
+_:n5004a7c835674c5a8acb406400d03faab157 rdf:first _:n5004a7c835674c5a8acb406400d03faab152 ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab158 a owl:Restriction ;
+    owl:onProperty icd:infectiousAgent ;
+    owl:someValuesFrom icd-entity:1420836726 .
+
+_:n5004a7c835674c5a8acb406400d03faab159 a owl:Restriction ;
+    owl:onProperty icd:specificAnatomy ;
+    owl:someValuesFrom icd-entity:1928625572 .
+
+_:n5004a7c835674c5a8acb406400d03faab160 rdf:first icd-entity:1082373067 ;
+    rdf:rest ( [ a owl:Restriction ;
+                owl:onProperty icd:specificAnatomy ;
+                owl:someValuesFrom icd-entity:123461884 ] ) .
+
+_:n5004a7c835674c5a8acb406400d03faab163 a owl:Restriction ;
+    owl:onProperty icd:infectiousAgent ;
+    owl:someValuesFrom icd-entity:1159128978 .
+
+_:n5004a7c835674c5a8acb406400d03faab164 rdf:first _:n5004a7c835674c5a8acb406400d03faab146 ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab165 rdf:first [ a owl:Restriction ;
+            owl:onProperty icd:infectiousAgent ;
+            owl:someValuesFrom icd-entity:824826401 ] ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab167 rdf:first icd-entity:1435254666 ;
+    rdf:rest ( _:n5004a7c835674c5a8acb406400d03faab158 _:n5004a7c835674c5a8acb406400d03faab159 ) .
+
+_:n5004a7c835674c5a8acb406400d03faab170 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab165 .
+
+_:n5004a7c835674c5a8acb406400d03faab171 rdf:first icd-entity:1116297863 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab150 .
+
+_:n5004a7c835674c5a8acb406400d03faab172 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab147 .
+
+_:n5004a7c835674c5a8acb406400d03faab173 rdf:first _:n5004a7c835674c5a8acb406400d03faab163 ;
+    rdf:rest () .
+
+_:n5004a7c835674c5a8acb406400d03faab174 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab157 .
+
+_:n5004a7c835674c5a8acb406400d03faab175 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab153 .
+
+_:n5004a7c835674c5a8acb406400d03faab176 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab164 .
+
+_:n5004a7c835674c5a8acb406400d03faab177 rdf:first icd-entity:1435254666 ;
+    rdf:rest _:n5004a7c835674c5a8acb406400d03faab173 .
+
+_:n5004a7c835674c5a8acb406400d03faab1 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab160 .
+
+_:n5004a7c835674c5a8acb406400d03faab10 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab176 .
+
+_:n5004a7c835674c5a8acb406400d03faab11 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab167 .
+
+_:n5004a7c835674c5a8acb406400d03faab12 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab170 .
+
+_:n5004a7c835674c5a8acb406400d03faab13 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab149 .
+
+_:n5004a7c835674c5a8acb406400d03faab2 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab177 .
+
+_:n5004a7c835674c5a8acb406400d03faab3 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab175 .
+
+_:n5004a7c835674c5a8acb406400d03faab4 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab172 .
+
+_:n5004a7c835674c5a8acb406400d03faab5 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab139 .
+
+_:n5004a7c835674c5a8acb406400d03faab6 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab171 .
+
+_:n5004a7c835674c5a8acb406400d03faab7 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab135 .
+
+_:n5004a7c835674c5a8acb406400d03faab8 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab138 .
+
+_:n5004a7c835674c5a8acb406400d03faab9 a owl:Class ;
+    owl:intersectionOf _:n5004a7c835674c5a8acb406400d03faab174 .
+

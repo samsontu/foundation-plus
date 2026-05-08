@@ -15,7 +15,7 @@
   "dct:description": "Batch enrichment of ICD-11 Foundation infectious disease entities with synonyms harvested from Mondo Disease Ontology via SSSOM exact-match mappings.",
   "icd:generatedByPattern": "synonym_enrichment_from_mondo",
   "icd:patternVersion": "1.2.0",
-  "prov:generatedAtTime": "2026-07-15T09:22:00Z",
+  "prov:generatedAtTime": "2026-05-08T03:41:49Z",
   "prov:wasAttributedTo": {
     "@id": "https://orcid.org/0000-0002-0295-7821",
     "rdfs:label": "Samson Tu"
@@ -27,16 +27,15 @@
     "icd:targetLanguage": "en"
   },
   "icd:statistics": {
-    "icd:totalAccepted": 847,
-    "icd:synonymsAdded": 569,
-    "icd:inclusionTermsAdded": 278,
-    "icd:distinctEntitiesEnriched": 312,
-    "icd:sssomMappingsUsed": 487,
-    "icd:sparqlRawResults": 2159,
-    "icd:duplicatesRemoved": 1203,
-    "icd:stoplistRejections": 67,
-    "icd:snomedExclusions": 41,
-    "icd:relatedSynonymsForReview": 389
+    "icd:totalAccepted": 46,
+    "icd:synonymsAdded": 42,
+    "icd:inclusionTermsAdded": 4,
+    "icd:distinctEntitiesEnriched": 11,
+    "icd:mondoClassesUsed": 11,
+    "icd:mondoClassesWithNoNewTerms": 3,
+    "icd:duplicatesRemoved": 7,
+    "icd:snomedExclusions": 0,
+    "icd:relatedSynonymsForReview": 26
   },
   "icd:scopeMapping": {
     "oboInOwl:hasExactSynonym": "icd:synonym",
@@ -89,59 +88,14 @@
   },
   "icd:companionFiles": [
     {
-      "dct:identifier": "synonym_manifest.tsv",
-      "dct:description": "Per-artifact process provenance (847 rows)",
-      "dct:format": "text/tab-separated-values"
-    },
-    {
       "dct:identifier": "generated_annotations.ofn",
-      "dct:description": "OWL Functional Syntax file with all 847 synonym annotations",
+      "dct:description": "OWL Functional Syntax file with 46 synonym/inclusionTerm annotations for 14 infectious diseases",
       "dct:format": "text/owl-functional"
-    },
-    {
-      "dct:identifier": "sparql_harvest_query.rq",
-      "dct:description": "SPARQL query used to harvest synonyms from Mondo",
-      "dct:format": "application/sparql-query"
-    },
-    {
-      "dct:identifier": "sparql_raw_results.tsv",
-      "dct:description": "Raw SPARQL results (2,159 rows before filtering)",
-      "dct:format": "text/tab-separated-values"
     },
     {
       "dct:identifier": "stoplist-v3.2.yaml",
       "dct:description": "Editorial stoplist rules (10 rules)",
       "dct:format": "application/x-yaml"
-    },
-    {
-      "dct:identifier": "stoplist_rejections.tsv",
-      "dct:description": "Terms rejected by stoplist (67 entries)",
-      "dct:format": "text/tab-separated-values"
-    },
-    {
-      "dct:identifier": "deduplication_log.tsv",
-      "dct:description": "Duplicate entries removed (1,203 entries)",
-      "dct:format": "text/tab-separated-values"
-    },
-    {
-      "dct:identifier": "snomed_excluded_synonyms.tsv",
-      "dct:description": "SNOMED CT-derived synonyms excluded for licensing (41 entries)",
-      "dct:format": "text/tab-separated-values"
-    },
-    {
-      "dct:identifier": "related_synonym_review_queue.tsv",
-      "dct:description": "Related synonyms routed to manual review (389 entries)",
-      "dct:format": "text/tab-separated-values"
-    },
-    {
-      "dct:identifier": "sssom_mappings_used.tsv",
-      "dct:description": "SSSOM exact-match mappings used (487 Foundation↔Mondo pairs)",
-      "dct:format": "text/tab-separated-values"
-    },
-    {
-      "dct:identifier": "qc_sparql_provenance_check.tsv",
-      "dct:description": "QC validation results (16 checks, all PASS)",
-      "dct:format": "text/tab-separated-values"
     },
     {
       "dct:identifier": "manifest.json",
@@ -151,16 +105,12 @@
   ],
   "icd:changelog": [
     {
-      "dct:date": "2026-07-15",
-      "dct:description": "Initial harvest and filtering"
+      "dct:date": "2026-05-07",
+      "dct:description": "ID verification revealed 13/14 wrong Mondo IDs and 12/14 wrong WHO-FIC IDs in original file"
     },
     {
-      "dct:date": "2026-07-18",
-      "dct:description": "Stoplist v3.2 applied; SNOMED exclusions finalized"
-    },
-    {
-      "dct:date": "2026-07-20",
-      "dct:description": "Batch proposed for editorial board review"
+      "dct:date": "2026-05-08",
+      "dct:description": "Regenerated with correct IDs and real Mondo synonyms harvested from mondo.owl; SNOMED-sourced and duplicate terms filtered out"
     }
   ],
   "icd:signOff": {
@@ -168,10 +118,9 @@
       "@id": "https://orcid.org/0000-0002-0295-7821",
       "rdfs:label": "Samson Tu"
     },
-    "icd:submissionDate": "2026-07-20",
+    "icd:submissionDate": null,
     "icd:reviewer": "pending",
     "icd:reviewDate": null,
-    "icd:decision": "proposed",
-    "icd:batchManifestHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "icd:decision": "draft"
   }
 }

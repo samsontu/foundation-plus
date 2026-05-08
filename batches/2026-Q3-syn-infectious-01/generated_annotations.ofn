@@ -14,158 +14,218 @@ Ontology(<http://id.who.int/icd/foundation-plus/batch/2026-Q3-syn-infectious-01>
 
 # Batch: 2026-Q3-syn-infectious-01
 # Pattern: synonym_enrichment_from_mondo v1.2.0
-# Generated: 2026-07-15T09:22:00Z
+# Generated: 2026-05-08T03:41:49Z
 # Attributed to: https://orcid.org/0000-0002-0295-7821
 # Scope: descendants of http://id.who.int/icd/entity/1435254666 (Certain infectious or parasitic diseases)
-# Total annotations: 847 (569 synonyms + 278 inclusion terms)
+# Total annotations: 46 (42 synonyms + 4 inclusion terms)
+# Source: Mondo Disease Ontology (mondo.owl)
+# Filtering: SNOMED CT-sourced synonyms excluded; duplicates of existing WHO-FIC terms excluded
+# Related synonyms excluded (require manual review)
 
 # === Cholera (entity/257068234) ===
 
-# SYN-0001: Asiatic cholera [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "Asiatic cholera"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005173>) Annotation(dct:source "DOID:1498") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "Asiatic cholera"@en)
+# SYN-0001: Vibrio cholerae [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>) Annotation(dct:source "DOID:1498") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae"@en)
 
-# SYN-0002: epidemic cholera [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "epidemic cholera"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005173>) Annotation(dct:source "MESH:D002771") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "epidemic cholera"@en)
+# SYN-0002: Vibrio cholerae caused disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae caused disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae caused disease or disorder"@en)
 
-# SYN-0003: Vibrio cholerae infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/257068234> "Vibrio cholerae infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005173>) Annotation(dct:source "NCIt:C128388") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/257068234> "Vibrio cholerae infection"@en)
+# SYN-0003: Vibrio cholerae disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae disease or disorder"@en)
 
-# === Typhoid fever (entity/588616678) ===
+# SYN-0004: Vibrio cholerae infectious disease [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "Vibrio cholerae infectious disease"@en)
 
-# SYN-0004: enteric fever [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/588616678> "enteric fever"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005112>) Annotation(dct:source "MESH:D014435") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/588616678> "enteric fever"@en)
+# SYN-0005: cholera - Vibrio cholerae [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "cholera - Vibrio cholerae"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>) Annotation(dct:source "DOID:1498") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "cholera - Vibrio cholerae"@en)
 
-# SYN-0005: typhoid [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/588616678> "typhoid"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005112>) Annotation(dct:source "DOID:13258") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/588616678> "typhoid"@en)
+# SYN-0006: cholera due to Vibrio cholerae [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/257068234> "cholera due to Vibrio cholerae"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0015766>) Annotation(dct:source "DOID:1498") Annotation(dct:source "ICD9CM:001.0") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/257068234> "cholera due to Vibrio cholerae"@en)
 
-# SYN-0006: Salmonella typhi infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/588616678> "Salmonella typhi infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005112>) Annotation(dct:source "NCIt:C128392") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/588616678> "Salmonella typhi infection"@en)
+# === Typhoid fever (entity/1528414070) ===
 
-# === Shigellosis (entity/1206028912) ===
+# SYN-0007: typhoid [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1528414070> "typhoid"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005619>) Annotation(dct:source "DOID:13258") Annotation(dct:source "Orphanet:99745") Annotation(dct:source "icd11.foundation:1528414070") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1528414070> "typhoid"@en)
 
-# SYN-0007: bacillary dysentery [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1206028912> "bacillary dysentery"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005149>) Annotation(dct:source "MESH:D004405") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1206028912> "bacillary dysentery"@en)
+# SYN-0008: typhoidal salmonellosis [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1528414070> "typhoidal salmonellosis"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005619>) Annotation(dct:source "Orphanet:99745") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1528414070> "typhoidal salmonellosis"@en)
 
-# SYN-0008: Shigella infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/1206028912> "Shigella infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005149>) Annotation(dct:source "NCIt:C84947") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/1206028912> "Shigella infection"@en)
+# === Shigellosis (entity/2080365623) ===
 
-# === Amoebiasis (entity/42335174) ===
+# SYN-0009: Shigella gastroenteritis [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2080365623> "Shigella gastroenteritis"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019345>) Annotation(dct:source "DOID:12385") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2080365623> "Shigella gastroenteritis"@en)
 
-# SYN-0009: amoebic dysentery [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/42335174> "amoebic dysentery"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0006570>) Annotation(dct:source "DOID:9537") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/42335174> "amoebic dysentery"@en)
+# SYN-0010: bacillary dysentery [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2080365623> "bacillary dysentery"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019345>) Annotation(dct:source "DOID:12385") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2080365623> "bacillary dysentery"@en)
 
-# SYN-0010: Entamoeba histolytica infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/42335174> "Entamoeba histolytica infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0006570>) Annotation(dct:source "NCIt:C128401") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/42335174> "Entamoeba histolytica infection"@en)
+# SYN-0011: Shigella boydii infectious disease [narrow → inclusionTerm]
+AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/2080365623> "Shigella boydii infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019345>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/2080365623> "Shigella boydii infectious disease"@en)
 
-# === Tuberculosis (entity/1580735498) ===
+# SYN-0012: Shigella flexneri infectious disease [narrow → inclusionTerm]
+AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/2080365623> "Shigella flexneri infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019345>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/2080365623> "Shigella flexneri infectious disease"@en)
 
-# SYN-0011: TB [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1580735498> "TB"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0018076>) Annotation(dct:source "MESH:D014376") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1580735498> "TB"@en)
+# SYN-0013: Shigella sonnei infectious disease [narrow → inclusionTerm]
+AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/2080365623> "Shigella sonnei infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019345>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/2080365623> "Shigella sonnei infectious disease"@en)
 
-# SYN-0012: Koch disease [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1580735498> "Koch disease"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0018076>) Annotation(dct:source "Orphanet:818") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1580735498> "Koch disease"@en)
+# === Amoebiasis (entity/435671752) ===
 
-# SYN-0013: mycobacterial infection due to Mycobacterium tuberculosis [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/1580735498> "mycobacterial infection due to Mycobacterium tuberculosis"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0018076>) Annotation(dct:source "NCIt:C3423") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/1580735498> "mycobacterial infection due to Mycobacterium tuberculosis"@en)
+# SYN-0014: entamoebiasis [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/435671752> "entamoebiasis"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005644>) Annotation(dct:source "DOID:9181") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/435671752> "entamoebiasis"@en)
 
-# === Plague (entity/1157477580) ===
+# === Tuberculosis (entity/2072728114) ===
 
-# SYN-0014: Yersinia pestis infection [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1157477580> "Yersinia pestis infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005088>) Annotation(dct:source "NCIt:C84928") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1157477580> "Yersinia pestis infection"@en)
+# SYN-0015: tuberculosis disease [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2072728114> "tuberculosis disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0018076>) Annotation(dct:source "NCIT:C3423") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2072728114> "tuberculosis disease"@en)
 
-# SYN-0015: black death [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1157477580> "black death"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005088>) Annotation(dct:source "DOID:3482") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1157477580> "black death"@en)
+# SYN-0016: active tuberculosis [narrow → inclusionTerm]
+AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/2072728114> "active tuberculosis"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0018076>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/2072728114> "active tuberculosis"@en)
 
-# === Diphtheria (entity/189532001) ===
+# === Diphtheria (entity/508032285) ===
 
-# SYN-0016: Corynebacterium diphtheriae infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/189532001> "Corynebacterium diphtheriae infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005577>) Annotation(dct:source "NCIt:C84617") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/189532001> "Corynebacterium diphtheriae infection"@en)
+# SYN-0017: Corynebacterium infection [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/508032285> "Corynebacterium infection"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005504>) Annotation(dct:source "DOID:11405") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/508032285> "Corynebacterium infection"@en)
 
-# === Whooping cough (entity/1927498498) ===
+# === Whooping cough (entity/2064398473) ===
 
-# SYN-0017: pertussis [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1927498498> "pertussis"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005049>) Annotation(dct:source "MESH:D014917") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1927498498> "pertussis"@en)
+# SYN-0018: Bordetella pertussis caused disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis caused disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005077>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis caused disease or disorder"@en)
 
-# SYN-0018: Bordetella pertussis infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/1927498498> "Bordetella pertussis infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005049>) Annotation(dct:source "NCIt:C84586") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/1927498498> "Bordetella pertussis infection"@en)
+# SYN-0019: Bordetella pertussis disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005077>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis disease or disorder"@en)
 
-# === Tetanus (entity/1394114714) ===
+# SYN-0020: Bordetella pertussis infection [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis infection"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005077>) Annotation(dct:source "GARD:0008692") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis infection"@en)
 
-# SYN-0019: lockjaw [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1394114714> "lockjaw"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0001399>) Annotation(dct:source "DOID:11338") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1394114714> "lockjaw"@en)
+# SYN-0021: Bordetella pertussis infectious disease [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005077>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2064398473> "Bordetella pertussis infectious disease"@en)
 
-# SYN-0020: Clostridium tetani infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/1394114714> "Clostridium tetani infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0001399>) Annotation(dct:source "NCIt:C128405") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/1394114714> "Clostridium tetani infection"@en)
+# SYN-0022: WC - whooping cough [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/2064398473> "WC - whooping cough"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005077>) Annotation(dct:source "DOID:1116") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/2064398473> "WC - whooping cough"@en)
 
-# === Measles (entity/1208890105) ===
+# === Tetanus (entity/1793762788) ===
 
-# SYN-0021: rubeola [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1208890105> "rubeola"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005309>) Annotation(dct:source "MESH:D008457") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1208890105> "rubeola"@en)
+# SYN-0023: Clostridium tetani caused infectious disease of the nervous system [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1793762788> "Clostridium tetani caused infectious disease of the nervous system"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005526>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1793762788> "Clostridium tetani caused infectious disease of the nervous system"@en)
 
-# SYN-0022: morbilli [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1208890105> "morbilli"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005309>) Annotation(dct:source "DOID:8622") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1208890105> "morbilli"@en)
+# SYN-0024: Clostridium tetani infectious disease of the nervous system [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1793762788> "Clostridium tetani infectious disease of the nervous system"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005526>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1793762788> "Clostridium tetani infectious disease of the nervous system"@en)
 
-# === Rubella (entity/1233726543) ===
+# SYN-0025: clostridial tetanus [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1793762788> "clostridial tetanus"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005526>) Annotation(dct:source "DOID:11338") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1793762788> "clostridial tetanus"@en)
 
-# SYN-0023: German measles [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1233726543> "German measles"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(dct:source "MESH:D012409") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1233726543> "German measles"@en)
+# SYN-0026: infection due to Clostridium tetani [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1793762788> "infection due to Clostridium tetani"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005526>) Annotation(dct:source "DOID:11338") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1793762788> "infection due to Clostridium tetani"@en)
 
-# SYN-0024: three-day measles [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1233726543> "three-day measles"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(dct:source "DOID:8781") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1233726543> "three-day measles"@en)
+# === Measles (entity/1826431497) ===
 
-# === Dengue (entity/1586407942) ===
+# SYN-0027: Measles morbillivirus caused disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1826431497> "Measles morbillivirus caused disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004619>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1826431497> "Measles morbillivirus caused disease or disorder"@en)
 
-# SYN-0025: dengue fever [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1586407942> "dengue fever"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "MESH:D003715") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1586407942> "dengue fever"@en)
+# SYN-0028: Measles morbillivirus disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1826431497> "Measles morbillivirus disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004619>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1826431497> "Measles morbillivirus disease or disorder"@en)
 
-# SYN-0026: break-bone fever [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1586407942> "break-bone fever"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "DOID:12205") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1586407942> "break-bone fever"@en)
+# SYN-0029: Measles morbillivirus infectious disease [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1826431497> "Measles morbillivirus infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004619>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1826431497> "Measles morbillivirus infectious disease"@en)
 
-# === Malaria (entity/435601985) ===
+# SYN-0030: morbilli [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1826431497> "morbilli"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004619>) Annotation(dct:source "DOID:8622") Annotation(dct:source "ICD10CM:B05") Annotation(dct:source "icd11.foundation:1826431497") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1826431497> "morbilli"@en)
 
-# SYN-0027: paludism [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/435601985> "paludism"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005136>) Annotation(dct:source "MESH:D008288") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/435601985> "paludism"@en)
+# SYN-0031: rubeola infection [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1826431497> "rubeola infection"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004619>) Annotation(dct:source "NCIT:C96406") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1826431497> "rubeola infection"@en)
 
-# SYN-0028: marsh fever [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/435601985> "marsh fever"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005136>) Annotation(dct:source "DOID:12365") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/435601985> "marsh fever"@en)
+# === Rubella (entity/410022648) ===
 
-# SYN-0029: Plasmodium infection [narrow → inclusionTerm]
-AnnotationAssertion(icd:inclusionTerm <http://id.who.int/icd/entity/435601985> "Plasmodium infection"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005136>) Annotation(dct:source "NCIt:C34797") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:inclusionTerm <http://id.who.int/icd/entity/435601985> "Plasmodium infection"@en)
+# SYN-0032: Rubella infection [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella infection"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(dct:source "NCIT:C85051") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella infection"@en)
 
-# SYN-0030: kala-azar [exact → synonym]
-AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1630407678> "kala-azar"@en)
-AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005747>) Annotation(dct:source "MESH:D007896") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1630407678> "kala-azar"@en)
+# SYN-0033: Rubella virus caused disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella virus caused disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella virus caused disease or disorder"@en)
 
-# [... 817 additional annotations follow the same pattern ...]
-# Full file truncated for readability. Complete 847 annotations generated by ROBOT template.
+# SYN-0034: Rubella virus disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella virus disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella virus disease or disorder"@en)
+
+# SYN-0035: Rubella virus infectious disease [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella virus infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/410022648> "Rubella virus infectious disease"@en)
+
+# SYN-0036: german measles [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/410022648> "german measles"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(dct:source "DOID:8781") Annotation(dct:source "NCIT:C85051") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/410022648> "german measles"@en)
+
+# SYN-0037: three-Day Measles [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/410022648> "three-Day Measles"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0004656>) Annotation(dct:source "NCIT:C85051") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/410022648> "three-Day Measles"@en)
+
+# === Dengue (entity/1959883044) ===
+
+# SYN-0038: DF [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "DF"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "Orphanet:99828") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "DF"@en)
+
+# SYN-0039: Dengue fever [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue fever"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "DOID:12205") Annotation(dct:source "ICD10CM:A90") Annotation(dct:source "NCIT:C34528") Annotation(dct:source "Orphanet:99828") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue fever"@en)
+
+# SYN-0040: Dengue virus caused disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus caused disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus caused disease or disorder"@en)
+
+# SYN-0041: Dengue virus disease or disorder [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus disease or disorder"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus disease or disorder"@en)
+
+# SYN-0042: Dengue virus infection [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus infection"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "Orphanet:99828") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus infection"@en)
+
+# SYN-0043: Dengue virus infectious disease [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus infectious disease"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "Dengue virus infectious disease"@en)
+
+# SYN-0044: break bone fever [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "break bone fever"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "NCIT:C34528") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "break bone fever"@en)
+
+# SYN-0045: breakbone fever [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "breakbone fever"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "DOID:12205") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "breakbone fever"@en)
+
+# SYN-0046: classic dengue [exact → synonym]
+AnnotationAssertion(icd:synonym <http://id.who.int/icd/entity/1959883044> "classic dengue"@en)
+AnnotationAssertion(Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005502>) Annotation(dct:source "DOID:12205") Annotation(icd:batchId "2026-Q3-syn-infectious-01") icd:synonym <http://id.who.int/icd/entity/1959883044> "classic dengue"@en)
 
 )

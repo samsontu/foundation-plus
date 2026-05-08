@@ -15,216 +15,145 @@ Ontology(<http://id.who.int/icd/foundation-plus/batch/2026-Q3-subtree-infectious
 # Batch: 2026-Q3-subtree-infectious-01
 # Pattern: equivalence_anchored_subtree_import v1.0.0
 # Generated: 2026-07-22T11:04:00Z
+# Revised: 2026-05-08 — removed 7 fabricated entities with no Mondo source class
 # Attributed to: https://orcid.org/0000-0002-0295-7821 (Samson Tu)
 # Scope: Mondo descendants of Foundation infectious disease leaf nodes
-# Total new entities: 98 (showing first 10 representative examples)
+# Total new entities: 3 representative examples shown
+#
+# Removed (no corresponding Mondo class):
+#   ST-0001 "Intestinal cryptosporidiosis" — synonym of MONDO_0015474, not a child class
+#   ST-0002 "Pulmonary cryptosporidiosis" — does not exist in Mondo
+#   ST-0003 "Biliary cryptosporidiosis" — does not exist in Mondo
+#   ST-0004 "Active trachoma" — MONDO_0001249 (trachoma) has no subclasses
+#   ST-0005 "Cicatricial trachoma" — MONDO_0001249 (trachoma) has no subclasses
+#   ST-0008 "Ehrlichia ewingii infection" — does not exist in Mondo
+#   ST-0010 "Spotted fever group rickettsiosis" — synonym of MONDO_0001195, not a child
 
 # ═══════════════════════════════════════════════════════════
-# Class Declarations (provisional IRIs in icd-stage: namespace)
+# Class Declarations with provenance annotations
+# (provisional IRIs in icd-stage: namespace)
 # ═══════════════════════════════════════════════════════════
 
-Declaration(Class(icd-stage:ST-0001))
-Declaration(Class(icd-stage:ST-0002))
-Declaration(Class(icd-stage:ST-0003))
-Declaration(Class(icd-stage:ST-0004))
-Declaration(Class(icd-stage:ST-0005))
-Declaration(Class(icd-stage:ST-0006))
-Declaration(Class(icd-stage:ST-0007))
-Declaration(Class(icd-stage:ST-0008))
-Declaration(Class(icd-stage:ST-0009))
-Declaration(Class(icd-stage:ST-0010))
+Declaration(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000225>)
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0000225>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
+  Class(icd-stage:ST-0006)
+)
+
+Declaration(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005118>)
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005118>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
+  Class(icd-stage:ST-0007)
+)
+
+Declaration(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000332>)
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0000332>)
+  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
+  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
+  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
+  Class(icd-stage:ST-0009)
+)
 
 # ═══════════════════════════════════════════════════════════
 # Labels
 # ═══════════════════════════════════════════════════════════
 
-AnnotationAssertion(rdfs:label icd-stage:ST-0001 "Intestinal cryptosporidiosis"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0002 "Pulmonary cryptosporidiosis"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0003 "Biliary cryptosporidiosis"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0004 "Active trachoma"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0005 "Cicatricial trachoma"@en)
 AnnotationAssertion(rdfs:label icd-stage:ST-0006 "Human monocytic ehrlichiosis"@en)
 AnnotationAssertion(rdfs:label icd-stage:ST-0007 "Human granulocytic anaplasmosis"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0008 "Ehrlichia ewingii infection"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0009 "Sennetsu neorickettsiosis"@en)
-AnnotationAssertion(rdfs:label icd-stage:ST-0010 "Spotted fever group rickettsiosis"@en)
+AnnotationAssertion(rdfs:label icd-stage:ST-0009 "Sennetsu fever"@en)
 
 # ═══════════════════════════════════════════════════════════
 # Subclass Assertions (parentage in Foundation hierarchy)
 # ═══════════════════════════════════════════════════════════
 
-# ENT-001: Intestinal cryptosporidiosis → child of Cryptosporidiosis
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044654>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044654>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0001
-  <http://id.who.int/icd/entity/1245382927>
-)
-
-# ENT-002: Pulmonary cryptosporidiosis → child of Cryptosporidiosis
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044655>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044655>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0002
-  <http://id.who.int/icd/entity/1245382927>
-)
-
-# ENT-003: Biliary cryptosporidiosis → child of Cryptosporidiosis
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044656>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044656>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0003
-  <http://id.who.int/icd/entity/1245382927>
-)
-
-# ENT-004: Active trachoma → child of Trachoma
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044657>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044657>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0004
-  <http://id.who.int/icd/entity/1210724685>
-)
-
-# ENT-005: Cicatricial trachoma → child of Trachoma
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044658>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044658>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0005
-  <http://id.who.int/icd/entity/1210724685>
-)
+# All three are children of Ehrlichiosis (entity/1116297863) in the
+# WHO-FIC Foundation, imported from Mondo descendants of MONDO_0016003.
 
 # ENT-006: Human monocytic ehrlichiosis → child of Ehrlichiosis
 SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005765>)
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000225>)
   Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
   Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005765>)
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0000225>)
   Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
   Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
   icd-stage:ST-0006
-  <http://id.who.int/icd/entity/1876773788>
+  <http://id.who.int/icd/entity/1116297863>
 )
 
 # ENT-007: Human granulocytic anaplasmosis → child of Ehrlichiosis
 SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005766>)
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005118>)
   Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
   Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005766>)
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0005118>)
   Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
   Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
   icd-stage:ST-0007
-  <http://id.who.int/icd/entity/1876773788>
+  <http://id.who.int/icd/entity/1116297863>
 )
 
-# ENT-008: Ehrlichia ewingii infection → child of Ehrlichiosis
+# ENT-009: Sennetsu fever → child of Ehrlichiosis
 SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044659>)
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000332>)
   Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
   Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044659>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0008
-  <http://id.who.int/icd/entity/1876773788>
-)
-
-# ENT-009: Sennetsu neorickettsiosis → child of Ehrlichiosis
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044660>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0044660>)
+  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0000332>)
   Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
   Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
   icd-stage:ST-0009
-  <http://id.who.int/icd/entity/1876773788>
+  <http://id.who.int/icd/entity/1116297863>
 )
-
-# ENT-010: Spotted fever group rickettsiosis → child of Rickettsiosis
-SubClassOf(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019354>)
-  Annotation(dct:license <https://creativecommons.org/licenses/by/4.0/>)
-  Annotation(dct:rightsHolder "Mondo Disease Ontology Consortium")
-  Annotation(dct:source <http://purl.obolibrary.org/obo/MONDO_0019354>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  Annotation(icd:batchManifestHash "sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5")
-  icd-stage:ST-0010
-  <http://id.who.int/icd/entity/1134198768>
-)
-
-# [... 88 additional entities follow the same pattern ...]
-# Full file contains 98 SubClassOf axioms + 98 class declarations + 98 labels.
-# Provisional IRIs (icd-stage:) rewritten to permanent at iCAT submission.
 
 # ═══════════════════════════════════════════════════════════
 # Equivalence Axioms (anchoring new entities to Mondo classes)
-# ═══════════════════════════════════════════════════���═══════
+# ═══════════════════════════════════════════════════════════
 
 # These allow the ELK reasoner to verify that the new Foundation class
 # is logically equivalent to its Mondo source, given the axis alignments
 # established in batch 2026-Q2-axis-align-01.
 
+# MONDO_0000225: ehrlichiosis AND hasAgent Ehrlichia chaffeensis (NCBITaxon:945)
 EquivalentClasses(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044654>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  icd-stage:ST-0001
-  ObjectIntersectionOf(
-    <http://id.who.int/icd/entity/1245382927>
-    ObjectSomeValuesFrom(icd:specificAnatomy <http://purl.obolibrary.org/obo/UBERON_0000160>)
-  )
-)
-
-EquivalentClasses(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0044655>)
-  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  icd-stage:ST-0002
-  ObjectIntersectionOf(
-    <http://id.who.int/icd/entity/1245382927>
-    ObjectSomeValuesFrom(icd:specificAnatomy <http://purl.obolibrary.org/obo/UBERON_0002048>)
-  )
-)
-
-EquivalentClasses(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005765>)
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000225>)
   Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
   icd-stage:ST-0006
   ObjectIntersectionOf(
-    <http://id.who.int/icd/entity/1876773788>
+    <http://id.who.int/icd/entity/1116297863>
     ObjectSomeValuesFrom(icd:infectiousAgent <http://purl.obolibrary.org/obo/NCBITaxon_945>)
   )
 )
 
+# MONDO_0005118: infectious disease AND hasAgent Anaplasma phagocytophilum (NCBITaxon:948)
 EquivalentClasses(
-  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0019354>)
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0005118>)
   Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
-  icd-stage:ST-0010
+  icd-stage:ST-0007
   ObjectIntersectionOf(
-    <http://id.who.int/icd/entity/1134198768>
-    ObjectSomeValuesFrom(icd:infectiousAgent <http://purl.obolibrary.org/obo/NCBITaxon_114277>)
+    <http://id.who.int/icd/entity/1116297863>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://purl.obolibrary.org/obo/NCBITaxon_948>)
   )
 )
 
-# [... remaining equivalence axioms for all 98 entities ...]
+# MONDO_0000332: infectious disease AND hasAgent Neorickettsia sennetsu (NCBITaxon:951)
+EquivalentClasses(
+  Annotation(prov:wasDerivedFrom <http://purl.obolibrary.org/obo/MONDO_0000332>)
+  Annotation(icd:batchId "2026-Q3-subtree-infectious-01")
+  icd-stage:ST-0009
+  ObjectIntersectionOf(
+    <http://id.who.int/icd/entity/1116297863>
+    ObjectSomeValuesFrom(icd:infectiousAgent <http://purl.obolibrary.org/obo/NCBITaxon_951>)
+  )
+)
+
+# [... remaining entities from the full batch follow the same pattern ...]
+# Provisional IRIs (icd-stage:) rewritten to permanent at iCAT submission.
 
 )
